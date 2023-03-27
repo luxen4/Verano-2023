@@ -1,0 +1,713 @@
+
+Nota: Esta función está hecha con mysqli   https://www.hostinger.es/tutoriales/como-usar-php-para-insertar-datos-en-mysql/
+public function ocuparPlazaBus($codigoDestino,$codCliente,$codBus,$plazasAocupar){  
+
+
+https://www.awardspace.com/user-login/	 entra con google						Host gratuito  superlaya50@gmail.com / alberite2
+https://cp1.awardspace.net/login/?next=ftp-manager&notice=login						superlaya50@gmail.com / alberite2
+
+
+FTP---> laya.atwebpages.com   3714088_laya  villamediana2 21  entrando con superlaya50@gmail.com/alberite2
+FTP---> laya2.atwebpages.com  4009740_laya misma  villamediana2 21  entrando con superlaya51@gmail.com/alberite2
+
+ 
+proyectoPlayas
+https://github.com/luxen4/proyectoPlayas  luxen4/alberite2
+
+alberite1     11
+
+https://xaviesteve.com/4158/clase-php-mysql-simple-y-facil-de-usar-recomendada/  	BUEN EFECTO
+http://jquery-manual.blogspot.com/2013/08/responsive-design-para-imagenes.html   	Para hacer el archivo
+https://www.tutorialspoint.com/javascript/array_splice.html 						Para web
+http://www.uterra.com/base_datos_mysql/codigo_mysql.php?ref=evitar_registros_duplicados_en_mysql    web bonita
+http://www.rotuprintrioja.com/																		Buen diseño
+https://www.lucushost.com/dominios    																Para copiar la estética
+http://laya.atwebpages.com/          												Tiene un parallax muy bueno
+
+Explicación de como subir al hosting
+https://www.bing.com/videos/search?q=awardspace&&view=detail&mid=ED58CAF403A619A799ABED58CAF403A619A799AB&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dawardspace%26FORM%3DHDRSC3
+
+
+
+Hacer unas diapositivas mostrando todo para explicar al tribunal 
+https://www.webempresa.mx/wordpress/que-es-wordpress.html
+
+
+https://www.laurachuburu.com.ar/tutoriales/enlaces-html.php      para enlaces que abren fotos
+https://www.a2hosting.es/kb/developer-corner/php/using-php.ini-directives/php-allow-url-fopen-directive     web para copiar
+
+Herramientas empleadas para la creación de los Casos de Uso:
+yuml.me
+https://online.visual-paradigm.com/drive/#diagramlist:proj=0&new=UseCaseDiagram
+
+Para plantillas de casos de Uso
+https://infograph.venngage.com/
+https://infograph.venngage.com/templates/recommended
+
+
+<!--https://foro.elhacker.net/bases_de_datos/mysql_como_saber_cuando_no_he_recogido_datos-t282813.0.html   Buenos fondos-->
+
+
+El select no se le puede cambiar la fecha con el DOM
+
+
+
+
+https://www.inboundcycle.com/blog-de-inbound-marketing/bid/195258/Qu-es-el-funcional-de-un-sitio-web   para inputs de formulario
+<!--https://wpshopmart.com/free-css-cards/-->
+
+
+https://programacion.net/articulo/como_implementar_una_pasarela_de_pago_con_stripe_1994  pasarela de pagos
+https://neftali.clubdelphi.com/hablando-del-tiempo-openweathermap-12/   Fantastico menú
+https://codenaive.com/api/api-examples/api-use-air-quality-openweathermap-code/   openweather
+
+
+
+
+	https://www.youtube.com/watch?v=qA5AxStYdJw bajar musica
+	https://www.youtube.com/watch?v=NZy9Psx0lMY&list=RD57g3bf4SoNU&index=10
+	https://www.youtube.com/watch?v=Tjeaa0uYA4E&list=RD57g3bf4SoNU&index=4
+	https://www.youtube.com/watch?v=Y-meMutV_uo&list=RD57g3bf4SoNU&index=5
+	https://www.youtube.com/watch?v=VV0t1-8NRK0&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&index=16
+	https://www.youtube.com/watch?v=gk6bOlDyiio&list=RDGMEMYH9CUrFO7CfLJpaD7UR85w&index=17
+
+
+
+
+WinScp
+https://todosalaplaya.bokistock.es/
+Servidor: localhost:3306 »Base de datos: proyectoplayasdefinitivo
+
+
+https://www.dominiosa1.com/gratis/panel/list_domains#  para el dominio gratuito
+https://www.tokioschool.com/noticias/como-vender-app/   Como vender tu aplicación
+
+<!--https://www.w3schools.com/icons/fontawesome_icons_intro.asp  Meter de esto que da otro aspecto-->
+
+
+
+
+
+
+
+
+Petar:
+[23:07, 23/1/2022] Petar: https://uniwebsidad.com/libros/xhtml/capitulo-3/codificacion-de-caracteres
+[23:10, 23/1/2022] Petar: http://fancybox.net/
+[23:17, 23/1/2022] Petar: https://lokalise.com/blog/implementing-php-localization-complete-guide/
+
+Importante:
+De aquí se pueden sacar muchas fotos buenas;
+https://www.google.com/maps/place/Charly+Restaurante/@43.2863169,-2.1720723,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNaQkC-67dVReV1w8iHj1x282qCFLtFfIfkvLxh!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNaQkC-67dVReV1w8iHj1x282qCFLtFfIfkvLxh%3Dw114-h86-k-no!7i4000!8i3000!4m12!1m6!3m5!1s0x0:
+0x4d5c38800c5ec6ee!2sBronze+stem.+Zarautz!8m2!3d43.2874182!4d-2.1710678!3m4!1s0xd51c8413e38cc0f:0x251db67fcfb837bb!8m2!3d43.2872428!4d-2.1718595?hl=es-ES
+
+
+
+
+
+
+
+
+Web muy buena aparte que es de chaquetas
+https://axelwears.com/?utm_source=Facebook&utm_medium=23849126313120345&utm_campaign=Others&utm_content=23849126313390345&fbclid=IwAR1zebcg-tbXkoTc6HhodYvIKKG9o7v888Ks8Z8sxR5K-nIUz3UFYu_0HAM
+
+
+
+
+
+
+<!--
+'https://scontent-mad1-1.xx.fbcdn.net/v/t1.6435-1/s200x200/72890569_102186027864663_4189318285998686208_n.png?_nc_cat=103&ccb=1-5&_nc_sid=1eb0c7&_nc_ohc=HVCBRGyfNsgAX-CexGl&_nc_ht=scontent-mad1-1.xx&oh=00_AT96IdXkMmqZPW_xqecllmdG7PRZ3-6JD1zjpwUovInTsA&oe=621A870E',
+        'https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/270758641_631912114892049_1116438567995757962_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jjukM1hZSOUAX860xU8&_nc_ht=scontent-mad1-1.xx&oh=00_AT-1N7SAi2DUVdhU8tDB2IlA6UaKuT2m7tVtCyoKLnhhHg&oe=61FB1208',
+        'https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/270380196_631912051558722_7709224436737445481_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=g3EYAytB0ncAX9uIjWm&tn=oaAGGrChgXRaOQ_S&_nc_ht=scontent-mad1-1.xx&oh=00_AT_qTVomKD1nZT51VcHFD2Qajp0L1649qFK3I7k5p8mPoQ&oe=61F8FC00',
+        'El Figón de San Mamés','Restaurante y bar con comida tradicional... <br>y un toque especial',629619801,
+        'Bo. Maeda, 20B',7,
+        'https://www.tripadvisor.es/Restaurant_Review-g2569662-d21148117-Reviews-El_Figon_de_San_Mames-San_Mames_de_Meruelo_Cantabria.html',
+        'https://www.facebook.com/pages/category/Restaurant/El-Fig%C3%B3n-de-San-Mam%C3%A9s-102157554534177/','SI'),
+-->
+/* /*('Santander','Cantabria','Cantabria','España','https://fotos.hoteles.net/articulos/noja-villa-turistica-en-cantabria-3243-4.jpg'), Pillar esta web para hovers */ */
+
+
+
+https://www.vacaciones-espana.es/San-Sebastian/articulos/la-playa-de-la-concha-en-san-sebastian
+
+https://www.metrobilbao.eus/es/inicio
+
+
+como_implementar_una_pasarela_de_pago_con_stripe_1994
+
+
+
+
+Dia 4/02/2022 Viernes
+Pocer 5 columnas y en cada una de ella contenedores alargados sin foto con solo la agencia, el destino y la fecha a modo de solo lectura.
+
+
+
+Programa de diseño técnico inventor 2020
+Bubble, badoo, facebook
+
+
+
+
+https://www.amazon.es/Brandit-Denimshirt-Camisa-Vaquera-Hombre/dp/B072MRCKXK/ref=pd_rhf_cr_s_pd_crcd_1/262-2223756-7977607?pd_rd_w=Beggu&pf_rd_p=da6acabc-888d-4e3e-a133-3cbfc0b30282&pf_rd_r=7H5PH9PYASQR91DPQBM6&pd_rd_r=a9775ee0-1114-4de7-80c6-c0cb649fff7b&pd_rd_wg=UKrqo&pd_rd_i=B072K5X9BC&psc=1&th=1   Atuendo amazon
+
+https://www.youtube.com/watch?v=UjmOSMu1yLM  youtube Las chinas con música
+
+https://getbootstrap.com/docs/4.0/components/progress/ Bootstrap de barras de progreso
+
+https://www.uterra.com/base_datos_mysql/codigo_fuente_base_datos.php copiar web
+
+https://www.thefork.com/restaurant/castillo-de-arteaga-r26853
+
+https://www.creativosonline.org/slider-html-css.html#Slider_comparativo_de_imagenes Meter un par de estos
+https://siko.in/attractions-near/1145679
+
+
+
+
+
+Podría meter 4 fotos en vez de 3 que se queda pobre
+https://www.sluurpy.es/santo%C3%B1a/restaurante/1966345/amayuela    redes Sociales y Sluurpometro
+
+https://code.tutsplus.com/es/tutorials/how-to-use-ajax-in-php-and-jquery--cms-32494   Para Ajax
+https://developer.mozilla.org/es/docs/Web/API/Window/confirm  mensage de dialogo
+https://www.jose-aguilar.com/blog/abrir-popup-con-javascript/
+
+ https://es.foursquare.com/v/hermandad-de-pescadores/4c41af25ce54e21e7a630b1a   coger ideas red de restaurantes
+
+Tirar un Ajax con el hover
+https://www.amazon.es/waotier-Chaqueta-Masculina-Cazadora-Compuesto/dp/B081DTNLJB/ref=pd_sbs_5/262-2223756-7977607?pd_rd_w=JJT5K&pf_rd_p=f9559607-0e83-4976-8590-72740e10e24e&pf_rd_r=3BSDP812TSF2ZY4TPXBJ&pd_rd_r=022f2407-4002-4293-a69a-8d05a86d413d&pd_rd_wg=Jrz8j&pd_rd_i=B081DTNLJB&th=1&psc=1
+
+Buena web de isla para sacar fotos para su destino
+		https://www.tripadvisor.es/Restaurant_Review-g664610-d7002064-Reviews-Complejo_Hotelero_Alfar-Isla_Cantabria.html#photos;aggregationId=101&albumid=101&filter=7&ff=338150767
+
+https://www.sehacecaminoalandar.com/paseo-playas-san-sebastian/  Buena web
+https://placespain.com/places-in-cantabria-spain-lo7    Es mi página
+http://www.kirkilla.com/  Muy buen diseño y pillar los iconos de las redes sociales
+https://bbbmasajes.es/Laredo/ buena web
+
+ Foto de 2 amacas en la playa   https://fotos01.noticiasdealava.eus/2021/06/29/690x278/bonobusplayero-registrounico-1.jpg
+
+
+ https://www.remove.bg/upload para dar fondos transparentes a fotos
+
+ https://www.viajesbidasoa.com/    Para barra de navegación y agencia de viajes
+
+https://blog.ida.cl/diseno/ldiferencia-modal-pop-up-pop-over-light-box/   diferencias de popup etc
+
+
+https://www.youtube.com/watch?v=AEYV3geppMY Webinars para Pdf
+https://desarrolloweb.com/articulos/enlaces-fpdf.html  Trabajar esto para los Pdf!!!
+https://norfipc.com/inf/como-subir-fotos-imagenes-servidor-web.php   Bonita web
+
+
+
+		Euronation
+		https://www.youtube.com/watch?v=Q4JNPjm-OxQ																	"Extraterrestre verde"
+		https://www.youtube.com/watch?v=GbnSNgg6t6Y&list=RDEMMD7ttXcT5NUZV7kNFVLz0Q&start_radio=1&rv=dWFyoGhApJ8    "Caza fantasmas"
+		https://www.youtube.com/watch?v=tosdBrExwQ4 																"DANCE PARTY"
+		https://www.youtube.com/watch?v=L10j7x5Bl2Q		'TRANCE LIVE'
+https://www.youtube.com/watch?v=V96-7kkeTuk
+
+
+
+
+https://elmocambo.com/venue/ buena web
+
+
+	<!-- Madre
+L7AY79
+PQ9K5B
+-->
+
+Ver en Fuenterrabia si hay menús del día
+
+   (/*cod_menu* Bartolo(Este diseño, hacer una cosa personalizada), San Sebastián OK*/ es un pdf (Hacer a medida es un plus)
+   https://mesonportaletas.com/wp-content/uploads/2017/10/menu_cast.pdf
+
+   C:\xampp\htdocs\Verano-2022\insert_MenusRestaurantesLocalidad\poblar_MenusBiarritz.php   preparar ese menú personalizado o MOD-11
+
+
+
+
+
+ 
+
+
+Servidor Infinity Free
+	Servidor		ftpupload.net
+	FTP Username	epiz_31803423
+	FTP Password    rYPHq8acqd4Y
+	FTP Port (optional)	21
+
+http://laya82.infinityfreeapp.com/Verano-2022/
+https://app.infinityfree.net/accounts
+https://app.infinityfree.net/accounts/epiz_31803423
+
+
+----------
+[6:45 p. m., 28/5/2022] ...🍇☝🏻😃 dirías?: Aplicación de castillos de Loira para Dam
+Aplicación de opiniones de programas de TV y anuncios!
+[7:15 p. m., 28/5/2022] ...🍇☝🏻😃 dirías?: Parejas...brisca y sopas de letras
+----------
+
+
+
+
+
+/* https://www.tripadvisor.es/Restaurant_Review-g608999-d12474978-Reviews-ANCHOATECA_La_Mutua-Santona_Cantabria.html Anchoteca pero para pinchos poco en publicidad */
+
+/* Somo, Fuenterrabia y Zumaia tripadvisor tiene buenas fotos para su destino */
+
+
+        
+/*
+         
+
+          ('clubnautico_laredo.jpg','Real Club Nautico De Laredo','Restaurante español',942605812,
+          'Emilio Caprile nº1, Laredo',12,'https://www.facebook.com/707867909414458/posts/d41d8cd9/1757634667771105/')
+
+
+
+       */
+
+
+
+
+
+
+
+
+
+
+
+
+/*Le falta Plentzia Y Hendaya a Go Travell
+
+
+Mirar teclados 
+Mirar garajes
+
+
+Ir a knet a recibir un regalo
+
+
+
+
+
+
+   <!--    <div id="seguridad" class="row">Caso 1 Meter el nº de cuenta (supone la registrada) <br>
+                <div class="col-xl-12 text-center">
+                    <label for="numcuenta">Inserte su Nº de Cuenta</label> <br>
+                    <input type="text" name="info[numcuenta]" id="numcuenta" value="<?php echo $datos['numcuenta'] ?? '' ?>" placeholder="nº de cuenta" size="30" required><br>
+                </div> 
+            </div>
+        -->
+
+
+
+
+
+		http://respag.net/c%C3%B3mo-centrar-una-tabla-en-html.aspx   WEB para copiar, es buenísima
+
+
+
+
+		  /* gastrorankin */
+  /* .sluurpy.es */
+  /* minube.com */
+  /* http://www.buscorestaurantes.com/ */
+  /* https://dimeunrestaurante.com/restaurantes/kaia */
+  /* https://guide.michelin.com/es/es/pais-vasco/getaria/restaurante/kaia-kaipe */
+  /* https://www.yelp.com/ */
+  /* https://es.foursquare.com   /* https://es.foursquare.com/v/hermandad-de-pescadores/4c41af25ce54e21e7a630b1a */
+  /* https://placespain.com/bodegon-joxe-mari-orio-fd36824 */
+  /* www.bonviveur.es */
+  /* https://www.grupogarrancho.com/bares/meson-portaletas/ */
+  /* https://carta.menu/restaurants/hendaye/la-pinta-3 */
+  /* http://www.voyacomeren.es/bar%20rompeolas%20voy%20a%20comer%20en%20rahersa                           Copiarla */
+  /* https://www.kerico.es/Itxaspe-Getaria/  */
+  /* https://placespain.com/asador-mayflower-getaria-fd32372 */
+
+  /* rango_Precios  RANGO DE PRECIOS 10 € - 50 € (el Kai Eder de Plentzia)*/ /* RANGO DE PRECIOS Panorama Santander 20 € - 25 € */
+
+  /* Meter si hay menú y los precios */
+  /* sE PUEDE SOLICITAR A LA GENTE QUE HAGA UNA FOTO DE LA FACHADA, SI NO, HACERLA YO CUANDO VAYA */
+  /* Decir a los dueños de los restaurantes que es una página que reune los diferentes sitios de redes en uno */
+  /* https://guiasurf.com/donde-comer-en-somo/  Para ver la barra de navegación */
+
+
+/* Una página de estas tengo que hacer https://www.cylex.es/noja/amaya-bus-11427635.html#socialMediasLabel */
+/* https://www.kerico.es/Kaia-Taberna-Jatetxea-Hondarribia/    Pillar ejemplos de la página */   
+/* https://www.paginasamarillas.es/f/lekeitio/jatetxea-goitiko_178710117_000000001.html */
+/* https://restaurants-de-france.fr/73-savoie/hendaye/restaurants/143378-creperie-iguzkian.html */
+/* https://gastronomiaturismo.com/  se da un aire a mi página y con carrusel automático*/
+/* Buenas opiniones meter en por qué quiero este restaurante  */
+/* https://www.petitfute.es/v2776-biarritz-miarritze-64200/c1165-restaurants/c1031-cuisines-du-monde/c1036-cuisine-mediterraneenne/c82-restaurant-italien-et-pizzeria/625804-la-trattoria-pizzeria-des-arceaux.html */
+ 
+/* https://es.restaurantguru.com/search/Restaurant%2BLe%2BPradolesolsol?location=ci63592  Ver la resolución movil */
+
+/* Somos de Logroño y a veces hay problemas para que reserven, hacer como un cupón o que enseñen la app */
+
+/* https://www.thefork.es/restaurante/portal-de-la-rioja-r586767/menu */
+
+/* /* Se podría hacer una sugerencia de ruta del día en Somo tengo lo mismo, ir allí al archivo */
+/* Mirar el pop-up de reservas https://www.thefork.es/restaurante/la-casa-del-indiano-r712644 */
+
+
+
+/* Somorrostro que va ccoo van Domingos */
+
+
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+
+https://linuxize.com/post/how-to-configure-git-username-and-email/
+
+
+<!--https://www.baulphp.com/como-usar-include-y-require-en-php-ejemplos/ -->
+
+https://vallas-metalicas.com/buscar?controller=search&orderby=position&orderway=desc&search_query=dfvdfdf&submit_search=# Ver las vayas y copiar la página
+<<<<<<< HEAD
+https://casasprefabricadascofitor.com/casas-prefabricadas-estandar/9/Casa-prefabricada-40m2 opiar la página y ver las casas hacer un sprite
+=======
+https://casasprefabricadascofitor.com/casas-prefabricadas-estandar/9/Casa-prefabricada-40m2 opiar la página y ver las casass
+>>>>>>> 3463170a7c58b033837ea1555d9da8b31b7a8a3e
+
+
+
+https://www.lyrics.com/ simple
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <?php // Para futuro include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionIzda/dropdownDondeComer.inc';?>   
+
+
+
+
+
+
+
+
+
+<!-- No consigo ir al carrusel de tripadvisor, seria un nuevo campo de la tabla
+    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12 mas_fotos">
+        <a target="blanc" 
+            href="https://www.tripadvisor.es/Restaurant_Review-g187457-d989163-Reviews-Bar_Bergara-San_Sebastian_Donostia_Province_of_Guipuzcoa_Basque_Country.html#photos;aggregationId=101&albumid=101&filter=7&ff=186829580">
+            Ver más fotos
+        </a>
+    </div>
+-->   
+
+
+
+<?php if (!empty($_SESSION['perfil'])) {
+    if ($_SESSION['perfil']['roll'] == "admin") {}}
+;
+
+if (!empty($_SESSION['perfil'])) {if ($_SESSION['perfil']['roll'] == "agenciabuses") {?>
+<?php }
+}
+
+if (!empty($_SESSION['perfil'])) {
+
+    if (!empty($_SESSION['perfil'])) {
+        if ($_SESSION['perfil']['roll'] === "cliente") {?>
+
+<?php //echo "Borrar"; die(); ?>
+
+
+ 
+<?php }}}
+;?> 
+csd
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name" 
+
+
+
+  La Agencia de Viajes quiere que que su HOME aparezcan las cards de los Destinos más pequeñas,
+  a ella solo le interesa poder  y no las barras de navegación laterales 
+
+
+No puede crear la Agencia de viajes un Destino con otro autobús que no sea de su Agencia de buses predeterminada
+Hacer el bus real de azul Marino y Logrobus
+
+
+  Poner la comida
+  Fregar los cacharros
+
+
+Simplificarlo
+  C:\xampp\htdocs\Verano-2022\app\plantillas\bloques\plantabus\tablaBusDestino.php
+  C:\xampp\htdocs\Verano-2022\app\plantillas\bloques\plantabus\pruebaFormularios.php
+
+
+
+
+
+
+  https://www.geeksforgeeks.org/how-to-change-the-checkbox-value-using-jquery/  para checkbox
+
+
+  https://codepen.io/ainalem/pen/LJYRxz  Botones hamburguesa Hacer esta practica
+
+
+
+
+
+https://www.youtube.com/watch?v=p3HMwCiy-QM para variables de javascript a php
+
+
+
+Cookies
+// Creating a cookie after the document is ready
+/*
+var lat = pos.coords.latitude; alert(latitud);
+var lon = pos.coords.longitude; alert(longitud);
+
+var latYlon=lat + '_' + lon ;
+*/
+
+/*
+    createCookie("gfg", 'latYlonawwwa', "10");
+    alert(document.cookie);
+   
+// Function to create the cookie
+function createCookie(name, value, days) { 
+    var expires;
+      
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toGMTString();
+    }
+    else {
+        expires = "";
+    }
+      
+    document.cookie = escape(name) + "=" + 
+        escape(value) + expires + "; path=/";
+}
+*/
+
+//echo $_COOKIE["gfg"]; //setcookie($_SESSION['gfg']);
+//setcookie("gfg", "", time() - 3600);
+//setcookie ("gfg");
+//unset ($_COOKIE ["gfg"]);
+
+
+// Creating a cookie after the document is ready
+
+
+
+
+
+<!--
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bus-alt"></i> Area de Buses</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index.php?ctl=nuevobus"><i class="fas fa-bus"></i> Nuevo Bus</a> 
+                <!-- <a class="dropdown-item" href="index.php?ctl=nuevobus">Eliminar Bus (Hecho)</a>-->
+                <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
+                  <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
+        </div>
+</li>
+  -->
+
+
+<!--<li><a class="nav-link" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i> Todas las Agencias de Viajes</a></li>-->
+
+
+
+
+<!--
+<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-store-alt"></i> Agencias</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i> A. Viajes disponibles</a> 
+                  <a class="dropdown-item" href="index.php?ctl=mostraragenciaviajesdondeessocio"><i class="fas fa-store"></i> A. Viajes/socio </a> 
+                  <a class="dropdown-item" href="index.php?ctl=mostrartodasagenciabuses"><i class="fas fa-store"></i>A. Buses</a> 
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" style="padding:0.7em" href="#">Otros</a>
+          </div>
+</li>
+-->
+
+
+https://victorroblesweb.es/2017/08/26/crear-documentos-pdf-php-html-css/ Hacer esta Práctica para 
+
+
+
+<!-- <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-store"></i> Su Agencia</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.php?ctl=infoagenciaviajes"><i class="fas fa-eye"></i> Perfil</a> 
+             <a class="dropdown-item" href="index.php?ctl=modificacioninfoagenciaviajeslogeada"><i class="fas fa-edit"></i> Modificar Perfil</a> -->
+            <!-- <a class="dropdown-item" href="index.php?ctl=eliminarAgenciaviajesLogeada"><i class="fas fa-trash-alt"></i> Darse de baja</a>--> 
+              
+            <!--  <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fas fa-users"></i> Personal Agencia Viajes (ampliable V2)</a>-->
+
+            <!--  <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Otros (ampliable V2)</a>
+          </div>
+</li>-->
+
+
+          <!--
+            <a class="dropdown-item" href="index.php?ctl=modificardestino">Modificar Destino (mirar si se puede suprimir)</a> 
+            <a class="dropdown-item" href="index.php?ctl=eliminardestino">Eliminar Destino (mirar si se puede suprimir)</a> 
+          -->
+
+
+
+         Qué ver!
+          Flores de Laredo
+          Faro del Ratón de Getaria
+
+Meter la UDP
+Meter la asociación de Yagüe
+
+Proyectos:
+Paris 
+Muzamal, 
+Pinchos de LOgroño 
+App de Restaurantes
+
+         Cambio de Contraseña y ver perfil de Agencia de Viajes
+
+
+
+Contraseñas
+Análisis:
+  Cambio de contraseña por parte de la Agencia de Viajes
+    El admin no la sabe a menos que la guarde sin pasarla a $hash (no interesa)
+      Caso...-El admin quiere meterse como Azul Marino que tiene un problema
+          No tiene la contraseña ya que está cambiada
+            Opción1 Se le dice la contraseña al admin y se mete (la Agencia puede recelar de esto)
+            Opción2 El admin ve el username en la base de datos(no está hasheado) y mete contraseña alberite y ya actua como Azul Marino
+            
+  Olvido de contraseña
+          Opción1 Se llama al admin por teléfono y El admin la resetea 
+              y manda al correo de la agencia azulmarino21 azulmarino21 (predeterminada) o se lo dice en llamada 
+              o mete en la base de datos el hash a webbo azulmarino21 azulmarino21 y después la cambia ella.
+
+          Opción2 Se prepara un formulario para que la agencia meta el username correcto
+            De ser correcto el username puede cambiar su contraseña 
+            (por seguridad, se manda al correo de la agencia el enlace) 
+              pega...una vez sabido el enlace, no hace falta el correo por parte de un intruso y se puede meter en el enlace con la url
+
+          Opción3 Se crea al azar un username y una contraseña, se mete a la base de datos
+            y se la manda al correo insertado(comprobación de si está registrado y ya se sabe que es la Agencia de Viajes o un Cliente) en un input los nuevos datos. (No hay formulario especial, no hay enlace que un intruso sepa en una 2ª vez y 
+            ya la agencia se mete con XXXX1 xxxx1 y la cambia a su voluntad)
+            alert"Acabamos de mandar a su correo las nuevas credenciales";
+            En caso de no ver el correo y no saber las credenciales, 
+              Volver a empezar la Opción3
+              Llamar al administrador
+        
+
+
+
+Análisis
+Prepago de apertura de Destino
+
+Leaflet
+https://mapio.net/pic/p-59639189/  
+
+
+
+Menú hamburguesa
+https://ferreteriairigaray.com/?gclid=EAIaIQobChMIjrb40_77-QIVg5rVCh1McQMxEAEYASAAEgICkvD_BwE
+https://killerinstinct.fandom.com/es/wiki/Cinder
+https://codepen.io/ainalem/pen/LJYRxz  Botones hamburguesa Hacer esta practica
+
+
+
+Copiar cabecera y menu
+https://es.noracora.com/collections/ropa-de-mujer-oto-o-2022?adp=14109576,14093853,14072842,2451687,13957103,11523191&gclid=EAIaIQobChMI2dH0tuz2-QIVwsveCh1HqQxqEAEYASAAEgJGLfD_BwE
+
+
+
+Tareas pendientes: Dar prioridades
+
+Eventos
+  Flores de Laredo
+
+Meter Destino playero
+  Destino de Comillas (NO LE SALE EL TIEMPO)
+
+Meter Destinos No Playeros
+  Playa Pita
+  Arnedillo
+  Sidrería
+  Soria, Burgos, Las Cascadas
+
+
+
+Haga login para solicitar reserva reservar o comuníquese con la agencia
+
+Azul marino no tiene folleto en todas agencias de viajes
+
+En la tabla de ocupación de bus...los totales no salen bien
+
+Preparar Destinos playeros y botón de no playeros
+
+En nuevo destino salen los buses 2veces
+
+Popup de fuenterrabia no están cargadas las fotos
+
+El ticket descuento de los restaurantes no funciona
+
+Comentar Limpiar Desmarcar en Restaurantes de una Localidad
+
+
+
+Analisis
+SACAR TODOS LOS BUSES SIN QUE TENGAN RELACIÓN CON LAS AGENCIAS 
+  (Ortensia y Azul Marino ya han llamado a otras compañías)
+
+
+
+Reformar la interface de Administrador
+
+
+https://www.youtube.com/watch?v=SioFZHx7MEc
+https://www.youtube.com/watch?v=oghl1SjVbbs  Cambio de contraseña sin logueo este hacerlo
+
+
+
+
+Hacer una tabla usuario que dependan Clientes y Agencias de Viajes para coger el roll aqui y ya meterme a qué tabla ir con el correo electronico
+para restablecer la contraseña
+TABLE usuario
+  REF_uSUARIO
+  correo
+  roll
+
+
+  O SI EMPIEZA POR AV, CLI, BUS etc voy a una tabla u otra para cambiarle su contraseña
+
+
+Simplificar código en carrusel_principal.inc

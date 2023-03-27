@@ -1,0 +1,70 @@
+#wrapper {
+    width: 288px;
+    margin:0 auto;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+nav input{
+    border-bottom:4px black solid;
+    border-right:4px black solid;
+    margin-right: 0.3em;
+}
+
+
+.columna {
+    display: flex;
+   
+}
+
+input{
+    width: 32px;
+    height: 32px;
+    font-size: 2em;
+    line-height: 1px;
+    border: 1px solid black;
+}
+
+.arriba {
+    border-top: black 3px solid;
+}
+
+.abajo {
+    border-bottom: black 3px solid;
+}
+
+.izquierda {
+    border-left: black 3px solid;
+}
+
+.derecha {
+    border-right: black 3px solid;
+}
+
+.numeros {
+
+    margin-top: 1em;
+}
+
+
+.numeros input {
+    border: rebeccapurple 1px solid;
+    font-size: 2em;
+    line-height: 1px;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+}
+
+
+#number {
+    font-size: 16px;
+    color: #434343;
+    border-bottom: rebeccapurple 1px solid;
+    margin-left: 1.2em;
+    height: 16px;
+}

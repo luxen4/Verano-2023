@@ -1,0 +1,102 @@
+/*General*/
+label{/*font-weight: bolder; font-size: 1em;*/ color: #006293;} 
+li{ list-style:none;} 
+
+/* Perfil Agencias y Cliente */
+.infoperfil{/*font-size: 1.5em;*/ color: #212721; /*font-weight: bolder;*/ text-decoration: underline;}
+.s{text-decoration: none; color: #006293;}
+.infoperfil{
+  color:#212721;
+  /*font-weight: bolder;*/
+  text-decoration: underline;}
+#nohay{color:red; font: 4em sans-serif; text-align: center;}
+
+#ningun_destino h3{color: red; margin: 1em; text-decoration: underline;}
+
+
+/*Table*/
+th, td{border:1px solid #006293; text-align: center;}
+tbody tr,thead tr{background-color:  #F6f6f6;}
+thead tr{color:#006293}
+tbody tr:hover{background-color:#E7E4D0;}
+thead tr:hover{background-color: #AFB2B9; color:#212721;}
+
+  
+input:focus
+{ -webkit-transition: 0.8s;
+transition: 0.8s;
+background-color: #eee;
+border: 2px solid #555;
+}
+
+
+h1{margin-bottom: 0.5em; text-decoration: underline; margin-top: 0.5em;}
+h5{color:#006293; border-bottom: 1px solid #006293; text-align: left;}
+
+
+ /*MEDIAQUERYS*/
+  
+ @media only screen and (min-width: 1200px) and (max-width: 4000px) {
+  th, td{font-size: 0.8em;}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+ /* th, td{font-size: 1.2em;} */
+  th, td{font-size: 0.7em;}
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1000px) { 
+  th, td{font-size: 0.7em;}
+}
+
+
+@media only screen and (min-width: 770px) and (max-width: 989px) { 
+  /* th, td{font-size: 0.9em;} */
+  th, td{font-size: 0.5em;} 
+}
+
+@media only screen and (min-width: 650px) and (max-width: 769px) { 
+  /* th, td{font-size: 0.6em;} */
+  th, td{font-size: 0.4em;} 
+  .table>:not(caption)>*>* {padding: 0rem 0rem;}
+  td input{/*transform: scale(0.6);*/}
+}
+
+@media only screen and (min-width: 430px) and (max-width: 650px) {
+  th, td{ /*font-size: 0.3em;*/} 
+  .table>:not(caption)>*>* {padding: 0rem 0rem;  /*font-size: 0.31em;*/  /* line-height: 20px;*/}
+ }
+
+
+@media only screen and (min-width: 360px) and (max-width: 430px) {
+  th, td{ font-size: 0.3em;} 
+/*  .table>:not(caption)>*>* {padding: 0.2rem 0.2rem;  font-size: 0.24em;}*/
+ }
+
+@media only screen and (min-width: 513px) and (max-width: 809px) {
+  .letra{font-size: 1em;}
+  td input{/*transform: scale(0.6);*/}
+}
+
+@media only screen and (min-width: 511px) and (max-width: 512px) {
+  #tus_destinos, .letra{font-size: 1em; } 
+  
+}
+
+/* Código para Móvil */
+@media only screen and (min-width: 310px) and (max-width: 510px){
+  .letra{font-size: 1em; margin-top: 1em;} 
+  .btn-danger{transform: scale(0.5);}
+  td input{transform: scale(0.6);}
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 309px) {
+  .letra{font-size: 0.5em; margin-top: 1em;} 
+}
+
+/*
+.admin{color: red; text-decoration: underline;}
+.casillas{margin-top: 2em;}
+#consulta{ display: flex;}
+*/

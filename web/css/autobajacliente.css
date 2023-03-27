@@ -1,0 +1,47 @@
+
+#caja{
+    border:1px solid #006293; border-radius: 5px;  margin: auto; padding:1em;
+    background-color: #f6f6f6; margin-bottom: 1em; margin-top: 1em;
+    box-shadow: inset 0px 0px 20px 4px #c1c1c1;}
+    
+h5{color:#006293; border-bottom: 1px solid #006293; text-align: left;}
+
+
+#autobaja_profile input{
+    border: 1px solid #006293; 
+    border-radius: 5px;     padding: 0.2em;
+    margin: 0.2em 0.2em 0em 1.2em;
+}
+    
+    input{
+        border:1px solid #006293; border-radius: 5px;  margin: auto; margin-bottom: 0.5em;}
+    
+        #contenido_autobaja
+
+    
+    #submit{color:red;}
+    
+    #mas_info{ display: none;}
+    
+    .ok, .error{margin-right: 0.2em;}
+    .ok{color:green;}
+    .error{color:red;}
+
+
+
+    @media only screen and (min-width: 751px) and (max-width: 950px) {
+        #caja {flex: 0 0 auto; width: 50%;}
+    }
+
+    @media only screen and (min-width: 451px) and (max-width: 750px) {
+        #caja { flex: 0 0 auto; width: 80%;}
+    }
+
+    @media only screen and (min-width: 401px) and (max-width: 450px) {
+        #caja {flex: 0 0 auto; width: 100%;}
+    }
+
+    @media only screen and (min-width: 150px) and (max-width: 400px) {
+        #caja {flex: 0 0 auto; width: 100%;}
+    }
+

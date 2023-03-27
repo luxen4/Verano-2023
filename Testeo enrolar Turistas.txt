@@ -1,0 +1,83 @@
+
+
+
+Creación de la Agencia de Viajes, 
+	Por ella misma anónimamente (rellenando el formulario de inscripción)
+	Por el administrador 
+	Se valida en una interface por parte del administrador (no me esploten a agencias y controlarlas)
+
+Para que la Agencia de Viajes pueda enrolar gente a los Destinos, debe crearse previamente por su parte o por la del administrador 
+un Destino
+	Crear un Destino
+
+La Agencia de Viajes
+	En el Home de la Agencia de Viajes solo se vean sus Destinos
+
+	Enrolar Turistas con cada uno de sus formularios
+		Pasajero	
+			1 Juán David Reyes (asiento1), el input no se debe cambiar(no OK) OK
+			3 Éric León (2 Hermanos)
+		Cliente app (Hacer el registro)
+			1 Gabriela de Elizondo
+			3 Juán Reyes (Juán Reyes, Oscar Reyes y Franco Reyes)
+
+		Socio Agencia de Viajes (Hacerse Socio de la Agencia)
+			1 Rosario Montes
+			2 Samuel Caballero (Samuel Caballero y Muriel Caballero)
+			3 Pablo Gunter (Pablo Gunter y Panchita)
+
+	Mandar un correo electrónico a cada nuevo Cliente o Socio de una A. de Viajes
+	Mandar un correo electrónico a cada turista con su reserva
+	Cada uno puede suspender la Reserva de su billete de Viaje
+
+	Ver la información de un Bus que va a un Destino
+		Puede cambiar el estado de Pagado (SI/NO) y el importe de cada Billete de Viaje por si después es un niño(por ejemplo)
+			Modificación del importe cobrado y el importe que falta por pagar.
+			Eliminar una Reserva (Billete de Viaje)
+
+
+En el Home
+	Si es usuario sin loguear o Cliente:
+		// Solo salen los botones de 'Solicitar Reserva' y 'Comer en'.
+
+	Si es una Agencia de Viajes esta logueada
+		// Aparecen los botones de 'Reservar', 'Modificar' y 'Suspender Viaje'
+
+
+En el Home...
+	Una Persona no logueada puede:
+		Solicitar Reserva.
+			Para 1 Persona.
+				1 Juán David Reyes (asiento1), el input no se debe cambiar(no OK) OK
+			
+			Para Varias Personar a su nombre.
+				3 Éric León (2 Hermanos)
+			
+
+		Ver 'Comer en'.
+
+
+
+Plazas Reservadas
+	Agencia de Viajes puede cambiar el estado de un asiento 
+		"Asiento Pagado" en verde
+		"Asiento NO Pagado" en rojo (Se debe dinero de alguna persona que pagará en otro momento)	
+			
+	No logueado y Cliente ven 
+		Asiento Reservado en rojo
+		Asiento libre en negro
+
+
+
+Análisis
+	Se necesita un botón para generar el .pdf de como se encuentra de ocupado un Bus de un Destino
+	En la interface de información solo aparece la tabla desplegable y el botón de sacar a excell o de generar pdf
+	(no tiene sentido además de aburrir y no quedar limpio volver a sacar la tabla de asientos)
+	Botón de volver a todos los DEstinos de una agencia de viajes logueada y de directamente de enrolar Personas (por rapidez)
+
+
+	Empresa de buses estandar y en ella se inscriben los buses predeterminados (a los de diseño propio en un futuro, meter un coste)
+	Cargar a mano los Destinos de Victor Vallo
+
+En
+	mostrartodosdestinosdeagenciaviajeslogeada meter el botón de info del Bus de un Destino

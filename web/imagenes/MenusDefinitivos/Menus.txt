@@ -1,0 +1,24 @@
+MOD-1
+	4 Primeros
+	4 Segundos
+	Incluye
+	Precio
+	*Los Platos pueden variar ligeramente*
+
+
+
+
+
+MOD-3
+	Precio
+	5 Primeros
+	4 Segundos
+	Incluye
+	*Los Platos pueden variar ligeramente*
+
+MOD-8
+	Precio
+	5 Primeros
+	5 Segundos
+	Incluye
+	*Los Platos pueden variar ligeramente*
