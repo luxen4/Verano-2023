@@ -117,22 +117,19 @@
         }
     }else{ //var_dump($destino); ?>
     
-        <div class="col-xl-4 text-center col-lg-4 col-md-6 col-sm-12 col-12" style="margin:auto; margin-bottom:0.5em;">
+        <div class="col-xl-6 text-center col-lg-6 col-md-12 col-sm-12 col-12" style="margin:auto; margin-bottom:0.5em;">
             <article style="padding: 0em;">  
                 <div class="row articuloconboton">
 
-                
-                    
                         <h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana ; ?></h6>
                        
-                
-               
-                    
                 
                 <div class="col-xl-2 text-center col-lg-2 col-md-2 col-sm-2 col-2" style="padding: 0em;"><!--Foto -->
                         <!-- <img class="fotodestino" src="web/imagenes/destinos/completo.png" alt="Foto de un destino"-->
                             <div>
-                                <a style="font-size: 0.7em; filter: invert(20%) sepia(68%) saturate(2767%) hue-rotate(181deg) brightness(99%) contrast(101%);" href="#ventana2<?php echo $destino->ref_Localidad;?>" class="btn btn-successsss btn-lg" data-toggle="modal"> <img style="width: 50px;" src="web/imagenes/icons/camera.svg" alt="camera"> <br> <span>Ver Fotos</span> </a>
+                                <a style="font-size: 0.7em; filter: invert(20%) sepia(68%) saturate(2767%) hue-rotate(181deg) brightness(99%) contrast(101%);" 
+                                href="#ventana2<?php echo $destino->ref_Localidad;?>" 
+                                class="btn btn-successsss btn-lg" data-toggle="modal"> <img style="width: 50px;" src="web/imagenes/icons/camera.svg" alt="camera"> <br> <span>Ver Fotos</span> </a>
                             </div>  
                         
                         <!--Pop-Up de todas las Fotos de una Localidad-->

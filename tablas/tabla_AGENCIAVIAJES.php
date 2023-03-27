@@ -151,7 +151,7 @@ $pueblaAGENCIAVIAJES="INSERT INTO AGENCIAVIAJES (/*codigoAgencia*/fecha_Inscripc
 			'reser21','$2y$10\$T.k.0Xfk3If3FPDJZnlKl.D6ByRd2..N4X2tHgKO.kYNa2iModk1O','SI','ES650123456789'),										/* Agencia de Viajes: Gran Reserva  username:reser21  contraseña:reser21 */
 
 	/* username:gotravell21  contrasena:gotravell21 */ 
-	(default,'AV002','GO TRAVELL','GT','GoTravel.png','folletoGoTravell.jpeg','B26562918','C/ Avenida de la Solidaridad 9','26003','Logroño','La Rioja','La Rioja','España',
+	(default,'AV002','GO TRAVELL','GT','GoTravel.png','folletoGoTravell_2023.jpg','B26562918','C/ Avenida de la Solidaridad 9','26003','Logroño','La Rioja','La Rioja','España',
 			'gotravell@gotravell.com',
 			'superlaya51@gmail.com','653107390','643674634',default,'C/ Avenida de la Solidaridad 9','AB002',
 			'gotravell21','$2y$10\$rwK1HGaQotvT0dkt9G3Fhu/4.55cZ2WEOxY.UP1VwCT/7RWnjpNkC','SI','ES65987654321')";	

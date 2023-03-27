@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_cardDestinoHome.inc">
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_cardDestinoHome.inc'; ?>
 
-<?php $destinos = $_SESSION['destinos']; ; ?>
+<?php $destinos = $_SESSION['destinos'];  ?>
     <div class="container" style="padding: 0em;"><?php
 
         if (!empty($_SESSION['perfil'])) {
@@ -20,11 +20,10 @@
                  
         <div class="row">
             <?php $arrayRestaurantesPintar=array(); 
-                foreach ($destinos as $destino) {  
-
+                foreach ($destinos as $destino) {  // var_dump($destinos); die();
                     include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_busDestino.inc';     // Info del bus que va a un Destino
                     include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_tipoPublicidad.inc'; // Este archivo es para los "Donde Comer desplegable"
-
+                    
                         if ($vistaPublicidadGeneral=="derecha") {?><?php
 
                             if (!empty($lugaresDondeComer)) {?> 
@@ -35,7 +34,7 @@
                                 include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc'; ?>
                                 
                                 <?php
-                                if (empty($tipoPublicidadHome)) {?>
+                                if (empty($tipoPublicidadHome)) { ?>
 
                                     <div><?php
                                             if($tipoPublicidadHome[0]->modo_Apariencia==1){
@@ -53,18 +52,21 @@
                             }
                         } elseif($vistaPublicidadGeneral=="abajo") {
                             if (empty($lugaresDondeComer)) {
-                                //echo "Lugares donde Comer Vacio";
+                                
                             } else {}
                         
 
                             if($destino->estado=='DISPONIBLE'){ 
-                                
+                               // echo "Lugares donde Comer Vacio";
                                 include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
                             
                             }else if($destino->estado=='COMPLETO'){
                                 include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
                                                 
-                            }             
+                            } else{
+
+                               // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
+                            }            
                         } 
                 } ?>
         </div>

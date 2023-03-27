@@ -23,6 +23,7 @@ class DefaultController{
           }else{
                   // Para los destinos en tarjetas de la home.
             $_SESSION['destinos']=(new DestinoRepositorio())->todosDestinos(); 
+                  // var_dump($_SESSION['destinos']); //die();
                   //var_dump( $_SESSION['destinos'][0]->euros); die();
           }
 

@@ -40,25 +40,25 @@ body{
 
 
   <body>
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>  
-  <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+  <?php  include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>  
+  <?php  include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
 
 
 
 <header id="">
   <div class="container-fluid">
-      <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal.inc';?>
+      <?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal.inc';?>
   </div>
 
 
 </header>
     <div id="container_cabecera" class="container-fluid">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_cardDestinoHome.inc';?>
+        <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_cardDestinoHome.inc';?>
 <!--
         <div class="row">
             <div class="col-xl-12 text-center">
                 <div class="row">
-                  <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/general/faldon_Bienvenida.inc';?>
+                  <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/general/faldon_Bienvenida.inc';?>
                 </div>
             </div>    
         </div>  
@@ -222,7 +222,7 @@ if (!empty($_SESSION['perfil'])) {
 
 
         <footer style="margin-top: 1em;">
-          <?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/oficinasturismoOK.inc';?>
+          <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/oficinasturismoOK.inc';?>
         </footer>
 
 

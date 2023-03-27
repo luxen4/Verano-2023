@@ -9,14 +9,14 @@
             if(!empty($_SESSION['perfil'])){
 
                 if($_SESSION['perfil']['roll']=='cliente'){ ?>
-                    <div class="col-xl-12 text-center" style="margin:0em; margin-top: 0em;">
+                    <div class="col-xl-12 text-center">
                         <h5 style="text-align: center;">No te pierdas los <br> Próximos Viajes Programados</h5>
                     </div><?php
                 }
 
 
             }else{ ?>
-                <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12" style="padding-top: 1em;">
+                <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12">
                     <h5 style="text-align: center;">No te pierdas los <br> Próximos Viajes Programados</h5>
                 </div><?php
             }
@@ -41,5 +41,4 @@
 <style>
 
 
-h5{margin: 0em;}
 </style>

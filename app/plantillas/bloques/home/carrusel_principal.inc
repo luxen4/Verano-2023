@@ -1,14 +1,14 @@
 
 <?php
-$uri=$_SERVER["REQUEST_URI"];
-        $partes = explode("ctl=", $uri);
+// $uri=$_SERVER["REQUEST_URI"];
+    //    $partes = explode("ctl=", $uri);
        
-if (!empty($partes[1])) {
-    $ctl=$partes[1];
+//if (!empty($partes[1])) {
+   // $ctl=$partes[1];
 
-    if ($ctl=="inicio/") { ?>
+   // if ($ctl=="inicio/") { ?>
     
-    <div id="carrusel1" class="container-fluid" padding:0em;">
+    <div id="carrusel1" class="container-fluid" style="padding:0em;">
       <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">  
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -261,44 +261,10 @@ $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLo
     <style>
       .foto_pequena, .carousel-item img{width: 100%; height: 200px; border-radius:0.25em ;}
     </style>
-    
-
-
-<?php /*
-Cambio de Slider
-          Objetivo! La permanencia del usuario en la página
-          ¿Por qué? Ahora las fotos son de una en una y muy grande con movimiento rápido 
-             La agencia tiene que verlo bién para que de el paso de querer formar parte
-          ¿En qué se va a mejorar? Comodidad visual, es foto grande y la oferta de Destinos está muy abajo
-          ¿Aporta de importancia? Información visual de las Localidades
-
-            Como lo hacemos y por qué!
-              Al hacer fotos pequeñas es más cómodo de ver, aparte de subir la oferta de los Destinos
-              Porque aporta interes en ver las fotos de las Localidades
-
-            Diseño
-            3 Fotos arriba
-            1 Foto pequeña, Foto central, 1 Foto pequeña 
-            1 Foto pequeña, Foto central, 1 Foto pequeña 
-            4 Fotos pequeñas
-              Una foto central
-
-            Quién lo va a ver!
-              No logueado y Cliente */ ?>
-
-
-
-
-
-
-
-
-
-
 
     <?php
-    }
-}
+   // }
+//}
           ?>
 
 

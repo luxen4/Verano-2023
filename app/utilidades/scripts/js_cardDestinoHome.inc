@@ -12,7 +12,7 @@
     var valorInput="posicionImagen_" + ref_Localidad;
     var posicion=document.getElementById(valorInput);
 
-    if(partes[0]=="next"){alert('next');
+    if(partes[0]=="next"){//alert('next');
     numPosicion=parseInt(posicion.value)+1; 
 
     }else if(partes[0]=="previous"){

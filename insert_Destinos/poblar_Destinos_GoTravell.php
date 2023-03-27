@@ -5,9 +5,9 @@ $pueblaDESTINO="INSERT INTO DESTINO (/*codDestino,*/ref_Destino, ref_Localidad, 
     VALUES	
     
 
-/* Mayo 
-('D_GT1','SAS', ELT(WEEKDAY('2022-05-01') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-01','AV002',174,16,7), 	/* Domingo 
-('D_GT2','ZRT', ELT(WEEKDAY('2022-05-04') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-04','AV002',284,16,6),	/* Miercoles 
+/* Mayo */
+('D_GT1','SAS', ELT(WEEKDAY('2022-05-01') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-01','AV002',174,16,7), 	/* Domingo */
+('D_GT2','ZRT', ELT(WEEKDAY('2022-05-04') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-04','AV002',284,16,6),	/* Miercoles */
 ('D_GT3','LDO', ELT(WEEKDAY('2022-05-21') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-21','AV002',174,16,8),  
 ('D_GT4','STA', ELT(WEEKDAY('2022-05-08') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-08','AV002',193,17,9),
 ('D_GT5','CTS', ELT(WEEKDAY('2022-05-11') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-11','AV002',174,16,7), 	
@@ -18,9 +18,9 @@ $pueblaDESTINO="INSERT INTO DESTINO (/*codDestino,*/ref_Destino, ref_Localidad, 
 ('D_GT10','CTS', ELT(WEEKDAY('2022-05-22') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-22','AV002',284,16,6),	
 ('D_GT11','SAS', ELT(WEEKDAY('2022-05-25') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-25','AV002',174,16,8),
 ('D_GT12','CTS', ELT(WEEKDAY('2022-05-28') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-28','AV002',193,16,9),
-('D_GT13','LDO', ELT(WEEKDAY('2022-05-29') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-29','AV002',193,16,9)
+('D_GT13','LDO', ELT(WEEKDAY('2022-05-29') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-05-29','AV002',193,16,9),
 
-*/
+
 
 
 
@@ -39,37 +39,6 @@ $pueblaDESTINO="INSERT INTO DESTINO (/*codDestino,*/ref_Destino, ref_Localidad, 
 ('D_GT8','SAS', ELT(WEEKDAY('2023-04-23') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2023-04-23','AV002',174,17,9,'BUSJIM001'),  /* Domingo */
 ('D_GT9','SAS', ELT(WEEKDAY('2023-04-29') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2023-04-29','AV002',174,16,7,'BUSJIM001'), 	/* Sabado */
 ('D_GT10','BRZ', ELT(WEEKDAY('2023-04-30') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2023-04-30','AV002',210,16,6,'BUSJIM001'),	/* Domingo */
-
-
-
-/*
-semana santa 
-6/4 san sebastian
-7/4 san juan
-8 santander
-9 san sebasti
-
-15 castro
-16 san juan
-22 zarautz
-23 san sebastian
-29 san sebastian
-30 biarritz
-
-1mayo san sebastian
-3zarautz
-6hondarri
-7castro
-10castro
-13 san sebas
-14 zarautz
-17 san sebast
-20 san juan
-21 san sebas
-24 san sebast
-27 santander
-28 biarritz
-31 castro
 
 
 
@@ -124,15 +93,6 @@ semana santa
 ('D_GT55','SJL', ELT(WEEKDAY('2022-08-31') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'),'2022-08-31','AV002',194,18,'BUSJIM001')  /* 194km 2h 04min */   
 
 ";
-
-
-
-
-
-
-
-
-
 
 
 

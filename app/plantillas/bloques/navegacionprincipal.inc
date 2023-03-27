@@ -1,15 +1,11 @@
 <link rel="stylesheet" type="text/css" href='web/css/styles.css'>
-
-
-
 <link rel="stylesheet" type="text/css" href="web/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="web/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="web/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
+<link rel="stylesheet" type="text/css" href="web/css/bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="web/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
 
-
-
+<div class="container">
 
 <nav class="navbar navbar-expand-lg navbar-light "><!--bg-light-->
 
@@ -20,10 +16,8 @@
 
   <ul class="navbar-nav">
 
-
-  
     <div class="flex">
-      <li id="logo"><a class="navbar-brand" href="index.php?ctl=inicio/">PLAYAS-2022</a></li><!--sr-only-->
+      <li id="logo"><a class="navbar-brand" href="index.php?ctl=inicio/">PLAYAS-2023</a></li><!--sr-only-->
           <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/saludoIzda.inc'; ?>
     </div>
     
@@ -115,7 +109,7 @@ if (!empty($_SESSION['perfil'])) {
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bus-alt"></i> Area de Buses</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="index.php?ctl=nuevobus"><i class="fas fa-bus"></i> Nuevo Bus</a> 
-                <!-- <a class="dropdown-item" href="index.php?ctl=nuevobus">Eliminar Bus (Hecho)</a>-->
+                 <a class="dropdown-item" href="index.php?ctl=nuevobus">Eliminar Bus (Hecho)</a>-->
                 <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
                   <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
         </div>
@@ -238,6 +232,8 @@ if (!empty($_SESSION['perfil'])) {
 
 </nav>
 
+</div>
+
 
 <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="boostrap/js/popper.min.js"></script>
@@ -249,6 +245,8 @@ if (!empty($_SESSION['perfil'])) {
   crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 
 <!--Idioma <img style="width:100px; height: 60px; background-color:red;" src="web/imagenes/banderas/Ingles.png" alt="Logo idioma Inglés">-->
 
@@ -262,3 +260,4 @@ if (!empty($_SESSION['perfil'])) {
 
 }  .dropdown-item:hover{background-color: yellow;}
 </style>
+

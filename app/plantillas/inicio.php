@@ -20,8 +20,9 @@
 
  <?php $contenido = ob_get_clean() ?>
  
- <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php' ?>
-      
+ <?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php' ?>
+ <?php include $_SERVER['DOCUMENT_ROOT'] . BASE ?>
+ 
 
 
  <style>

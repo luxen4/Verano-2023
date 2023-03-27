@@ -32,4 +32,7 @@ const VIAJARREPOSITORIO = "/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc
 
 const SESIONS= "/Verano-2022/app/plantillas/bloques/sessiones/session.inc";  
 
+
+const BASE= "/Verano-2022/app/plantillas/basefantasma.php";  
+
 ?>
