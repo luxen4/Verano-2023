@@ -13,7 +13,7 @@ FTP---> laya2.atwebpages.com  4009740_laya misma  villamediana2 21  entrando con
  
 proyectoPlayas
 https://github.com/luxen4/proyectoPlayas  luxen4/alberite2
-
+ 
 alberite1     11
 
 https://xaviesteve.com/4158/clase-php-mysql-simple-y-facil-de-usar-recomendada/  	BUEN EFECTO
