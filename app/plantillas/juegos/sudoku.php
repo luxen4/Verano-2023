@@ -134,7 +134,7 @@ src="web/imagenes/zarautz_carrusel.jpg"
 
  <?php $contenido = ob_get_clean() ?>
 
- <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
+ <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
 
  <style>
     /* .articulo{margin: 0.5em;}

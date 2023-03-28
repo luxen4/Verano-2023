@@ -81,6 +81,6 @@ if($_GET['token']==$tokenBasedatos[0]->token_Password){
 
 
 <?php $contenido = ob_get_clean() ?>
-<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
 
 

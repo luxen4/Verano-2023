@@ -22,7 +22,7 @@
 
             <div class="row destinos_filtrados">
                 <div class="col-xl-12 text-center">
-                    <h4 >Agenda Verano 2022</h4><br>
+                    <h4 >Listado de todos los Viajes <br><?php echo (TEMPORADA. "/"); ?></h4><br>
                 </div>
             </div> <?php
 
@@ -32,7 +32,7 @@
 
                 $i = 0; ?>
 
-                <form action="" method="post">
+                <form action="" method="post" name="f1">
                     <div class="table-responsive">
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
@@ -46,7 +46,8 @@
                             </thead>
 
                             <tbody><?php 
-                                foreach ($destinos as $destino) { //var_dump($destino)?>
+                                foreach ($destinos as $destino) { 
+                                  //var_dump( $destino)?>
                                               <?php // Solo vea sus Destinos después de filtrar, si escoges una localidad, salen los de otras Agencias
                                               if (!empty($_SESSION['perfil'])) {
 
@@ -93,12 +94,12 @@
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE; ?>
 
 
 <style>
-    /*General*/ 
-.destinos_filtrados{margin-top: 1em;}
+/*General*/ 
+
 .destinos_filtrados h4{text-align: center; padding: 0em; margin-bottom: -1rem;}
 
 #nohay{color:red; font: 4em sans-serif; text-align: center;}

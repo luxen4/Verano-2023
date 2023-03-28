@@ -6,7 +6,8 @@
                 <div class="col-xl-4 text-center col-lg-12 col-md-12 col-sm-12 col-12" style="margin:auto; margin-bottom:0.5em;">
                     <article style="padding: 0em;">  
                     
-                        <div class="row articuloconboton"><h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana; ?></h6> 
+                        <div class="row articuloconboton">
+                            <h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana; ?></h6> 
                             <div class="col-xl-2 text-center col-lg-2 col-md-2 col-sm-2 col-2" style="padding: 0em;"><!--Foto -->
                                 <!-- <img class="fotodestino" src="web/imagenes/destinos/completo.png" alt="Foto de un destino"-->
                                     <div>
@@ -121,7 +122,7 @@
             <article style="padding: 0em;">  
                 <div class="row articuloconboton">
 
-                        <h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana ; ?></h6>
+                        <h6><span><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana ; ?></span></h6>
                        
                 
                 <div class="col-xl-2 text-center col-lg-2 col-md-2 col-sm-2 col-2" style="padding: 0em;"><!--Foto -->

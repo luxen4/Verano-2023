@@ -5,7 +5,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
         $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);?>
 
         <div id="recomendamos" class="col-xl-12 text-center ">
-            <h5>Te recomendamos en <br> <?php echo pasarUtf8($nombreLocalidad[0]->nombre_Localidad); ?></h5>
+            <h5>Te recomendamos en <?php echo pasarUtf8($nombreLocalidad[0]->nombre_Localidad); ?></h5>
 
         </div>
 

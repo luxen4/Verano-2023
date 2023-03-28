@@ -20,8 +20,9 @@ if(empty($negocios_Localidad)){ ?><script>window.location.href="index.php?ctl=in
                 <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/tituloPagina.inc';?>
             </div>
 
-            <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/negociosLocalidad.inc';?>         
-
+            <div class="row">
+                <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/negociosLocalidad.inc';?>         
+            </div>
             
   
                     <?php 
@@ -34,15 +35,12 @@ if(empty($negocios_Localidad)){ ?><script>window.location.href="index.php?ctl=in
 </form>
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
 
 
 
-<style>
+<style>/*
 .row>*{padding: 0em;}
-h5{ color: #006293; text-decoration: underline; text-align: center; margin: 0.5em;}  
-h6{color: #006293; margin-bottom: 0em;}
-.container{max-width: 5000px;}
 
 
 @media only screen and (max-width: 580px) {
@@ -53,7 +51,6 @@ h6{color: #006293; margin-bottom: 0em;}
 }
 
 
-p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 
 #carrusel_restaurantes .carousel-item img{width: 100%;}
 
@@ -108,9 +105,7 @@ p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 }
 
 
-@media only screen and (min-width: 452px) and (max-width: 3000px) {
-    .boton_cupon{margin: 3.5em -3em;}
-}
+*/
 
 
 

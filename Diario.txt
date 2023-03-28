@@ -711,3 +711,8 @@ TABLE usuario
 
 
 Simplificar código en carrusel_principal.inc
+
+
+Para hacer botones:
+https://www.youtube.com/watch?v=c-4wFMGFuCg
+https://www.youtube.com/watch?v=tOadTZoqjEM

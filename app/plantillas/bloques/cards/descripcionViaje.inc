@@ -30,7 +30,7 @@
     </div>
 
 
-<div class="row" style="margin-top: -1em;"><?php 
+<div class="row" style="margin-top: -0.5em;"><?php 
     if(!empty($_SESSION['perfil'])){
         if($_SESSION['perfil']['roll']=="agenciaviajes" || $_SESSION['perfil']['roll']=="cliente"){ ?>
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12"><?php
@@ -55,8 +55,7 @@
                 
                 <div class="row" style="margin: auto;">
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                        <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo ($ref_Destino); ?>')" 
-                            value="Solicitar Reserva">
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/solicitarReserva.inc'; ?>
                     </div>
 
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
@@ -66,8 +65,6 @@
 
 
                 <?php
-                    
-                    
                     
             }else{
 

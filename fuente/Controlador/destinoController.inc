@@ -587,7 +587,10 @@ require __DIR__ . '/../../app/plantillas/inicio.php';
 
 
     
-    if (isset($_POST['comer'])) { $datos=$_POST['datos']; $ref_Localidad=$datos['ref_Localidad'];
+    if (isset($_POST['comer'])) { 
+      $datos=$_POST['datos']; 
+      //var_dump($datos); die();
+      $ref_Localidad=$datos['ref_Localidad'];
         require __DIR__ . '/../../fuente/Repositorio/BuscadoresRepositorio.inc'; 
         $_SESSION['negocios_Localidad'] = (new BuscadoresRepositorio())->filtrarNegociosLocalidad($ref_Localidad); 
         

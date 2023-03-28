@@ -22,7 +22,8 @@
     </div>
     
       <!--<li><a class="nav-link" href="index.php?ctl=inicio/#situarprimerarticulo"><i class="fas fa-home"></i> eInicio</a></li>-->
-      <li><a class="nav-link" href="index.php?ctl=inicio/"><i class="fas fa-home"></i>Inicio</a></li>
+      <!--<li><a class="nav-link" href="index.php?ctl=inicio/"><i class="fas fa-home"></i>Inicio</a></li>-->
+      <li><a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a></li>
       <li><a class="nav-link" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a></li>
    
     
@@ -47,7 +48,8 @@ if(empty($_SESSION['perfil'])){?>
                 <a class="dropdown-item" href="#">Otros</a>
               
   </li>-->
-  
+  <li><a class="nav-link" href="index.php?ctl=cuadrobuscadoresnegocios"><i class="fas fa-utensils"></i> Bares y Restaurantes!</a></li>
+
   <li><a class="nav-link" href="https://www.eltiempo.es/" target="_blank"><i class="fa-solid fa-cloud-sun"></i> El tiempo</a></li><?php
 
 }elseif($_SESSION['perfil']['roll']=='cliente'){ ?>

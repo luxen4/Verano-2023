@@ -35,6 +35,8 @@ $lugaresDondeComer1= (new ComerRepositorio())->todosNegociosLocalidad($ref_Local
                                         <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconosPrincipal.inc'; ?>
                                         <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redes_sociales.inc';?>
                                         <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconos.inc'; ?>
+                                        
+                            
                                     </div>     
                                 </div>
                             </div><?php 
@@ -42,15 +44,11 @@ $lugaresDondeComer1= (new ComerRepositorio())->todosNegociosLocalidad($ref_Local
                             if(empty($bar_rest->dto)){?>
                                 <div class="col-xl-6 text-left col-lg-6 col-md-6 col-sm-6 col-6 mas_fotos"><?php
                             }else{?>
-                                <div class="col-xl-5 text-left col-lg-5 col-md-5 col-sm-5 col-5 mas_fotos"><?php
+                                <div class="col-xl-6 text-left col-lg-6 col-md-6 col-sm-6 col-6 mas_fotos"><?php
                             }?>
                                 <?php    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_negocioSimple.inc';?><!--Este es el definitivo-->
                                 <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_negocio.inc';?>
-                            </div>
-
-                            <div class="col-xl-1 text-left col-lg-1 col-md-1 col-sm-1 col-1">
-                                <?php // cards del Home
-                                require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cupon_descuento.inc';?>
+                                <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cupon_descuento.inc';?>
                             </div>
 
                         </div><?php    

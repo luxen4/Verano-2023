@@ -1,0 +1,1 @@
+<input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo ($ref_Destino); ?>')" value="Solicitar Reserva">

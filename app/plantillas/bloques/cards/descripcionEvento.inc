@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_descripcionViaje.inc';?>
     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">   
-            <h5 class="destino" style="margin-left: 1em; border-bottom:none;">
+            <h5 class="destino">
                 <div>
                     <div>
                    

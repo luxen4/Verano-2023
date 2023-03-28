@@ -200,7 +200,7 @@ use SebastianBergmann\CodeCoverage\Report\PHP;
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
 
 
 

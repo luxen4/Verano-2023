@@ -58,7 +58,7 @@
  
 
 
-    <div id="carrusel2" class="container" style="max-width:1600px;">
+    <div id="carrusel2" class="container" style="max-width:1600px; padding:0em;">
 
     <div class="row">
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-4 cont_foto"> 
@@ -125,9 +125,6 @@ $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLo
 .carousel-item{
     /*transition: none; margin: 0.5em;*/ padding : 0.5em;
   }
-
-  h6{text-align: center;}
-
 
   @media only screen and (min-width: 1601px) and (max-width: 2999px) {
     #carrusel1{display: none;}

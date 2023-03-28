@@ -1,5 +1,7 @@
 <?php
 use miId\fuente\Repositorio\LocalidadRepositorio; // Ajax
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2023/app/utilidades/constantes.inc'; 
+
     $ref_Localidad=$_POST['localidad'];
 	$posicion_Siguiente=$_POST['posicion_Siguiente'];
 

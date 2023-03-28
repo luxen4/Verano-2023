@@ -160,13 +160,14 @@ body{
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 
-  
+<?php /*
 <div class="container" style="max-width: 1400px">
     <div class="row">
         <?php //include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\utilidades\scripts\css_navegacion_filtros.inc'; ?>
         <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Izda.inc'; ?>
     </div>    
 </div>    
+*/ ?>
             
      
 

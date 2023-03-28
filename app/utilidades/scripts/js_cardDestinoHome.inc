@@ -17,7 +17,7 @@
 
     }else if(partes[0]=="previous"){
     numPosicion=parseInt(posicion.value)-1;
-
+alert(numPosicion);
     }
     $(selector).val(numPosicion); 
 

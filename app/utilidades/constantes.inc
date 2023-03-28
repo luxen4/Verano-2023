@@ -33,9 +33,9 @@ const VIAJARREPOSITORIO = "/Verano-2023/fuente/Repositorio/ViajarRepositorio.inc
 const SESIONS= "/Verano-2023/app/plantillas/bloques/sessiones/session.inc";  
 
 
-const BASE= "/Verano-2023/app/plantillas/basefantasma.php";  
 
 const TEMPORADA= "/Verano-2023"; 
+const BASE =  '/app/plantillas/archivo_base.php';
 
 
 ?>
