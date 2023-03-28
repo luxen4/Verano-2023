@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc';?>-->
+<?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc';?>-->
 
 
 <div id="buscadordestinos" class="container" style="max-width: 800px;">
@@ -27,7 +27,7 @@
             <div id="titulo" class="row">
               <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                   <h5>Crear Menú</h5>
-                    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/datos/propietario_negocio_menu.inc'; ?>
+                    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/datos/propietario_negocio_menu.inc'; ?>
 
                   <?php
 
@@ -39,7 +39,7 @@
                   if($menu_premium=="NO") {?><!--Solo debe sacar la foto de menú NO PREMIUM-->
 
 
-                    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/fotos_fondomenusbasicos.inc'; ?><?php
+                    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/fotos_fondomenusbasicos.inc'; ?><?php
                   
                   
                   
@@ -52,7 +52,7 @@
 
 
 
-                    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/fotos_fondomenusbasicos.inc'; ?>
+                    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/fotos_fondomenusbasicos.inc'; ?>
 
 
 
@@ -68,7 +68,7 @@
 
 
                     <div id="oi" style="margin: 1em; border: 1px solid black; padding: 1em; display: block;">
-                      <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/fotos_fondomenus.inc'; ?>
+                      <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/fotos_fondomenus.inc'; ?>
                     </div>
 
               </div>
@@ -107,7 +107,7 @@
 
             </div>
 
-          <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/formulariosmenusdeldia.inc';?>
+          <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/formulariosmenusdeldia.inc';?>
         </form>
     </div>
 
@@ -120,7 +120,7 @@
 </html>-->
 
 <?php $contenido = ob_get_clean()?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

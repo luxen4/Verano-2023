@@ -35,7 +35,7 @@ class EventoController
 
                 if (isset($datos['estaseguro'])) {
                     try {
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/EventoRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/EventoRepositorio.inc';
 
                         // Hay que darle una referencia al DestinoEvento
                         // Saber cuantos registros hay en la tabla DestinoEvento
@@ -79,7 +79,7 @@ class EventoController
 
     // Para buscar las plazas
     $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasOcupadas=[];
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
 
     for($i=0; $i<count($destinos); $i++){
 
@@ -154,7 +154,7 @@ class EventoController
 
     /*    if(isset($_SESSION['perfil'])){
             if ($_SESSION['perfil']['roll']=="agenciaviajes") {
-              require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+              require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaBusesRepositorio.inc';
               $agenciaViajes= (new AgenciaBusesRepositorio())->codigoAgenciaBuses();
               $codAgenciaBuses=$agenciaViajes[0]->cod_CompaniaBusHabitual;
               //var_dump($agenciaViajes[0]->cod_CompaniaBusHabitual);die();
@@ -165,7 +165,7 @@ class EventoController
         if(isset($_SESSION['perfil'])){
           if ($_SESSION['perfil']['roll']=="agenciaviajes") {
             $codAgenciaViajes=$_SESSION['perfil']['cod_AgenciaViajes']; 
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaBusesRepositorio.inc';
             $busesCompania = (new BusRepositorio())-> todosBusesdeUnaAgenciaBusesCodAgenciaViajes($codAgenciaViajes);
             $todosBusesCompanias =  (new BusRepositorio())->  todosBusesDisponiblesParaUnaAgenciaViajes($codAgenciaViajes);
           }
@@ -186,7 +186,7 @@ class EventoController
              $datos['ref_Destino']= $ref_Destino; //var_dump($datos['ref_Destino']); die();
              $datos['ref_AgenciaViajes']=$_SESSION['perfil']['ref_AgenciaViajes'];
             //die(); 
-              require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+              require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
               $obj=(new DestinoRepositorio())->modificarUnDestino($datos,$ref_Destino);
 
               if ($obj==true) {
@@ -214,7 +214,7 @@ class EventoController
 
   // Función que muestra todos los destinos de una Agencia de Viajes Logueada
   public function mostrarTodosDestinosDeAgenciaViajesLogeada(){ 
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
             $ref_AgenciaViajes=$_SESSION['perfil']['ref_AgenciaViajes'];
         // $destinos = (new DestinoRepositorio())->todosDestinosPorAgenciaViajes($cod_AgenciaViajesLogeada);  //var_dump($destinos);die();
 
@@ -223,25 +223,25 @@ class EventoController
             //var_dump($destinos);die();//  €; ?>
 
              
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/estadoasientosbus.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/estadoasientosbus.inc'; ?>
 
-    <?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/cancelarasientosbus.inc'; ?>
+    <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/cancelarasientosbus.inc'; ?>
 
 <?php
           
-          require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/LocalidadRepositorio.inc';
+          require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/LocalidadRepositorio.inc';
           $todasLocalidades = (new LocalidadRepositorio())-> todasLocalidades(); 
           $_SESSION['todaslocalidades']= $todasLocalidades;
 
 
 
-          require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+          require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
           $busesAgenciaPredeterminada = (new BusRepositorio())-> todosBusesdeUnaAgenciaBusesCodAgenciaViajes($ref_AgenciaViajes);
          //var_dump($busesAgenciaPredeterminada); die();
           $_SESSION['busesAgenciaPredeterminada']= $busesAgenciaPredeterminada;
 
 
-          require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+          require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
           $todosBusesAgenciaViajes = (new BusRepositorio())-> todosBusesDisponiblesParaUnaAgenciaViajes($ref_AgenciaViajes);
          // var_dump($todosBusesAgenciaViajes); die();
           $_SESSION['todosbusesagenciaviajes']= $todosBusesAgenciaViajes;
@@ -378,14 +378,14 @@ if(isset($_POST['contratar']) ){
 
 
 
-<?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques\partesControladores\contratar_modificar_cancelar.inc'; ?>
+<?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques\partesControladores\contratar_modificar_cancelar.inc'; ?>
 <?php require __DIR__ . '/../../app/plantillas/destino/mostrartodosdestinosdeunaagenciaviajeslogeada.php';
   } 
 
 
 // Función que muestra los destinos a los que se ha apuntado un cliente.
 public function tusDestinosContratados(){
-      require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+      require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
               $cod_Cliente=$_SESSION['perfil']["ref_Cliente"];
               $destinosContratados = (new DestinoRepositorio())->destinosDeUnClienteLogueado($cod_Cliente);  
 
@@ -425,7 +425,7 @@ public function tusDestinosContratados(){
 
 // Función que muestra todos los destinos más vendidos                           
 public function destinosMasVendidos(){
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
 
     // Saber el número de plazas mayor en 3 buses
      $destinosMasVendidos=(new DestinoRepositorio())->numPlazasBusesMasLlenos();
@@ -461,7 +461,7 @@ $datos='';
 
     // Para buscar las plazas
     $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasDisponibles=[];
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
 
     for($i=0; $i<count($destinos); $i++){
 
@@ -496,7 +496,7 @@ $datos='';
                     // Necesito la planta del bus
                       ?><script>window.location.href="index.php?ctl=motrarplantabus";</script><?php
                       
-                      require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';
+                      require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';
                       
                       $datos = (new ViajarRepositorio())->ocuparPlazaBus($codigoDestino,$codCliente,$plazasAocupar);
         }else{?>          
@@ -510,7 +510,7 @@ $datos='';
 
 // Función que devuelve los Destinos más económicos de menos de 15euros 
 public function destinosMasEconomicosEnCards(){
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
   $destinosMasEconómicos=(new DestinoRepositorio())->destinosMasEconómicosEnCards();
   $_SESSION['destinos']=$destinosMasEconómicos;
 require __DIR__ . '/../../app/plantillas/inicio.php';
@@ -526,12 +526,12 @@ require __DIR__ . '/../../app/plantillas/inicio.php';
   // Función que muestra todos los destinos en la "Tabla Agenda Verano 2022"
   public function mostrarTodosDestinos(){
    
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
     $destinos = (new DestinoRepositorio())->todosDestinosEnTabla();  
 
     // Para buscar las plazas
    // $plazasTotalesCadaBus=[];  $plazasQuedanCadaBus=[];     $plazasDisponibles=[];
-   // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+   // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
 
     /* for($i=0; $i<count($destinos); $i++){
 
@@ -566,7 +566,7 @@ require __DIR__ . '/../../app/plantillas/inicio.php';
                     // Necesito la planta del bus
                       ?><script>window.location.href="index.php?ctl=motrarplantabus";</script><?php
                       
-                      require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';
+                      require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';
                       
                       $datos = (new ViajarRepositorio())->ocuparPlazaBus($codigoDestino,$codCliente,$plazasAocupar);
         }else{?>          
@@ -755,7 +755,7 @@ public function destinosPorAgenciaViajesFiltrados(){
 //header('Location: index.php?ctl=tusdestinoscontratados');   
 //header('Location: index.php?ctl=generarpdf');
 
-//require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/destino/tusDestinosContratadoss.php';
+//require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/destino/tusDestinosContratadoss.php';
 
 
 

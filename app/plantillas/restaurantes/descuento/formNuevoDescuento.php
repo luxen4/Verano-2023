@@ -18,7 +18,7 @@ use miId\fuente\Repositorio\ComerRepositorio; // Ajax
 
         <div class="container">
                 <div class="row"> 
-                    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+                    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                         $datos['ref_negocio'] = $_SESSION['perfil']['ref_negocio'];            
                         $hayDescuento = (new ComerRepositorio())->hayDescuento($datos);
 
@@ -31,10 +31,10 @@ use miId\fuente\Repositorio\ComerRepositorio; // Ajax
                         <?php }
 
                         if($hayDescuento[0]->dto!=null){?>
-                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/barrestaurantes/descuentos/eliminardescuento.php';?>        
-                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/barrestaurantes/descuentos/modificardescuento.php';?><?php
+                            <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/barrestaurantes/descuentos/eliminardescuento.php';?>        
+                            <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/barrestaurantes/descuentos/modificardescuento.php';?><?php
                         }else{?>
-                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/barrestaurantes/descuentos/creardescuento.php';?><?php 
+                            <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/barrestaurantes/descuentos/creardescuento.php';?><?php 
                         } ?>
                 </div>
         </div>
@@ -45,7 +45,7 @@ use miId\fuente\Repositorio\ComerRepositorio; // Ajax
 
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

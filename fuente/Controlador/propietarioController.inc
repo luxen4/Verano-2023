@@ -12,7 +12,7 @@ public function nuevoPropietarioNegocio(){
 
     //Necesitamos un foreach de las referencias y nombres de Negocios
      $ref_localidad="NJA";
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
     $todosNegociosLocalidad = (new ComerRepositorio())-> publicidadRestaurantes($ref_localidad);
 
     if (isset($_POST['nuevopropietario'])) {
@@ -32,7 +32,7 @@ public function nuevoPropietarioNegocio(){
                    echo("Alberite->");
                   var_dump($hash);die();
 
-                    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/PropietarioRepositorio.inc';
+                    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/PropietarioRepositorio.inc';
                     $obj = (new PropietarioRepositorio())->nuevoPropietarioNegocio($datos, $hash);
 
 //var_dump($obj); die();
@@ -68,7 +68,7 @@ public function logearPropietarios(){
     if(isset($_POST['logincliente'])){
         $datos=$_POST['datos'];
 
-       //header('Location: /Verano-2022/index.php');
+       //header('Location: /Verano-2023/index.php');
 
         
        
@@ -77,7 +77,7 @@ public function logearPropietarios(){
 
         //Tenemos que comprobar si la contraseña se encuentra en la base de datos.
           // Extraemos el hash de la base de datos
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/PropietarioRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/PropietarioRepositorio.inc';
         $obj = (new PropietarioRepositorio())->hashPropietarioNegocio($datos,$hash);
 
         // var_dump($obj[0]->contrasena);die();
@@ -110,7 +110,7 @@ public function logearPropietarios(){
 
                     $todoBien=true;
                   //  $this->meterIndex();
-                    //header('Location: /Verano-2022/index.php');
+                    //header('Location: /Verano-2023/index.php');
                     ?><script>window.location.href="index.php?ctl=inicio/";</script><?php
                         
               }else{ ?>
@@ -120,7 +120,7 @@ public function logearPropietarios(){
                 <script>//alert("¡Lo sentimos, los datos introducidos no se encuentran registrados!")</script><?php  
           }
     }
-    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/cliente/formLogearCliente.php';
+    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/cliente/formLogearCliente.php';
 }
 
 
@@ -176,7 +176,7 @@ public function logearPropietarios(){
                         $cliente =  new Cliente($datos);
                         
 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
 
                         if(empty($datos['nif'])){$datos['nif']="-";}
                         if(empty($datos['fNacimiento'])){$datos['fNacimiento']="-";}
@@ -225,7 +225,7 @@ public function logearPropietarios(){
                         $cliente =  new Cliente($datos);
                         
 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                         $obj = (new ClienteRepositorio())->nuevoCliente($datos, $hash);
 
                         ?><pre><script>//alert("¡Enhorabuena, ya forma parte de nosotros!")</script></pre><?php
@@ -272,7 +272,7 @@ public function logearPropietarios(){
                                 $nuevoHash=password_hash($datos['contrasena'], PASSWORD_DEFAULT);
                         
                                 try {
-                                    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                                    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                                     $hashActual=(new ClienteRepositorio())->hashClienteAgenciaViajes($datos);
                                     
 
@@ -326,7 +326,7 @@ public function logearPropietarios(){
             $datos=$_POST['datos'];                    
                 
             if (isset($datos['estaseguro'])) {
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                 $hashActual=(new ClienteRepositorio())->hashClienteAgenciaViajes($datos);
                 //var_dump($hashActual); die();
 
@@ -395,7 +395,7 @@ public function logearPropietarios(){
     // Función que muestra los datos de un Cliente logueado.
     public function mostrarInfoClienteLogeado()
     {
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                 $usernamee=$_SESSION ['perfil']['username'];
                 $contrasenaa=$_SESSION ['perfil']['contrasena'];
                 $datosPerfilCliente = (new ClienteRepositorio())->datosClienteLogeado($usernamee,$contrasenaa);

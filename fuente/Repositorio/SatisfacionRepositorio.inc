@@ -8,7 +8,7 @@ class SatisfacionRepositorio{
 
 // Función que devuelve el número de tuplas de Satisfaciones de un Negocio
 public function numRegistrosSatisfacion(){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
     try {
 
         $sql="SELECT count(cod_Satisfacionusernamerestaurantes) as num_tuplas FROM SATISFACIONUSERNAMERESTAURANTES";
@@ -38,7 +38,7 @@ public function numRegistrosSatisfacion(){
 
 // Función que inserta un nuevo 
 public function insertSatisfacion($datos){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
 
 
 
@@ -82,7 +82,7 @@ public function insertSatisfacion($datos){
 public function deleteTuplaSatisfacionUsernameNegocio($datos){
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
 
         $sql="DELETE FROM SATISFACIONUSERNAMERESTAURANTES WHERE username='$datos[username_cliente]' and ref_negocio='$datos[ref_Negocio]'"; 
 
@@ -114,7 +114,7 @@ public function deleteTuplaSatisfacionUsernameNegocio($datos){
 
 // Función que elimina TUPLAS de la tabla "SATISFACIONUSERNAMERESTAURANTES"
 public function totalTuplasSatisfaciones($ref_negocioAjax){ 
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
     try {
         $sql="SELECT count(cod_Satisfacionusernamerestaurantes) as num_tuplas FROM SATISFACIONUSERNAMERESTAURANTES WHERE ref_negocio='$ref_negocioAjax'" ;
         
@@ -133,7 +133,7 @@ public function totalTuplasSatisfaciones($ref_negocioAjax){
 
 // Función que 
 public function satisfacionPorBarra($ref_negocio, $grado_Satisfacion){ 
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
     try {
         $sql="SELECT count(cod_Satisfacionusernamerestaurantes) as num_tuplas FROM SATISFACIONUSERNAMERESTAURANTES WHERE
         ref_negocio='$ref_negocio' and
@@ -164,7 +164,7 @@ public function satisfacionPorBarra($ref_negocio, $grado_Satisfacion){
 
 // Función que devuelve el grado de satisfacion de un cliente en un negocio
 public function totalTuplasCaritaClienteNegocio($ref_negocioparaAjax, $username_cliente){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
     try {
 
         $sql="SELECT grado_Satisfacion FROM SATISFACIONUSERNAMERESTAURANTES WHERE

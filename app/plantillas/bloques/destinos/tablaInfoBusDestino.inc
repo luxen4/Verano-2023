@@ -17,7 +17,7 @@
                         </div>
 
                     
-                       <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/tablaOcupacionBus.inc'; ?>
+                       <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tablaOcupacionBus.inc'; ?>
                 </div>
             </div>
         </form>

@@ -28,7 +28,7 @@
 
 $.ajax({
   data: parametros, 
-  url: "/Verano-2022/app/ajax/elTiempo.php",
+  url: "/Verano-2023/app/ajax/elTiempo.php",
   type: "POST",
 
   beforesend:function(){
@@ -89,7 +89,7 @@ var parametros = {"ref_AgenciaViajes":ref_AgenciaViajes.id};                // H
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/horario_AgenciaViajes.php",
+    url: "/Verano-2023/app/ajax/horario_AgenciaViajes.php",
     type: "POST",
 
     beforesend:function(){
@@ -128,7 +128,7 @@ var parametros = {"ref_Destino":ref_Destino, "asiento":asiento};                
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/horario_AgenciaViajes.php",
+    url: "/Verano-2023/app/ajax/horario_AgenciaViajes.php",
     type: "POST",
 
     beforesend:function(){
@@ -159,7 +159,7 @@ var parametros = {"ref_Destino":ref_Destino, "asiento":asiento};                
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/eliminarasientobus.php",
+    url: "/Verano-2023/app/ajax/eliminarasientobus.php",
     type: "POST",
 
     beforesend:function(){
@@ -187,7 +187,7 @@ function horarios(e){
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/horario_AgenciaViajes.php",
+    url: "/Verano-2023/app/ajax/horario_AgenciaViajes.php",
     type: "POST",
 
     beforesend:function(){
@@ -205,7 +205,7 @@ function horarios(e){
  
    $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/telefono_AgenciaViajes.php",
+    url: "/Verano-2023/app/ajax/telefono_AgenciaViajes.php",
     type: "POST",
 
     beforesend:function(){
@@ -258,7 +258,7 @@ var parametros = {"ref_Destino":ref_Destino};                // Hago un Ajax par
 
 $.ajax({
   data: parametros, 
-  url: "/Verano-2022/app/ajax/sesion-ref_Destino.php",
+  url: "/Verano-2023/app/ajax/sesion-ref_Destino.php",
   type: "POST",
 
   beforesend:function(){
@@ -335,7 +335,7 @@ function seleccionaPlaza(plaza){
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/codigoSumar1Voto.php",
+    url: "/Verano-2023/app/ajax/codigoSumar1Voto.php",
     type: "POST",
 
     beforesend:function(){
@@ -362,7 +362,7 @@ var parametros = {"ref_Negocio":r.id};                // Hago un Ajax para meter
 
 $.ajax({
   data: parametros, 
-  url: "/Verano-2022/app/ajax/opiniones_1negocio.php",
+  url: "/Verano-2023/app/ajax/opiniones_1negocio.php",
   type: "POST",
 
   beforesend:function(){
@@ -417,7 +417,7 @@ function caritaAjax(username, ref_negocioparaAjax){
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/satisfacion/gradoCaritaClienteNegocio.php",
+    url: "/Verano-2023/app/ajax/satisfacion/gradoCaritaClienteNegocio.php",
     type: "POST",
 
     beforesend:function(){
@@ -473,7 +473,7 @@ var parametros = {"ref_NegocioparaAjax":ref_negocioparaAjax, "num_barra":num_bar
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/satisfacion/gradoSatisfacion.php",
+    url: "/Verano-2023/app/ajax/satisfacion/gradoSatisfacion.php",
     type: "POST",
 
     beforesend:function(){
@@ -518,7 +518,7 @@ var parametros = {"ref_Negocio":r.id};                // Hago un Ajax para meter
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/nombre_negocio.php",
+    url: "/Verano-2023/app/ajax/nombre_negocio.php",
     type: "POST",
 
     beforesend:function(){
@@ -547,7 +547,7 @@ var parametros = {"ref_Negocio":ref_negocio};                // Hago un Ajax par
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/menu_negocio.php",
+    url: "/Verano-2023/app/ajax/menu_negocio.php",
     type: "POST",
 
     beforesend:function(){
@@ -621,7 +621,7 @@ $(selector).val(numPosicion);
 var parametros = {"localidad":ref_Localidad, "posicion_Siguiente":numPosicion};    
 
 $.ajax({
-    data: parametros, url: "/Verano-2022/app/ajax/imagenLocalidad.php", type: "POST",
+    data: parametros, url: "/Verano-2023/app/ajax/imagenLocalidad.php", type: "POST",
 
     beforesend:function(){
         $('#mostrar_mensaje').html("Mensaje antes de enviar!");
@@ -650,7 +650,7 @@ function imagen(ref_MenuPersonal){
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/menuImagenPersonal_negocio.php",
+    url: "/Verano-2023/app/ajax/menuImagenPersonal_negocio.php",
     type: "POST",
 
     beforesend:function(){ $('#mostrar_mensaje').html("Mensaje antes de enviar!");
@@ -702,7 +702,7 @@ var parametros = {"ref_Negocio":r.id};                // Hago un Ajax para meter
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/nombre_negocio.php",
+    url: "/Verano-2023/app/ajax/nombre_negocio.php",
     type: "POST",
 
     beforesend:function(){
@@ -830,7 +830,7 @@ Swal
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/codigoRestar1Voto.php",
+    url: "/Verano-2023/app/ajax/codigoRestar1Voto.php",
     type: "POST",
 
     beforesend:function(){
@@ -870,7 +870,7 @@ Swal
              
               $.ajax({
               data: parametros, 
-              url: "/Verano-2022/app/ajax/codigoSatisfacion.php",
+              url: "/Verano-2023/app/ajax/codigoSatisfacion.php",
               type: "POST",
 
               beforesend:function(){

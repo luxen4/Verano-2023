@@ -13,7 +13,7 @@ class DefaultController{
           'Noja','Biarritz','Laredo','Santander','Castro Urdiales','Hendaya','Saint-Jean-de-Luz','Getaria','Zumaia',
           'Orio','Somo','Plentzia','Lekeitio','Isla','Ajo','Bakio','Ondarroa','Deba','Somorrostro','Zaragoza','Getaria','Sopelana','Comillas');
 
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
           
   require __DIR__ . '/../../fuente/Modelo/busquedas.inc';
 
@@ -44,7 +44,7 @@ class DefaultController{
       window.location.href="index.php?ctl=motrarplantabus";</script><?php
     }
   
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/partesControladores/verFicha.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/partesControladores/verFicha.inc';
 
     require __DIR__ . '/../../app/plantillas/inicio.php';
   }

@@ -15,11 +15,11 @@ ob_start();?>
   <link rel="stylesheet" type="text/css" href="web/css/stylesmostrarfiltrados.css">
 </head>
 <body>
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?> 
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?> 
 
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
 // Necesito el nombre de las localidades que son del dia de hoy
 $localidades = (new ComerRepositorio())->localidadesViajarHoy();
 
@@ -134,7 +134,7 @@ src="web/imagenes/zarautz_carrusel.jpg"
 
  <?php $contenido = ob_get_clean() ?>
 
- <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+ <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
  <style>
     /* .articulo{margin: 0.5em;}

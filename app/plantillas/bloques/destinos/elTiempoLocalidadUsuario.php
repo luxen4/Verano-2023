@@ -1,6 +1,6 @@
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
  
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_elTiempoLocalidadUsuario.inc';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_elTiempoLocalidadUsuario.inc';?>
 
 
 <form action="" method="POST">
@@ -17,7 +17,7 @@ $googleApiUrl ="https://api.openweathermap.org/data/2.5/weather?lat=" . $lat . "
 
 <?php 
 // Entra con la $googleApiUrl //
-include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\curl_OpenWeather.inc';?><?php
+include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/curl_OpenWeather.inc';?><?php
 
 
 ?>

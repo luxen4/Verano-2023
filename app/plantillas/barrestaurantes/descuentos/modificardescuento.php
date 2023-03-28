@@ -12,7 +12,7 @@
                 </div>       
                 
             <!-- Contenido de la ventana-->
-                <!-- <form method="post" action="/Verano-2022/app/plantillas/bloques/opinionnegocio.php">-->
+                <!-- <form method="post" action="/Verano-2023/app/plantillas/bloques/opinionnegocio.php">-->
                 <form id="form_menu_descuento" action="" method="POST">     
                     <div class="row">
                         <div style="margin: auto;" class="col-xl-11 text-center col-lg-11 col-md-11 col-sm-11 col-11">

@@ -28,13 +28,13 @@ $lugaresDondeComer1= (new ComerRepositorio())->todosNegociosLocalidad($ref_Local
                     foreach ($negocios_Localidad1 as $bar_rest) { ?>
                         <div class="row articulo" style="padding-top: 0.8em;">
                             <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                                <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/carruselFotosNegocio.inc';?>
+                                <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/carruselFotosNegocio.inc';?>
 
                                 <div class="row">
                                     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12 mas_fotos">
-                                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/redesSocialesIconosPrincipal.inc'; ?>
-                                        <?php // require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/redes_sociales.inc';?>
-                                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/redesSocialesIconos.inc'; ?>
+                                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconosPrincipal.inc'; ?>
+                                        <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redes_sociales.inc';?>
+                                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconos.inc'; ?>
                                     </div>     
                                 </div>
                             </div><?php 
@@ -44,13 +44,13 @@ $lugaresDondeComer1= (new ComerRepositorio())->todosNegociosLocalidad($ref_Local
                             }else{?>
                                 <div class="col-xl-5 text-left col-lg-5 col-md-5 col-sm-5 col-5 mas_fotos"><?php
                             }?>
-                                <?php    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_negocioSimple.inc';?><!--Este es el definitivo-->
-                                <?php // require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_negocio.inc';?>
+                                <?php    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_negocioSimple.inc';?><!--Este es el definitivo-->
+                                <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_negocio.inc';?>
                             </div>
 
                             <div class="col-xl-1 text-left col-lg-1 col-md-1 col-sm-1 col-1">
                                 <?php // cards del Home
-                                require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cupon_descuento.inc';?>
+                                require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cupon_descuento.inc';?>
                             </div>
 
                         </div><?php    

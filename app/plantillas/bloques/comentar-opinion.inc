@@ -6,7 +6,7 @@
         <input id="ref_negocio" type="checkbox" name=datos[ref_negocio] hidden value="<?php echo pasarUtf8($bar_rest[0]->ref_negocio);?>"/> <!-- Para recoger la referencia del negocio-->
 
         <div class="row comentar_opinion" >
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/comentar-opinionFicha.inc'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/comentar-opinionFicha.inc'; ?>
         </div><?php
 
     }else{ ?>

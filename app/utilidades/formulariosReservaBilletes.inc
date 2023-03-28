@@ -39,7 +39,7 @@ alert(a.value);
 var parametros = {"ref_Destino":ref_Destino, "ref_Cliente":ref_Cliente, "asientos":asientos, "pagado":pagado};
 
   $.ajax({
-    data: parametros, url: "/Verano-2022/app/ajax/reservasbus/reservarAsientosBus.php", type: "POST",
+    data: parametros, url: "/Verano-2023/app/ajax/reservasbus/reservarAsientosBus.php", type: "POST",
     beforesend:function(){
         $('#mostrar_mensaje').html("Mensaje antes de enviar!");
     },

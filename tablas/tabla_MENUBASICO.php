@@ -77,7 +77,7 @@
              
   ;";      
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_MenusRestaurantesLocalidad/poblar_Menus.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_MenusRestaurantesLocalidad/poblar_Menus.php';
 
   // Condicional PHP que creará la tabla
   if (mysqli_query($conn, $pueblaMENUMOD)) {

@@ -16,7 +16,7 @@
             $total=0; $pendienteRecaudar=0; $plazasCobradas=0; $plazasSinCobrar=0;
             $asiento=1; $esOnoCliente=""; $infoCliente=""; $plaza_Bus=1;                                  
             for ($i = 1; $i <= 63; $i++) { //var_dump($ref_Destino);?>
-                <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\partesRepositorios\--datos_PersonasBus.inc'; ?>
+                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\partesRepositorios\--datos_PersonasBus.inc'; ?>
 
                 <?php
 
@@ -67,7 +67,7 @@
                         </div>
                     
                         <?php // Es mutua a cualquiera ?>
-                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoTablaBusDestino\--celda_plaza.inc'; ?>
+                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\--celda_plaza.inc'; ?>
                     
                         <input id="<?php echo ("asiento_" . $asiento); ?>" type="checkbox" name="datos[asiento]" value="<?php echo ($asiento); ?>" hidden >
 
@@ -90,7 +90,7 @@
                     </td><?php   
                     
                     if ($nomenclatura=="CLI") {   $infoPersona=$infoCliente; ?>
-                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
+                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
                    ?> <td><?php 
     
                     if(!empty($infoPersona[0]->nombre)){ ?>
@@ -141,7 +141,7 @@
                 </style><?php
                     
                     }elseif($nomenclatura=="PAS"){ $infoPersona=$infoNoCliente; ?>
-                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
+                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
                   ?>  <td><?php 
     
                     if(!empty($infoPersona[0]->nombre)){ ?>
@@ -170,7 +170,7 @@
                 
                 <td id='<?php echo 'plaza_' . $plaza_Bus; ?>'<?php ?>
 
-                <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoTablaBusDestino\celda_Cobrado.inc'; ?><?php
+                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\celda_Cobrado.inc'; ?><?php
                     if($infoPersona[0]->pagado=='NO'){ ?>style="background-color: red;" 
                         <?php $pendienteRecaudar= $pendienteRecaudar+($infoPersona[0]->embolso);
                                 $plazasSinCobrar=$plazasSinCobrar+1;
@@ -269,7 +269,7 @@ var pdf =new jsPDF('p','pt','letter');
 </script>
 
 
-    <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/infoTablaBusDestino/--modificarEstadosReservas.inc'; ?>
+    <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/--modificarEstadosReservas.inc'; ?>
     <div class="table-responsive"> 
     <table class="table table-bordered table-hover">
         <thead class="table-active">
@@ -304,7 +304,7 @@ var pdf =new jsPDF('p','pt','letter');
     </table>
     <?php 
   
-    // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\--info_Recaudado.inc'; ?>
+    // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\--info_Recaudado.inc'; ?>
 
 
 <div class="row">

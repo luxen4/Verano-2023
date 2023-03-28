@@ -8,7 +8,7 @@ class EventoRepositorio
     // Función que inserta un nuevo Evento | Recive un array de datos                                            
     public function nuevoEvento($datos){ 
         $ref_AgenciaViajes=$_SESSION['perfil']['ref_AgenciaViajes'];
-include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
         try {
             //include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
             
@@ -57,7 +57,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma
     public function numRegistros(){
         try {
            // include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
                 $sql = "SELECT count(ref_DestinoEvento) as numRegistros FROM DESTINOEVENTO";
                // var_dump($sql);die();
                 $result = $gbd->query($sql); 
@@ -108,7 +108,7 @@ public function todosEventosHome(){
 public function rutaImagen($ref_Evento,$posicion_Siguiente){
     try {  
         //include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
            $sql="SELECT i.nombre_Carpeta, n.nombre_ImagenEvento FROM IMAGENESEVENTO i
            INNER JOIN NOMBREIMAGENEVENTO n on i.ref_NombreImagenEvento=n.ref_NombreImagenEvento
@@ -133,7 +133,7 @@ public function rutaImagen($ref_Evento,$posicion_Siguiente){
 public function carpetaImagen($ref_Evento){
     try {  
         //include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
            $sql="SELECT i.nombre_Carpeta FROM IMAGENESEVENTO i
            INNER JOIN NOMBREIMAGENEVENTO n on  n.ref_NombreImagenEvento=i.ref_NombreImagenEvento

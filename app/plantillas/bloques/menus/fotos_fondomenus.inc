@@ -2,7 +2,7 @@
 use miId\fuente\Repositorio\MenuRepositorio;
 use miId\fuente\Repositorio\IpremotainterfaceRepositorio;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuRepositorio.inc'; 
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuRepositorio.inc'; 
 $todosModelosMenus = (new MenuRepositorio())->todosModelosMenus2("Premium");//  var_dump($todosModelosMenus); ?>
 
 <!--Necesito distinguir los de pago y los de no pago, 
@@ -15,7 +15,7 @@ en la tabla meter el atributo pago y ya después de ahí que filtre y saque unos
     
     echo $_SERVER['REMOTE_ADDR'] . "<br>";
     // Meter la ip en la base de datos
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/IpremotainterfaceRepositorio.inc'; 
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/IpremotainterfaceRepositorio.inc'; 
 
 // Extraer la última y configurar la siguiente     IPIF001 última  
 $ultima_ref_IpRemota = (new IpremotainterfaceRepositorio())->ultimaRelacionInterfaceRemota();
@@ -76,7 +76,7 @@ var_dump($menu_premium);
                         <br>-->
 
                         <div class="" style="margin-top: -1.5em; margin-left:-5em; ">
-                            <a href="../Verano-2022/web/imagenes/<?php echo $modeloMenu->nombre_modelomenu; ?>"><i style="color:white;" class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="../Verano-2023/web/imagenes/<?php echo $modeloMenu->nombre_modelomenu; ?>"><i style="color:white;" class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                         <label style="margin: 1em;" for="<?= $modeloMenu->ref_modelomenu?>"> <?php echo $modeloMenu->ref_modelomenu?></label>
                        
@@ -89,7 +89,7 @@ var_dump($menu_premium);
             }?>
         </div>
 </div>        
-<!--<div class="g" style='background-image:url("/Verano-2022/app/plantillas/bloques/menus/logo.jpg"); background-size: cover;'>d</div>-->
+<!--<div class="g" style='background-image:url("/Verano-2023/app/plantillas/bloques/menus/logo.jpg"); background-size: cover;'>d</div>-->
 
 
 

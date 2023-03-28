@@ -18,7 +18,7 @@
 
     <div class="flex">
       <li id="logo"><a class="navbar-brand" href="index.php?ctl=inicio/">PLAYAS-2023</a></li><!--sr-only-->
-          <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/saludoIzda.inc'; ?>
+          <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/saludoIzda.inc'; ?>
     </div>
     
       <!--<li><a class="nav-link" href="index.php?ctl=inicio/#situarprimerarticulo"><i class="fas fa-home"></i> eInicio</a></li>-->
@@ -64,7 +64,7 @@ if(empty($_SESSION['perfil'])){?>
 if(empty($_SESSION['perfil'])){?> 
     <li><a class="nav-link" href="index.php?ctl=loginusuarios" ><i class="fas fa-users"></i> LOGIN </a></li>
 
-  <?php // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc'; ?>
+  <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc'; ?>
 
         
 
@@ -99,10 +99,10 @@ if(empty($_SESSION['perfil'])){?>
 if (!empty($_SESSION['perfil'])) {
   if ($_SESSION['perfil']['roll']=="propietario") {?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/propietario/propietario.inc'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/propietario/propietario.inc'; ?>
 
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
 
 <!--
 <li class="nav-item dropdown">
@@ -152,15 +152,15 @@ if($_SESSION['perfil']['roll']=="admin"){?>
 
 
   
-  <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Propietarios.inc'; ?>
-  <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Localidades.inc'; ?>
+  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Propietarios.inc'; ?>
+  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Localidades.inc'; ?>
 
 
-  <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Clientes.inc'; ?>
+  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Clientes.inc'; ?>
   
-  <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Agencias.inc'; ?>
+  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Agencias.inc'; ?>
 
-  <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Barrestaurantes.inc'; ?>
+  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/admin/Admin_Barrestaurantes.inc'; ?>
 
 
   <li><a class="nav-link" href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
@@ -175,7 +175,7 @@ if (!empty($_SESSION['perfil'])) {
   if ($_SESSION['perfil']['roll']=="agenciabuses") {?>
 
 <li><a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Destinos</a></li>
-    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciabuses/agenciabuses.inc'; ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciabuses/agenciabuses.inc'; ?>
 <li><a class="nav-link" href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
 <li class="saludo"><?php echo('<span class="nav-link fas fa-user" > Hola ' . pasarUtf8($_SESSION['perfil']['name']) . '!</span>');?></li>
 
@@ -188,7 +188,7 @@ if (!empty($_SESSION['perfil'])) {
 
 if (!empty($_SESSION['perfil'])) {
   if ($_SESSION['perfil']['roll']=="agenciaviajes") {?>
-      <?php // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/--agenciaviajes.inc'; ?>
+      <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/--agenciaviajes.inc'; ?>
 
       <li><a class="nav-link" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos/<?= $_SESSION['perfil']['name']; ?></a></li>                           
       <li class="nav-item dropdown">
@@ -218,7 +218,7 @@ if (!empty($_SESSION['perfil'])) {
       if ($_SESSION['perfil']['roll']=="cliente") {?> 
         <li ><a class="nav-link" href="index.php?ctl=sudoku"><span style="color:red"><i class="fa-solid fa-chess-board"></i> SUDOKU de hoy</span> </a></li>
 
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
+        <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
 
         <li><a class="nav-link" style="border-right: 1px solid #006293;"  href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
         <li class="saludo"><?php echo('<span class="nav-link fas fa-user"  > Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . '!</span>');?></li><?php    }

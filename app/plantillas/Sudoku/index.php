@@ -44,7 +44,7 @@ use miId\fuente\Repositorio\JuegosRepositorio;
 
  <?php      
  $numcasillasrellenadas=0;
- require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/JuegosRepositorio.inc';
+ require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/JuegosRepositorio.inc';
             $numSudoKus=(new JuegosRepositorio())->numSudokus();
 
 $numSudoKus= $numSudoKus[0]->numeroSudokus;
@@ -52,7 +52,7 @@ $numSudoKus= $numSudoKus[0]->numeroSudokus;
             $ref_Sudoku= random_int( 1, $numSudoKus);
             
 
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/JuegosRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/JuegosRepositorio.inc';
             $sudoku=(new JuegosRepositorio())->extraerSudoku($ref_Sudoku);
 
             $numeros=$sudoku[$ref_Sudoku-1]->numeros;
@@ -200,7 +200,7 @@ $numSudoKus= $numSudoKus[0]->numeroSudokus;
 
 
 <?php /* Cuando esté hecho
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/JuegosRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/JuegosRepositorio.inc';
         $casillas=(new JuegosRepositorio())->introducirSudoku(); */ ?>
 
 

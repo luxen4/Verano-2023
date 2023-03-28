@@ -4,15 +4,15 @@
 <div id="infobus"><?php 
     
     if(!empty($_SESSION['ref_Destino'])){ ?>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/tablaBusDestino.php'; ?><?php
+      <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/tablaBusDestino.php'; ?><?php
     }else{ ?>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/tablaBusDestino.php'; ?><?php
+      <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/tablaBusDestino.php'; ?><?php
     } ?>
     
 </div>
 
 <?php $contenido = ob_get_clean(); ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

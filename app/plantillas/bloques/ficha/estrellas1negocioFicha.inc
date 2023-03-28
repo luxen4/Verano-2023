@@ -65,7 +65,7 @@
             </svg><?php
         } 
 
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/OpinionesRepositorio.inc'; 
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/OpinionesRepositorio.inc'; 
             $ref_negocio= $bar_rest[0]->ref_negocio;                                                                                               
             $relacion_Votos = (new OpinionesRepositorio())->votos1Negocio($ref_negocio);?>
       

@@ -4,7 +4,7 @@
   
 
 <div class="row"> 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/nombreNegocio.inc';?>  
+    <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/nombreNegocio.inc';?>  
 </div>
 
 <?php
@@ -13,27 +13,27 @@
  $ref_negocio=($_SESSION['datos_negocio'][0]->ref_negocio);
 
  
-require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; 
+require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; 
 
-include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/menu_deldia.inc'; ?>
+include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/menu_deldia.inc'; ?>
 
 <div class="row"> 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/estrellas1negocioFicha.inc';?>  
+    <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/estrellas1negocioFicha.inc';?>  
 </div>
                 
 <div class="row">
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/carruselFicha.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/carruselFicha.inc'; ?>
 </div> 
 
 <div class="row">
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/descripcionNegocioFicha.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/descripcionNegocioFicha.inc'; ?>
 </div>
 
 <div class="row">
     <div class="col-xl-4 text-left col-lg-4 col-md-4 col-sm-4 col-4"></div>
 
     <div class="col-xl-4 text-left col-lg-4 col-md-4 col-sm-4 col-4">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/redesSocialesIconosFicha.inc'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/redesSocialesIconosFicha.inc'; ?>
     </div>
 
     <div class="col-xl-4 text-left col-lg-4 col-md-4 col-sm-4 col-4"></div>
@@ -41,14 +41,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/m
 
 
 <div class="row">
-    <?php  //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/comentar-opinion.inc'; ?>
+    <?php  //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/comentar-opinion.inc'; ?>
 </div>
 
 
 
 <?php 
 // Funciona Muy Bien //
-include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/partesRepositorios/registrovisitasnegocio.inc'; 
+include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/partesRepositorios/registrovisitasnegocio.inc'; 
 ?>
 
  

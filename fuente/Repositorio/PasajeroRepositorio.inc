@@ -85,7 +85,7 @@ class PasajeroRepositorio
 public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "UPDATE CLIENTE
         SET /*username='$datos[username]',*/ nombre='$datos[nombre]', apellidos='$datos[apellidos]', nif='$datos[nif]',TlfnoParticular='$datos[tlfnoParticular]',
@@ -116,7 +116,7 @@ public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
     public function darDeBajaPasajero($datos, $hashActual){
 
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE contrasena='$hashActual'";
  
             $result = $gbd->query($sql);?>
@@ -144,7 +144,7 @@ public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
     // El username no se puede cambiar ya que es clave UNIQUE //
     public function darDeBajaPasajeroPorAministrador($datos){
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE cod_Cliente='$datos[clienteaeliminar]'";
  
             $result = $gbd->query($sql);?>
@@ -172,7 +172,7 @@ public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
     public function mostrarTodosPasajeros()
     {
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             $sql="SELECT cod_Cliente, nombre,apellidos,nif,calle,cp,localidad,provincia,comunidad,pais,email,TlfnoParticular,
             fNacimiento,sexo FROM CLIENTE";
 
@@ -198,7 +198,7 @@ public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
         $contrasena=$_SESSION['perfil']['contrasena'];
      
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
                 $sql="SELECT cod_Cliente,username,nombre,apellidos,nif,TlfnoParticular,email,
                     fNacimiento,sexo,calle,cp,localidad,provincia,comunidad,pais,contrasena,roll FROM CLIENTE 
@@ -224,7 +224,7 @@ public function modificarPlazaPasajero($datos, $hashActual, $nuevoHash){
         require __DIR__ . '/../../app/conf/configuracionfantasma.inc';
 
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             $sql = "DELETE FROM CLIENTE";
             $result = $gbd->query($sql); ?>
             <script>alert("¡TODOS CLIENTES ELIMINADOS CON EXITO!");</script><?php

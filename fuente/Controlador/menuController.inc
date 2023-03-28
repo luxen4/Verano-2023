@@ -11,7 +11,7 @@ class MenuController
   
 // Función que crea un Menú del día
 public function crearMenu(){
-    include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; 
+    include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; 
 
     if (isset($_POST['nuevomenu'])) { $datos=$_POST['datos'];
         if (isset($_POST['asegura'])) {
@@ -38,7 +38,7 @@ public function crearMenu(){
 
             if (empty($datos['comentario'])) {  $datos['comentario']=""; }
 
-           // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuRepositorio.inc';
+           // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuRepositorio.inc';
            require_once $_SERVER['DOCUMENT_ROOT'] . MENUREPOSITORIO;
 
             // Antes de crear, debe borrar el anterior (podría borrarse y no hacer el nuevo menú)
@@ -96,7 +96,7 @@ public function crearMenu(){
           }
     
 
-          $nombre_fichero = $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/web/imagenes/archivos/rguru.png';
+          $nombre_fichero = $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/web/imagenes/archivos/rguru.png';
 
           if (file_exists($nombre_fichero)) {
               echo "El fichero $nombre_fichero existe";?>
@@ -131,7 +131,7 @@ $rutaRelativaCarpeta='./web/imagenes/archivos_MenusPersonalizados';
                 $datos['habilitado']='SI';
 
 
-    // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuPersonalRepositorio.inc';
+    // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuPersonalRepositorio.inc';
      require_once $_SERVER['DOCUMENT_ROOT'] . MENUPERSONALREPOSITORIO;
 // Si de esa referencia está habilitado un Menú Personal, debe habilitar a 'NO'
 $inhabilitarMenuPersonal = (new MenuPersonalRepositorio())->inhabilitarMenuPersonal($datos);
@@ -153,7 +153,7 @@ $inhabilitarMenuPersonal = (new MenuPersonalRepositorio())->inhabilitarMenuPerso
 
 
            
-        //    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuRepositorio.inc';
+        //    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuRepositorio.inc';
             require_once $_SERVER['DOCUMENT_ROOT'] . MENUREPOSITORIO;
 
 
@@ -295,4 +295,4 @@ public function seleccionarMenu(){ $ref_negocio=$_SESSION['perfil']['ref_negocio
 
 }
 
- //require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuRepositorio.inc';
+ //require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuRepositorio.inc';

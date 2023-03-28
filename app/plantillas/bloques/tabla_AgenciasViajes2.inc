@@ -25,7 +25,7 @@
         <td style="vertical-align: middle;">
 
         <div style="margin-top: 1em;" > 
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/AgenciaViajesRepositorio.inc'; ?>
+            <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaViajesRepositorio.inc'; ?>
             <?php $ruta_LogoAgenciaViajes = (new AgenciaViajesRepositorio())->rutaLogoAgenciaViajes($ref_AgenciaViajes); 
             //var_dump($ruta_LogoAgenciaViajes);
             if($ruta_LogoAgenciaViajes[0]->logo_AgenciaViajes != NULL){ ?>
@@ -57,7 +57,7 @@
                     }?>
                             
                 <a class="boton_VerHorario" href="#Pop_UP_horario_AgenciaViajes" onclick="seleccionaRefAgenciaViajes2(<?php echo $ref_AgenciaViajes; ?>,'<?php echo ($agenciaViajes[$i]->nombre_Agencia); ?>')" data-toggle="modal" > Ver Horario</a><?php 
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/popups/Pop_UP_horario_AgenciaViajes.inc'; // Tabla grande ?>                    
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popups/Pop_UP_horario_AgenciaViajes.inc'; // Tabla grande ?>                    
                     <input id="<?php echo ($ref_AgenciaViajes); ?>" type="checkbox" name="datos[ref_AgenciaViajes]" hidden value="<?= $ref_AgenciaViajes; ?>">
                     <input class="boton_VerHorario" type="submit" name="ver_folleto" onclick="seleccionaRefAgenciaViajes(<?php echo ($ref_AgenciaViajes); ?>)" value="Ver Folleto">
                     <!-- #B3A299 #D5BAA9 #B6A498 -->
@@ -90,7 +90,7 @@ function hacerseSocio(ref_AgenciaViajes,ref_Cliente){
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/hacerse_Socio.php",
+    url: "/Verano-2023/app/ajax/hacerse_Socio.php",
     type: "POST",
 
     beforesend:function(){

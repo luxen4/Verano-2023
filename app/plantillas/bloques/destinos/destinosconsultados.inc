@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_cardDestinoHome.inc">
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_cardDestinoHome.inc'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_cardDestinoHome.inc'; ?>
 
 <?php $destinos = $_SESSION['destinos'];  ?>
     <div class="container" style="padding: 0em;"><?php
@@ -21,31 +21,31 @@
         <div class="row">
             <?php $arrayRestaurantesPintar=array(); 
                 foreach ($destinos as $destino) {  // var_dump($destinos); die();
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_busDestino.inc';     // Info del bus que va a un Destino
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_tipoPublicidad.inc'; // Este archivo es para los "Donde Comer desplegable"
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_busDestino.inc';     // Info del bus que va a un Destino
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_tipoPublicidad.inc'; // Este archivo es para los "Donde Comer desplegable"
                     
                         if ($vistaPublicidadGeneral=="derecha") {?><?php
 
                             if (!empty($lugaresDondeComer)) {?> 
                                 <div class="row">
-                                    <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidad/publicidadderecha.inc'; ?>
+                                    <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidad/publicidadderecha.inc'; ?>
                                 </div><?php
                             } else {
-                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc'; ?>
+                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc'; ?>
                                 
                                 <?php
                                 if (empty($tipoPublicidadHome)) { ?>
 
                                     <div><?php
                                             if($tipoPublicidadHome[0]->modo_Apariencia==1){
-                                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/--negociovacio1.inc';
+                                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/--negociovacio1.inc';
                                             }  ?>
                                     </div> 
 
                                     <div >
                                         <?php
                                             if($tipoPublicidadHome[0]->modo_Apariencia==2){
-                                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/--negociovacio3.inc';
+                                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/--negociovacio3.inc';
                                             } ?>
                                     </div><?php
                                 } else {} ;
@@ -58,14 +58,14 @@
 
                             if($destino->estado=='DISPONIBLE'){ 
                                // echo "Lugares donde Comer Vacio";
-                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
+                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc';  
                             
                             }else if($destino->estado=='COMPLETO'){
-                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
+                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc';  
                                                 
                             } else{
 
-                               // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc';  
+                               // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc';  
                             }            
                         } 
                 } ?>

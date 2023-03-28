@@ -3,11 +3,11 @@ use miId\fuente\Repositorio\ComerRepositorio;
 use miId\fuente\Repositorio\LocalidadRepositorio; ?>
 
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/css_restaurantes.inc';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_restaurantes.inc';?>
 
 <details>
     <summary>Restaurantes</summary>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/LocalidadRepositorio.inc'; ?> 
+        <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/LocalidadRepositorio.inc'; ?> 
         <?php $localidades = (new LocalidadRepositorio())->todasLocalidades_ReferenciaYnombre(); 
 
     $ref_LocalidadTitulo="";
@@ -20,7 +20,7 @@ use miId\fuente\Repositorio\LocalidadRepositorio; ?>
         } ?>
         
         <?php // Si no hay Restaurantes en esa Localidad, no pinta esa Localidad ?>
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; ?>
+        <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; ?>
         <?php $bar_restaurantes = (new ComerRepositorio())->nombreYenlace($ref_LocalidadTitulo);
         if(!empty($bar_restaurantes)){ ?>
             <details>

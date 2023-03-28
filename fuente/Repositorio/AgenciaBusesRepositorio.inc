@@ -10,7 +10,7 @@ public function nuevaAgenciaBuses($datos,$hash){
   $horario=$datos['horaEntrManana'] . " a " . $datos['horaSalManana'] . " y " . $datos['horaEntrTarde'] . " a " . $datos['horaSalTarde'] ;
 
   try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
  
             $sql="INSERT INTO AGENCIABUSES (/*codAgenciaAutobus,*/ fecha_incripcion, nombre, nif, direccion, cp,
                 localidad, provincia, comunidad, pais, 
@@ -81,7 +81,7 @@ public function datosAgenciaBusesLogeada(){
           $contrasenaa=$_SESSION['perfil']['contrasena'];
 
       try {   
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
  
         $sql="SELECT  fecha_incripcion,nombre,nif,direccion,cp,
                 localidad,provincia,comunidad,pais, 
@@ -107,7 +107,7 @@ public function codigoAgenciaBuses(){
     $codAgenciaViajes=$_SESSION['perfil']['cod_CompaniaBusHabitual']; 
     
 try {   
-  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
   $sql="SELECT cod_CompaniaBusHabitual FROM AGENCIAVIAJES WHERE cod_AgenciaViajes='$codAgenciaViajes'";
 
@@ -161,7 +161,7 @@ $contrasenaa=$_SESSION['perfil']['contrasena'];
 $nuevoHorario= $datos['horaEntrManana'] . " a " . $datos['horaEntrManana'] . " y " . $datos['horaEntrManana'] . " a " .  $datos['horaEntrManana'] ;
 
         try {   
-          include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+          include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         
           
         $sql="UPDATE AGENCIABUSES
@@ -195,7 +195,7 @@ public function eliminarAgenciaBusesLogeada(){
   $codAgenciaBuses=$_SESSION['perfil']['cod_AgenciaAutobus'];
 
         try {   
-          include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+          include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
  
           $sql="DELETE FROM AGENCIABUSES WHERE cod_AgenciaBuses='$codAgenciaBuses'" ; //  AND contrasena='$contrasena'
                   //var_dump($sql);  die();
@@ -216,7 +216,7 @@ public function eliminarAgenciaBusesLogeada(){
 public function todasAgenciasDeBuses(){
    
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
  
             //$sql="SELECT nombre,direccion,localidad,provincia,comunidad,pais,email,telefono_Agencia FROM AGENCIABUSES";
             $sql="SELECT cod_AgenciaBuses,nombre,direccion,localidad,provincia,comunidad,pais,email,telefono_Agencia FROM AGENCIABUSES";
@@ -240,7 +240,7 @@ public function todasAgenciasDeBuses(){
 public function todasAgenciasDeBuses2(){
       
       try {
-         include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+         include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
         $sql="SELECT nombre,direccion,localidad,provincia,comunidad,pais,email,telefono_Agencia FROM AGENCIABUSES";
           $result = $gbd->query($sql);
@@ -263,7 +263,7 @@ public function todasAgenciasDeBuses2(){
 public function buscarCodAgenciaBuses($codAgenciaBuses){
 
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="SELECT cod_agenciaBuses FROM AGENCIABUSES WHERE cod_agenciaBuses='$codAgenciaBuses'";
 
         $result = $gbd->query($sql);
@@ -310,7 +310,7 @@ public function nombreAgenciaBuses($ref_AgenciaViajes){
 // Función que elimina las Agencias seleccionadas por el administrador en los checkboxes
 public function eliminarAgenciasDeBuses(string $nombreAgenciaBuses){
         try {
-          include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+          include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
       
           $sql="DELETE FROM AGENCIABUSES WHERE nombre='$nombreAgenciaBuses'";
 

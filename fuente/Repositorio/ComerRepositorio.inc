@@ -8,7 +8,7 @@ class ComerRepositorio
 // Función que devuelve los Baresrestaurantes donde comer de una Localidad
     public function dondeComer($cod_Destino){ 
         //var_dump($cod_Destino);
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             //$cod_Destino=$cod_Destino[0]->cod_Destino;
         try {
             $sql="SELECT br.cod_Destino,d.nombre_Lugar,l.nombre_Localidad as nombreLocalidad, br.ruta_imagen1,br.ruta_imagen2,br.ruta_imagen3,br.nombre,br.descripcion,br.telefono,
@@ -48,7 +48,7 @@ class ComerRepositorio
     // All Bars & Restaurants
     public function todosBaresRestaurantes(){ 
         
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             /*     <th>Localidad</th> <th>Nombre</th><th>Dirección</th><th>Teléfono</th><th>Inicio Publicidad</th><th>Final Publicidad</th><th>Habilitar</th> */
         try {
 
@@ -97,7 +97,7 @@ class ComerRepositorio
 
 // Función que devuelve los Negocios de cada Localidad
 public function publicidadRestaurantes($cod_Localidad){ 
-    try { include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    try { include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
         $sql="SELECT distinct l.ref_Localidad, l.nombre_Localidad as nombreLocalidad,br.ref_negocio, br.nombre, br.direccion,veces_Votado, veces_Positivo, veces_Negativo,
             br.descripcion, br.telefono,/* cn.f_inicio, cn.f_final,*/ br.cod_barrestaurantes, br.habilitado, 
             br.ruta_imagen1, br.ruta_imagen2, br.ruta_imagen3, e_tripadvisor, e_facebook, e_web, e_restaurantGuru, e_theFork, br.dto  
@@ -122,7 +122,7 @@ public function publicidadRestaurantes($cod_Localidad){
 
 // Función que devuelve todos los Negocios de una Localidad en cards al 100%
 public function todosNegociosLocalidad($ref_Localidad){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT * FROM BARRESTAURANTES br
@@ -171,7 +171,7 @@ public function todosNegociosLocalidad($ref_Localidad){
 
 // Función que devuelve todos los Negocios de una Localidad en cards al 100%
 public function nombreYenlace($ref_Localidad){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT nombre, e_web FROM BARRESTAURANTES WHERE ref_Localidad='$ref_Localidad' ORDER BY cod_posiciones asc";
@@ -205,7 +205,7 @@ public function nombreYenlace($ref_Localidad){
 
 // Función que devuelve el nombre de una Localidad por medio de si código
 public function nombreLocalidad($ref_Localidad){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT nombre_Localidad FROM LOCALIDAD WHERE ref_Localidad='$ref_Localidad'";
@@ -237,7 +237,7 @@ public function nombreLocalidad($ref_Localidad){
 
 // Función que Posiciona y/o Desabilita Baresrestaurantes donde comer
 public function posicionarDesabilitarNegocios($ref_negocio, $posicion, $estado){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
    
     
 
@@ -278,7 +278,7 @@ echo "<br>";
 
 // Función que devuelve el número de veces que aparece un Destino para controlar las veces que aparece un Negocio
 public function numeroVecesDestino($cod_Localidad){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT count(ref_Localidad) as numveces FROM DESTINO WHERE ref_Localidad='$cod_Localidad'";
@@ -312,7 +312,7 @@ public function numeroVecesDestino($cod_Localidad){
 
 // Función que extrae el modo de publicitar los negocios en la Home
 public function tipoPublicidadHome($ref_Localidad){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT ref_Localidad, modo_Apariencia FROM VISTASNEGOCIOSHOME WHERE ref_Localidad='$ref_Localidad'";
@@ -344,7 +344,7 @@ public function tipoPublicidadHome2(){
     
 
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
         $sql="SELECT posicion FROM PUBLICIDADGENERAL WHERE tipo='general'";
 
         $result = $gbd->query($sql);
@@ -372,7 +372,7 @@ public function tipoPublicidadHome2(){
 
 // Función que extrae las Localidades a donde se viaja hoy
 public function localidadesViajarHoy(){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
     try {
         $sql="SELECT ref_Localidad FROM DESTINO WHERE fecha_Viaje='2022-06-12'";//CURDATE()
@@ -404,7 +404,7 @@ public function localidadesViajarHoy(){
 // Función que devuelve el nombre del negocio a partir de su referencia
 public function nombreNegocio($ref_negocio){
     //include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
     try {
         $sql="SELECT br.nombre as nombre_negocio, l.nombre_Localidad FROM BARRESTAURANTES br
           INNER JOIN LOCALIDAD l on l.ref_Localidad=br.ref_Localidad
@@ -545,7 +545,7 @@ public function tieneMenu($ref_negocio){
 // Función que crea un Descuento en un Negocio
 public function crearDescuento($datos){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             $sql0='SET lc_time_names = "es_ES"';
             $sql = "UPDATE BARRESTAURANTES SET dto='$datos[descuento]' WHERE ref_negocio='$datos[ref_negocio]'";
 
@@ -580,7 +580,7 @@ public function crearDescuento($datos){
     public function eliminarDescuento($datos){
 
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
                 $sql = "UPDATE BARRESTAURANTES SET dto=null WHERE ref_negocio='$datos[ref_negocio]'";
                 $result = $gbd->query($sql);
     

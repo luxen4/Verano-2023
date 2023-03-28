@@ -1,7 +1,7 @@
 <?php
 use miId\fuente\Repositorio\MenuRepositorio;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/MenuRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/MenuRepositorio.inc';
 $todosModelosMenusBasicos = (new MenuRepositorio())->todosModelosMenus2("Basico"); ?>
 <div style="" class="row"><?php
     $posicionMenu=0;
@@ -17,7 +17,7 @@ $todosModelosMenusBasicos = (new MenuRepositorio())->todosModelosMenus2("Basico"
                     onclick="esconder(this)">
                 </div> 
                 <div class="" style="margin-top: -1.5em; margin-left:-5em; ">
-                            <a href="../Verano-2022/web/imagenes/<?php echo $modeloMenu->nombre_modelomenu; ?>"><i style="color:white;" class="fa-solid fa-magnifying-glass"></i></a>
+                            <a href="../Verano-2023/web/imagenes/<?php echo $modeloMenu->nombre_modelomenu; ?>"><i style="color:white;" class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                 <div>
                     <label  style="margin:1em;" for="<?= $modeloMenu->ref_modelomenu?>"> <?php echo $modeloMenu->ref_modelomenu?></label>

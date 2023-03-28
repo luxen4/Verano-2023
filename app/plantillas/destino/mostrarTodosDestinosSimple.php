@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 <div class="toda_programacion">
     <div class="container-fluid ">
 
@@ -53,21 +53,21 @@
                                                   if($_SESSION['perfil']['roll']=='agenciaviajes'){
                                                       if ($_SESSION['perfil']['name']==$destino->nombre_Agencia) { ?>
                                                         <tr>
-                                                          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
+                                                          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
                                                         </tr> <?php
                                                       }
 
                                                   }elseif($_SESSION['perfil']['roll']=='cliente'){ ?>
                                                         <tr>
-                                                          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
-                                                          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/programaciontabla/destinoinforestaurantes.inc'; ?>
+                                                          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
+                                                          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/programaciontabla/destinoinforestaurantes.inc'; ?>
                                                         </tr><?php
                                                   }
 
                                               }else{ ?>
                                                         <tr>
-                                                          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
-                                                          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/programaciontabla/destinoinforestaurantes.inc'; ?>
+                                                          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/programaciontabla/destinofechaprecio.inc'; ?>
+                                                          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/programaciontabla/destinoinforestaurantes.inc'; ?>
                                                         </tr><?php 
                                               } 
                                 }?>
@@ -93,7 +93,7 @@
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php'; ?>
 
 
 <style>

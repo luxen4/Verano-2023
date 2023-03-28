@@ -1,5 +1,5 @@
 
-<?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/formMenu-7.inc';?>
+<?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/formMenu-7.inc';?>
 
                
 <style>

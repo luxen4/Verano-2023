@@ -2,7 +2,7 @@
  use miId\fuente\Repositorio\DestinoRepositorio;
  use miId\fuente\Repositorio\EventoRepositorio;
         $ref_Destino=$destino->ref_DestinoEvento;
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';
         $plazasOcupadas = (new ViajarRepositorio())-> numPlazasOcupadas($ref_Destino,'VIAJAREVENTO','ref_DestinoEvento'); 
         $plazasOcupadasPagadas = (new ViajarRepositorio())-> numPlazasOcupadasPagadas($ref_Destino); 
         $plazasOcupadasNoPagadas = (new ViajarRepositorio())-> numPlazasOcupadasNoPagadas($ref_Destino); ?>
@@ -31,7 +31,7 @@
                                     
         <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12 g"><br><?php 
             // preguntar en qué estado está el viaje al Evento
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
             $estadoDestino = (new DestinoRepositorio())-> estado($ref_Destino,'DESTINOEVENTO','ref_DestinoEvento'); ?>
         </div>
     </td>
@@ -88,9 +88,9 @@
         <!--https://getbootstrap.com/docs/5.0/components/buttons/-->
 
 
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
         <?php $ref_DestinoEvento=$destino->ref_DestinoEvento; ?>
-        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
+        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
 
     </td>
 </tr>

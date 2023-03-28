@@ -6,8 +6,8 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
       <!--  <link rel="stylesheet" type="text/css" href='web/css/plantasbuses/plantabus.css'/> OK
         <link rel="stylesheet" type="text/css" href='web/css/plantasbuses/bus_63plazas.css'/>  -->
 
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
             <div class="container fondoplantabus"> 
                 <form action="" method="POST">
@@ -22,7 +22,7 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
 
                     <?php 
                     if ($destino[0]->matricula=='1111 AAA') { // Logrobus ?>
-                        <?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bus\plano_Logrobus_55plazas_9438JLX.inc';?>
+                        <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bus\plano_Logrobus_55plazas_9438JLX.inc';?>
 <div class="container todo">
 <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
     <div id="ojo" class="table-responsive">  
@@ -33,35 +33,35 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
                     $numFilaIzdaVentana=count($filaIzdaVentana);
                         for($k=0; $k<$numFilaIzdaVentana; $k++){ ?>
                             <?php $i=$filaIzdaVentana[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaIzdaPasillo=array(56,52,48,44,40,38,34,30,26,22,18,14,10,6,2); $numFilaIzdaPasillo=count($filaIzdaPasillo);
                         for($k=0; $k<$numFilaIzdaPasillo; $k++){ ?>
                             <?php $i=$filaIzdaPasillo[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaCentral=array(57,'pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo'); $numFilaCentral=count($filaCentral);
                         for($k=0; $k<$numFilaCentral; $k++){ ?>
                             <?php $i=$filaCentral[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php 
                     $filaDrchaVentana=array(59,54,50,46,42,36,32,'escalera','bano',28,24,20,16,12,8,4); $numFilaDrchaVentana=count($filaDrchaVentana);
                         for($k=0; $k<$numFilaDrchaVentana; $k++){ ?>
                             <?php $i=$filaDrchaVentana[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaDrchaPasillo=array(58,53,49,45,41,35,31,'escalera','bano',27,23,19,15,11,7,3); $numFilaDrchaPasillo=count($filaDrchaPasillo);
                         for($k=0; $k<$numFilaDrchaPasillo; $k++){ ?>
                             <?php $i=$filaDrchaPasillo[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
             </div>
         </table>
@@ -80,35 +80,35 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
                     $numFilaIzdaVentana=count($filaIzdaVentana);
                         for($k=0; $k<$numFilaIzdaVentana; $k++){ ?>
                             <?php $i=$filaIzdaVentana[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaIzdaPasillo=array(56,52,48,44,40,38,34,30,26,22,18,14,10,6,2); $numFilaIzdaPasillo=count($filaIzdaPasillo);
                         for($k=0; $k<$numFilaIzdaPasillo; $k++){ ?>
                             <?php $i=$filaIzdaPasillo[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaCentral=array(57,'pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo','pasillo'); $numFilaCentral=count($filaCentral);
                         for($k=0; $k<$numFilaCentral; $k++){ ?>
                             <?php $i=$filaCentral[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php 
                     $filaDrchaVentana=array(59,54,50,46,42,36,32,'escalera','bano',28,24,20,16,12,8,4); $numFilaDrchaVentana=count($filaDrchaVentana);
                         for($k=0; $k<$numFilaDrchaVentana; $k++){ ?>
                             <?php $i=$filaDrchaVentana[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
 
                 <div class="fila_asientos" style="display: flex;"><?php
                     $filaDrchaPasillo=array(58,53,49,45,41,35,31,'escalera','bano',27,23,19,15,11,7,3); $numFilaDrchaPasillo=count($filaDrchaPasillo);
                         for($k=0; $k<$numFilaDrchaPasillo; $k++){ ?>
                             <?php $i=$filaDrchaPasillo[$k]; ?>
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plantaBusAMedida/butacacompleta2.php' ?><?php } ?>
                 </div>
             </div>
         </table>
@@ -118,14 +118,14 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
                     } ?> 
             </div>     
              
-             <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoDestino.inc' ; No me deja el include para el movil ?>            
+             <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoDestino.inc' ; No me deja el include para el movil ?>            
 
              <?php 
 include_once $_SERVER['DOCUMENT_ROOT'] . DESTINOREPOSITORIO; 
 $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
 
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
     <input id="ref_Destino" type="checkbox" name="datos[refdestino]" value="<?php echo ($ref_Destino); ?>" hidden checked>
     <div id="info_viaje" class="container">
@@ -178,20 +178,20 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
                                                        <!-- <label for="importepasajero">Importe Predeterminado del Viaje (podría tener descuento) </label><?php if(isset($datos)){if(isset($errores['importepasajero'])){?><span class="error"><?= $errores['importepasajero'].'</span>'?><?php }else{?><span class="ok">OK</span><?php }};?>-->
                                                     </div>
 
-                                                    <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/formulariospartefinal.php' ?>
+                                                    <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/formulariospartefinal.php' ?>
 
                                                 </div>
                                             </div><?php
 
                                         }else{ ?> 
-                                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/formularios.php' ?><?php 
+                                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/formularios.php' ?><?php 
                                         } ?>
 
                                    
                                         
                                     <div><?php 
                                         if($_SESSION['perfil']['roll']=='agenciaviajes'){ ?>
-                                            <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/infoOcupacionBus.php' no va en el servidor gratuito ?> 
+                                            <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/infoOcupacionBus.php' no va en el servidor gratuito ?> 
                                          
                                         
 
@@ -320,7 +320,7 @@ form{margin: 0em;}
 </style>
            
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

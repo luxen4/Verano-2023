@@ -24,7 +24,7 @@
     var parametros = {"localidad":ref_Localidad, "posicion_Siguiente":numPosicion};    
 
     $.ajax({
-        data: parametros, url: "/Verano-2022/app/ajax/imagenLocalidad.php", type: "POST",
+        data: parametros, url: "/Verano-2023/app/ajax/imagenLocalidad.php", type: "POST",
 
         beforesend:function(){
             $('#mostrar_mensaje').html("Mensaje antes de enviar!");

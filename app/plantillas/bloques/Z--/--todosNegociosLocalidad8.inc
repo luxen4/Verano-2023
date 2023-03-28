@@ -2,7 +2,7 @@
 <?php 
 use miId\fuente\Repositorio\ComerRepositorio;
 ob_start(); ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc';
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc';
 
    $negocios_Localidad =$_SESSION['negocios_Localidad']; $ref_Localidad=$negocios_Localidad[0]->ref_Localidad; 
    if(empty($ref_Localidad)){?><script>window.location.href="index.php?ctl=inicio/#situarprimerarticulo";</script><?php } ?>
@@ -11,7 +11,7 @@ ob_start(); ?>
         <div class="row">
             <?php
                 require __DIR__ . '/../../../fuente/Modelo/busquedas.inc';
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+                require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                 $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);?>
 
                 <div id="recomendamos" class="col-xl-12 text-center ">
@@ -30,13 +30,13 @@ ob_start(); ?>
 
 
                 <div class="row">
-                    <?php  require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/nombreRestaurante.inc';?> 
+                    <?php  require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/nombreRestaurante.inc';?> 
                 </div>
 
                 <div class="row" style="margin: auto; padding:0em;">
 
                     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12 info_negocio" >
-                        <?php  require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/carruselTodos.inc';?> 
+                        <?php  require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/carruselTodos.inc';?> 
                     </div>
 
                 </div>
@@ -46,24 +46,24 @@ ob_start(); ?>
 
                     <div class="col-xl-11 text-center col-lg-11 col-md-11 col-sm-11 col-11 info_negocio">
 
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/menu_deldia.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/menu_deldia.inc'; ?>
                                 
-                    <?php // require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/estrellas1negocioderecha.inc';?><?php  
+                    <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/estrellas1negocioderecha.inc';?><?php  
 
                                 if(empty($bar_rest->e_menu)){?>
                                     <div class="descrip_negocio" style="margin-top: 1.2em;"><?php
                                 }else{?>   
                                     <div class="descrip_negocio" style="margin-top: 0.5em;"><?php } ?>
-                                            <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/descripcion.inc';?>
+                                            <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcion.inc';?>
                                     </div>
                                 </div>
 
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/leerMas.inc'; ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/leerMas.inc'; ?>
                         </div>
 
 
                 <div class="col-xl-1 text-center col-lg-1 col-md-1 col-sm-1 col-1">
-                <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cupon_descuento.inc';?>
+                <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cupon_descuento.inc';?>
                 </div>
 
 
@@ -92,7 +92,7 @@ ob_start(); ?>
     
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

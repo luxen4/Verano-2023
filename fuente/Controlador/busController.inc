@@ -20,10 +20,10 @@ class BusController
 
                 try {
                     //require __DIR__ . '/../../fuente/Modelo/Bus.inc';   // Ha entrado //
-                    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Modelo/Bus.inc';    // Para el host
+                    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Modelo/Bus.inc';    // Para el host
                     $bus = new Bus($datos);
 
-                    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+                    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
                     $datos = (new BusRepositorio())->nuevoBus($datos);
                     
                     ?><script>window.location.href="index.php?ctl=inicio/";</script><?php
@@ -63,7 +63,7 @@ class BusController
 
         $plazasOcupadas=[]; 
 
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plazasOcupadas.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plazasOcupadas.inc'; 
   
 
 
@@ -220,7 +220,7 @@ class BusController
                         $info= $_POST['info'];
         
                         // Necesito saber si ese número de cuenta es el del Cliente                                                                                                                                     //var_dump($info);die(); 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                         $numCuentaCorrecto = (new ClienteRepositorio())->numCuentaCorrecto($codCliente);
 
                         // Si son iguales, que reserve la plaza
@@ -282,11 +282,11 @@ class BusController
                  $datos = $_POST['datos'];
                 
                 try {
-                    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Modelo/Bus.inc';    // Para el host
+                    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Modelo/Bus.inc';    // Para el host
                     $bus = new Bus($datos);
 
                    // require __DIR__ . '/../../fuente/Repositorio/BusRepositorio.inc';
-                    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+                    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
 
                     $datos = (new BusRepositorio())->modificarBus($datos, $codBus);
                     ?><script>window.location.href="index.php?ctl=todosbusesdeunaagenciabuses";</script><?php
@@ -316,7 +316,7 @@ class BusController
     public function todosBusesdeUnaAgenciaBuses(){
     
         $codAgenciaBuses = $_SESSION['perfil']["cod_AgenciaAutobus"];
-        require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';   // Para el host
+        require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';   // Para el host
 
         $buses = (new BusRepositorio())->todosBusesdeUnaAgenciaBuses($codAgenciaBuses);
       
@@ -359,7 +359,7 @@ class BusController
     // Función que devuelve la interface de la Información de un Bus que va a un Destino
     public function informacionBusDestino(){
         $ref_Destino=$_SESSION['ref_Destino']; //echo "Estoy"; die();
-        require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';  
+        require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';  
         if (isset($_POST['guardarcambiosbilletes'])) { 
 
             if(isset($_POST['asegura'])){  //var_dump($_POST); die();
@@ -383,7 +383,7 @@ class BusController
            // var_dump($plazasEliminar);
 
             // Recorrer todas las seleccionadas y eliminarlas en bloque
-            //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc'; 
+            //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc'; 
 
             $obj = (new ViajarRepositorio())->eliminarVariasReservasBus($ref_Destino, $plazasEliminar);
         }

@@ -21,7 +21,7 @@ if(!empty($plazasAocupar["asientoseleccionado"])){          // Servidor gratuito
     $sql="SELECT * FROM VIAJAR WHERE cod_Destino= $cod_Destino AND cod_Cliente=$codCliente AND cod_Bus=$codBus AND plaza_Bus=$plazasAocupar";	
 
 
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
     $result = $gbd->query($sql); 
     $results = $result -> fetchAll(\PDO::FETCH_OBJ); 
@@ -136,7 +136,7 @@ public function clienteOpasajero($ref_Destino,$plaza_Bus){
 
 // Función que devuelve el nombre de un ocupante
 public function nombreClienteOcupacionPlaza($ref_Destino){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
             try {
                     

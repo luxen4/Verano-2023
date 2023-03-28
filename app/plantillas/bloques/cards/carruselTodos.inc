@@ -22,10 +22,10 @@
     </div>
 
     <div class="redes">
-            <?php //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/redesSocialesIconosLargo.inc';?>
+            <?php //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconosLargo.inc';?>
           
                 <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/redesSocialesIconosPrincipal.inc';?>   
+                    <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/redesSocialesIconosPrincipal.inc';?>   
                 </div>
            
     </div>

@@ -20,7 +20,7 @@ class comerController
             /* var_dump($datos); var_dump($datos['diasemana']); var_dump($datos['lugardestino']); var_dump($datos['agenciaviajes']);*/
         }
 
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
   
         $lugaresDondeComer=(new ComerRepositorio())->dondeComer($cod_Destino);
 
@@ -32,7 +32,7 @@ class comerController
     public function comerDestino()
     {
         // die();
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
         $cod_Localidad=$_SESSION['datosdestino'];
  
         $negocios_localidad=(new ComerRepositorio())->todosNegociosLocalidad($cod_Localidad);
@@ -47,7 +47,7 @@ class comerController
     // "All Bars & Restaurants" y el administrador puede activarlos o borrarlos
     public function mostrarTodosBaresRestaurantes()
     {
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
         $_TodosBarRestaurantes=(new ComerRepositorio())->TodosBaresRestaurantes();
         //var_dump($_TodosBarRestaurantes);die();
 
@@ -96,14 +96,14 @@ class comerController
     // Función que crea y carga las tablas de los Bares y Restaurantes predeterminados
     public function cargarBarRestaurantes()
     {
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/poblarbarrestaurantes.php';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/poblarbarrestaurantes.php';
     }
 
 
     // Función prueba
     public function mostrarWrap(){
         ?><script>alert("ooooooh");</script> <?php
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/poblarbarrestaurantes.php';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/poblarbarrestaurantes.php';
     }
 
 

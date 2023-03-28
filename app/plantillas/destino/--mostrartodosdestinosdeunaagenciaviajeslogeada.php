@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 <div class="container-fluid"> 
 
 <div class="container">
@@ -150,7 +150,7 @@ if (!empty($destinos)) {
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

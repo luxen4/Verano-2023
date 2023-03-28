@@ -3,7 +3,7 @@ use miId\fuente\Repositorio\LocalidadRepositorio; // Ajax
     $ref_Localidad=$_POST['localidad'];
 	$posicion_Siguiente=$_POST['posicion_Siguiente'];
 
-	require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/LocalidadRepositorio.inc'; 
+	require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/LocalidadRepositorio.inc'; 
 	//include $_SERVER['DOCUMENT_ROOT'] . LOCALIDADREPOSITORIO;
 	$nombreImagen = (new LocalidadRepositorio())->nombreImagen($ref_Localidad,$posicion_Siguiente);
 

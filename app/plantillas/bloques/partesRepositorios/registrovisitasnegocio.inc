@@ -10,7 +10,7 @@ if ($datos['direccion_Interface']=="fichanegocio") {
     $datos['ref_negocio']=$bar_rest[0]->ref_negocio;
     $datos['ref_IpRemota']="IP" . $_SERVER['REMOTE_ADDR'];
 
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/IpRemotaInterfaceRepositorio.inc';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/IpRemotaInterfaceRepositorio.inc';
     $ultima_ref_VisitaFichaNegocio = (new IpremotainterfaceRepositorio())->ultimaRefVisitaNegocio();
     
     if ($ultima_ref_VisitaFichaNegocio[0]->ref_VisitaFichaNegocio==null) {

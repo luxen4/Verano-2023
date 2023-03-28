@@ -20,7 +20,7 @@
     </div>                                         
 
 
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/estrellas1negocioderecha.inc';?>                                    
+    <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/estrellas1negocioderecha.inc';?>                                    
     
     <div class="descrip_negocio">
         <p><?php echo pasarUtf8($bar_rest->descripcion); ?></p>
@@ -39,7 +39,7 @@
                 <a id="<?php echo $ref_negocio; ?>" href="#ventana1" onclick="nombreNegocio(this)" data-toggle="modal" > Comentar!</a>
             </div>
         </div>
-        <?php  require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/tuopinion.php';?>
+        <?php  require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/tuopinion.php';?>
 
 
         <div class='col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6'>
@@ -57,7 +57,7 @@
         /* $ip_add = $_SERVER['REMOTE_ADDR'];
         var_dump($ip_add);*/
 
-        require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/Pop-Up_todasopiniones.inc';?>
+        require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/Pop-Up_todasopiniones.inc';?>
 
     </div>                                    
 

@@ -472,7 +472,7 @@ public function todosDestinosPorAgenciaViajes($ref_AgenciaViajes){
   
         try {
              //include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-             include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';  
+             include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';  
             $sql="SELECT d.cod_Destino,l.nombre_Localidad,l.provincia,l.comunidad,l.pais,d.dia_Semana,d.fecha_Viaje,
             av.nombre_Agencia,d.kilometrosIdaVuelta, d.euros, d.ref_AgenciaViajes ,av.telefono_Agencia, av.email
             FROM DESTINO d 
@@ -552,7 +552,7 @@ var_dump($sql);
 // Función que busca la información de un Billete contratado por un Cliente.         (Después se genera el PDF)
 public function destinosContratado($cod_destino,$plaza_Bus){
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';                
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';                
 
             $sql=  "SELECT d.cod_Destino,l.nombre_Localidad, d.fecha_Viaje,
                             av.nombre, av.telefono_Reserva,	av.lugar_SalidaPredeterminado,
@@ -579,7 +579,7 @@ public function destinosContratado($cod_destino,$plaza_Bus){
 // Función que cancela un billete ya comprado de un cliente desde la tabla "Tus Destinos contratados"
 public function cancelarBillete($codDestino,$codCliente,$plaza):bool{
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';                
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';                
             $gbd = new \PDO("mysql:host=$host;dbname=$dbname", $username, $contrasena);
 
             $sql=  "DELETE FROM VIAJAR WHERE cod_Destino='$codDestino' AND cod_Cliente='$codCliente' AND plaza_Bus='$plaza'";

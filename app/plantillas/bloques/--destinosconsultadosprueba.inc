@@ -22,7 +22,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                         $nombreAgenciaViajes = $destinos[$i]->nombre_Agencia;
                         //$nombreAgenciaViajes=utf8_encode($destinoss[$i]->nombre);
                         try {
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
                             $sqlCodigoBus = "SELECT distinct cod_Bus FROM DESTINO
                                                         WHERE cod_Destino=$codDestino";
@@ -73,7 +73,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                         }
 
 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                         $vistaPublicidadGeneral=(new ComerRepositorio())->tipoPublicidadHome2();
                         $vistaPublicidadGeneral=$vistaPublicidadGeneral[0]->posicion;
                         
@@ -100,24 +100,24 @@ use miId\fuente\Repositorio\ComerRepositorio;
                                             if (!empty($tipoPublicidadHome)) {// Exceso de publicidad y espacios vacios //
                                                 
                                                 if ($tipoPublicidadHome[0]->modo_Apariencia==1) {
-                                                    //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
-                                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha1negocio.inc';
+                                                    //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
+                                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha1negocio.inc';
                                                 }
     
                                                 if ($tipoPublicidadHome[0]->modo_Apariencia==3) {
-                                                    //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
-                                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha3negocio.inc';
+                                                    //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
+                                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha3negocio.inc';
                                                 }
     
                                                 if ($tipoPublicidadHome[0]->modo_Apariencia==0) {
-                                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';
+                                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';
                                                 }
                                                 $veces=1;
                                             
                                         }
                                     
                                 } else {
-                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';
+                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';
     
                                     if (empty($tipoPublicidadHome)) {?>
     
@@ -125,7 +125,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                                             <?php
     
                                             if ($tipoPublicidadHome[0]->modo_Apariencia==1) {
-                                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio1.inc';
+                                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio1.inc';
                                             }?>
                                         </div>
     
@@ -133,7 +133,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                                         <div >
                                             <?php
                                             if ($tipoPublicidadHome[0]->modo_Apariencia==2) {
-                                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio3.inc';
+                                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio3.inc';
                                             }?>
                                         </div>
     
@@ -146,7 +146,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                         
                         
                         
-                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc'; ?>    
+                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc'; ?>    
                         
                         
                         

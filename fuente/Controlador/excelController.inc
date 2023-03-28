@@ -13,10 +13,10 @@ class excelController
         // Función que genera un archivo Excel de Ocupaciçon de un Bus.    
         public function generaExcelOcupacionbus (){ 
           $ref_Destino=$_SESSION['ref_Destino'];
-          require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';
+          require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';
           $datosBusDestino = (new ViajarRepositorio())->infoOcupacionBus($ref_Destino);
           $_SESSION['datos_busdestino']=$datosBusDestino; 
-        // include __DIR__ . '/../../../Verano-2022\app\plantillas\bus\generaexcel\excelOcupacionBusOK.php';
+        // include __DIR__ . '/../../../Verano-2023/app\plantillas\bus\generaexcel\excelOcupacionBusOK.php';
 
 
         
@@ -44,7 +44,7 @@ class excelController
         <body>
         
         
-        <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+        <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
         
         <!DOCTYPE html>
         <html lang="en">
@@ -122,7 +122,7 @@ class excelController
                         $asiento=1; $esOnoCliente=""; $infoCliente=""; $plaza_Bus=1;    
 
                         for ($i = 1; $i <= 63; $i++) { ?>
-                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2022\app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
+                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2023/app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
                             <?php
                                                 $plaza_Bus=$i;  
 

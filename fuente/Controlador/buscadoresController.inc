@@ -77,7 +77,7 @@ public function cuadrobuscadoresnegocios(){
 
 // Función que devuelve Destinos Filtrados después del Buscador. 
 public function todosNegociosLocalidad(){
-      include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/partesControladores/verFicha.inc';
+      include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/partesControladores/verFicha.inc';
   
       $rotulo=1;
       require __DIR__ . '/../../app/plantillas/bloques/general/todosNegociosLocalidad.inc';

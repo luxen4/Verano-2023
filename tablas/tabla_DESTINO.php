@@ -43,14 +43,14 @@ if (mysqli_query($conn, $creaDESTINO)) {
 /*ACTUALIZADO SET lc_time_names = "es_ES"; /* Para que traduzca a Español el dia de la semana */
 
 /* Inserción de Destinos */    
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_GranReserva.php';
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_ZafiroTours.php';
-	// require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_AzulMarino.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_GoTravell_2023.php';
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_Ortensia.php';
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_ComisionesObreras.php';
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_Rotuprint.php';
-// require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Destinos/poblar_Destinos_BidasoaViajes.php';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_GranReserva.php';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_ZafiroTours.php';
+	// require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_AzulMarino.php';
+    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_GoTravell_2023.php';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_Ortensia.php';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_ComisionesObreras.php';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_Rotuprint.php';
+// require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Destinos/poblar_Destinos_BidasoaViajes.php';
 
 
  

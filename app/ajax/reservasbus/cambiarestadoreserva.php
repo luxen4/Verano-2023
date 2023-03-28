@@ -1,6 +1,6 @@
 <?php
 use miId\fuente\Repositorio\ViajarRepositorio; // Ajax
- include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\utilidades\constantes.inc';
+ include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\utilidades\constantes.inc';
  include $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
     $ref_Destino=$_POST['ref_Destino'];
     $plaza_Bus=$_POST['asiento'];

@@ -8,8 +8,8 @@
    
 
   
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
             <div class="container fondoplantabus"> 
                 <form action="" method="POST">
@@ -26,8 +26,8 @@
                             </div>
                         </div>-->
                      
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bus\plano_Logrobus_51plazas_0051LOG.inc' ?>
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\InfoDestino.inc' ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bus\plano_Logrobus_51plazas_0051LOG.inc' ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoDestino.inc' ?>
 
 
 
@@ -54,20 +54,20 @@
                                                        <!-- <label for="importepasajero">Importe Predeterminado del Viaje (podría tener descuento) </label><?php if(isset($datos)){if(isset($errores['importepasajero'])){?><span class="error"><?= $errores['importepasajero'].'</span>'?><?php }else{?><span class="ok">OK</span><?php }};?>-->
                                                     </div>
 
-                                                    <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/formulariospartefinal.php' ?>
+                                                    <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/formulariospartefinal.php' ?>
 
                                                 </div>
                                             </div><?php
 
                                         }else{ ?> 
-                                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/formularios.php' ?><?php 
+                                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/formularios.php' ?><?php 
                                         } ?>
 
                                    
                                         
                                     <div><?php 
                                         if($_SESSION['perfil']['roll']=='agenciaviajes'){ ?>
-                                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/infoOcupacionBus.php' ?><?php  
+                                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/infoOcupacionBus.php' ?><?php  
                                         } ?>              
                                     </div>
                                 </div><?php
@@ -77,7 +77,7 @@
            
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

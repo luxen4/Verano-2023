@@ -7,7 +7,7 @@ class PropietarioRepositorio{
     public function nuevoPropietarioNegocio($datos, $hash){
     
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql0='SET lc_time_names = "es_ES"';
             $sql = "INSERT INTO PROPIETARIO (ref_propietario, fecha_inscripcion, nombre, apellidos, telefono, email, ref_negocio, username, contrasena)
                     VALUES('ORO10001',default,'$datos[nombre]',' $datos[apellidos]', '$datos[telefono]', '$datos[email]', '$datos[nombre_negocio]',
@@ -40,7 +40,7 @@ class PropietarioRepositorio{
 // Función que busca el hash de un Propietario de un Negocio, parámetros: username(para buscar la contraseña "hash")
 public function hashPropietarioNegocio($datos){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT * FROM PROPIETARIO WHERE username='$datos[username]'";       
         $result = $gbd->query($sql);
         return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -56,7 +56,7 @@ public function hashPropietarioNegocio($datos){
  // Función que busca la información de un Propietario de un Negocio desde la ref_negocio
  public function infoPropietario($ref_negocio){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT * FROM MENU WHERE ref_negocio='$ref_negocio'";    
         $result = $gbd->query($sql);
         return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -72,7 +72,7 @@ public function hashPropietarioNegocio($datos){
 // Función que devuelve la info del Negocio desde la ref_negocio.
 public function infoNegocio($ref_negocio){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT * FROM BARRESTAURANTES WHERE ref_negocio='$ref_negocio'";
         $result = $gbd->query($sql);
         return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -86,7 +86,7 @@ public function infoNegocio($ref_negocio){
 // Función que devuelve el nombre del Negocio desde la ref_negocio.
 public function nombreNegocio($ref_negocio){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql = "SELECT nombre FROM BARRESTAURANTES WHERE ref_negocio='$ref_negocio'";
         $result = $gbd->query($sql);
         return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -116,7 +116,7 @@ public function nombreNegocio($ref_negocio){
 // Función que devuelve el número de cuenta de un Cliente
    public function numCuentaCorrecto($codCliente){
        //echo "<br>Entro a ClienteRepositorio->numCuentaCorrecto"; 
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
     try {
         $sql0='SET lc_time_names = "es_ES"';
@@ -146,7 +146,7 @@ public function nombreNegocio($ref_negocio){
 public function modificarCliente($datos, $hashActual, $nuevoHash){
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "UPDATE CLIENTE
         SET /*username='$datos[username]',*/ nombre='$datos[nombre]', apellidos='$datos[apellidos]', nif='$datos[nif]',TlfnoParticular='$datos[tlfnoParticular]',
@@ -177,7 +177,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     public function darDeBajaCliente($datos, $hashActual){
 
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE contrasena='$hashActual'";
  
             $result = $gbd->query($sql);?>
@@ -205,7 +205,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     // El username no se puede cambiar ya que es clave UNIQUE //
     public function darDeBajaClientePorAministrador($datos){
         try {  
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql = "DELETE FROM CLIENTE WHERE cod_Cliente='$datos[clienteaeliminar]'";
  
             $result = $gbd->query($sql);?>
@@ -233,7 +233,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
     public function mostrarTodosClientes()
     {
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             $sql="SELECT cod_Cliente, nombre,apellidos,nif,calle,cp,localidad,provincia,comunidad,pais,email,TlfnoParticular,
             fNacimiento,sexo FROM CLIENTE";
 
@@ -259,7 +259,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
         $contrasena=$_SESSION['perfil']['contrasena'];
      
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
                 $sql="SELECT cod_Cliente,username,nombre,apellidos,nif,TlfnoParticular,email,
                     fNacimiento,sexo,calle,cp,localidad,provincia,comunidad,pais,contrasena,roll FROM CLIENTE 
@@ -285,7 +285,7 @@ public function modificarCliente($datos, $hashActual, $nuevoHash){
         require __DIR__ . '/../../app/conf/configuracionfantasma.inc';
 
         try {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
             $sql = "DELETE FROM CLIENTE";
             $result = $gbd->query($sql); ?>
             <script>alert("¡TODOS CLIENTES ELIMINADOS CON EXITO!");</script><?php

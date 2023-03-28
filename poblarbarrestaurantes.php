@@ -5,7 +5,7 @@
 
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_CONTRATO.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_CONTRATO.php';
 /////////////////////////////////////////////////////////////////////////////
 
  
@@ -16,37 +16,37 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_CONTRATO.php
 
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_BARRESTAURANTES.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_BARRESTAURANTES.php';
 /////////////////////////////////////////////////////////////////////////////
 
 
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_POSICIONES.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_POSICIONES.php';
 /////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_MENUBASICO.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_MENUBASICO.php';
 /////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_MENUPERSONAL.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_MENUPERSONAL.php';
 /////////////////////////////////////////////////////////////////////////////
  
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_MODELOMENU.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_MODELOMENU.php';
 /////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_RELACIONMENUSNEGOCIOS.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_RELACIONMENUSNEGOCIOS.php';
 /////////////////////////////////////////////////////////////////////////////
 
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_IPINTERFACES.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_IPINTERFACES.php';
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/tablas/tabla_VISITASNEGOCIOS.php';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/tablas/tabla_VISITASNEGOCIOS.php';
 
 
 

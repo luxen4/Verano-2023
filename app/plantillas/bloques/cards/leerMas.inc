@@ -16,7 +16,7 @@
     </div>
 
     <div>
-        <?php //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cupon_descuento.inc';?>
+        <?php //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cupon_descuento.inc';?>
     </div>
 
 

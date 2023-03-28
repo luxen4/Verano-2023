@@ -1,9 +1,12 @@
 <?php
 
+/* Cosntantes */
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2023/app/utilidades/constantes.inc'; 
+
  	$lat=$_POST['latitude']; $lon=$_POST['longitude'];
     $googleApiUrl ="https://api.openweathermap.org/data/2.5/weather?lat=" . $lat . "&lon=" . $lon . "&appid=364b8c96a92b46376a612bae9241de67&lang=en"; ?>
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\curl_OpenWeather.inc';?> <?php
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/curl_OpenWeather.inc';?> <?php
 
     if (!$data == null) { 
 

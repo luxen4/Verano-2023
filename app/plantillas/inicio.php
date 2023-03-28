@@ -1,10 +1,10 @@
 <?php ob_start();?>
 
   <!--<link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">-->
-  <?php // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades2.inc'; ?>
+  <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
   <link rel="stylesheet" type="text/css" href="web/css/stylesmostrarfiltrados.css">
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Modelo/buscadoresfantasma.inc'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Modelo/buscadoresfantasma.inc'; ?>
 
   <script>
         $(".flip").click(function(){
@@ -15,12 +15,12 @@
       });
   </script>
  
-  <?php // <div class="flex"> require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionprincipal/saludoIzda.inc';  </div>?>
+  <?php // <div class="flex"> require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/saludoIzda.inc';  </div>?>
 
 
  <?php $contenido = ob_get_clean() ?>
  
- <?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php' ?>
+ <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php' ?>
  <?php include $_SERVER['DOCUMENT_ROOT'] . BASE ?>
  
 

@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\OpinionesRepositorio; // Ajax
     $ref_negocio=$_POST['ref_Negocio'];
 
 
-require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/OpinionesRepositorio.inc'; 
+require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/OpinionesRepositorio.inc'; 
 // Número de registros
 $num_RegistrosVotos = (new OpinionesRepositorio())-> numRegistrosVotos();
 $num_RegistrosVotos = $num_RegistrosVotos[0]->num_RegistrosVotos;

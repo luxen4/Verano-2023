@@ -15,7 +15,7 @@ $dompdf= new Dompdf($Options);
 
 $descuento='Vale Descuento por: 
 <img style="width: 50px; height: 30px;" 
-src="C:\xampp\htdocs\Verano-2022\app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\100dto.jpg"/>';
+src="C:\xampp\htdocs\Verano-2023/app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\100dto.jpg"/>';
 
 
 
@@ -120,14 +120,14 @@ $cuerpo = '<html>
 
 
 <img style="width: 900px; height: 600px;" 
-src="C:\xampp\htdocs\Verano-2022\app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\tarjetadescuento.jpg"/>
+src="C:\xampp\htdocs\Verano-2023/app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\tarjetadescuento.jpg"/>
 
 <div class="centrado" style="margin-top:-29em; margin-left:35em">
 
 <h3 style="margin-left:-5em; color:#781617">Queremos tener un detalle contigo y <br>te obsequiamos con un descuento de:</h3>
 
 <img style="width: 120px; height: 100px; margin-top:0em;" 
-src="C:\xampp\htdocs\Verano-2022\app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\\'  . $rutaDescuento . '"/>
+src="C:\xampp\htdocs\Verano-2023/app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\\'  . $rutaDescuento . '"/>
 
 <h1 style=" width:60%; text-align: center; margin-left:-2.8em; color:#A70008">' . $_SESSION['datos_negocio'][0]->nombre .'</h1>
 <p style="margin-top:-1em; margin-left:-5.5em;  width:60%; text-align: center; color:#A70008"><span style="text-decoration: underline;">' .
@@ -180,7 +180,7 @@ body{
 <p>Hello</p>
 
 <img style="width: 50px; height: 30px;" 
-src="C:\xampp\htdocs\Verano-2022\app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\100dto.jpg"
+src="C:\xampp\htdocs\Verano-2023/app\plantillas\generadorpdf_CuponDescuento\pruebita7\dompdf\images\100dto.jpg"
      
 />
 

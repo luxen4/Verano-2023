@@ -2,7 +2,7 @@
 
     <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 
 
 
@@ -158,7 +158,7 @@
 
 
                
-                      <?php //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/menus/fotos_fondomenus.inc'; ?>
+                      <?php //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/menus/fotos_fondomenus.inc'; ?>
 
               
 
@@ -272,7 +272,7 @@ Completar el menú
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 <style>

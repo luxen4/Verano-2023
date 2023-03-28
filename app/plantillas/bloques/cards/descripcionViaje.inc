@@ -1,6 +1,6 @@
 <!--Descripción de un ViajeOK--> 
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/css_descripcionViaje.inc';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_descripcionViaje.inc';?>
     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">   
             <h5 class="destino" style="margin-left: 1em; border-bottom:none;">
                 <div>
@@ -9,7 +9,7 @@
                     </div>
 
                     <div>
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/elTiempo.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempo.inc'; ?>
                     </div>    
                 </div>
             </h5>
@@ -22,10 +22,10 @@
         </div><?php 
             if (!empty($_SESSION['perfil'])) {
                 if ($_SESSION['perfil']['roll'] === "cliente" || $_SESSION['perfil']['roll'] === "agenciaviajes" || $_SESSION['perfil']['roll'] === "admin"){ ?>
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/estadodestino.inc'; }       
+                    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; }       
 
             }else{
-               // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/estadodestino.inc'; 
+               // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; 
             } ?>
     </div>
 
@@ -47,11 +47,11 @@
 
                 <div class="row" style="margin: auto;">
                     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/estadodestino.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; ?>
                     </div>
                 </div>
                 
-                <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
+                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
                 
                 <div class="row" style="margin: auto;">
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                         </div>
                     </div><?php 
 
@@ -114,13 +114,13 @@
 
                 }else{ ?>
                         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                         </div><?php
                 }
             
             } ?>
 </div>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/popups/horariosAgencias.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popups/horariosAgencias.inc'; ?>
 
 
  

@@ -57,4 +57,4 @@ if (mysqli_query($conn, $pueblaHOTEL)) {
 
 
 
-/* 10 LAREDO */ //require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Hoteles_Localidad/poblar_HotelesLaredo.php';
+/* 10 LAREDO */ //require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Hoteles_Localidad/poblar_HotelesLaredo.php';

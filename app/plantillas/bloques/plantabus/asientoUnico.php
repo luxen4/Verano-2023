@@ -5,14 +5,14 @@
         if ($plazasOcupadas[$k]==$i) {
             if ($entra==0) {
                 $entra=1; ?>
-                <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/asiento.php' ?>
+                <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/asiento.php' ?>
     <?php break;
             }
         } 
     }
 
     if ($entra==0) {?>
-    <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/asientoVacio.php' ?>
+    <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/asientoVacio.php' ?>
             
 
 

@@ -1,6 +1,6 @@
 <?php use miId\fuente\Repositorio\DestinoRepositorio; 
 
-//include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc'; 
+//include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc'; 
 // include $_SERVER['DOCUMENT_ROOT'] . DESTINOREPOSITORIO; 
 $destino = (new DestinoRepositorio())->infoDestino($ref_Destino);?>
     <div class="row">

@@ -53,7 +53,7 @@
                                             </div>
                                         </div>
                             </div>
-                                <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
+                                <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
                         </div>
                     </article>
                 </div><?php
@@ -109,7 +109,7 @@
                                         </div>
                                     </div>
                         </div>
-                            <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
+                            <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
                     </div>
                 </article>
             </div><?php
@@ -172,7 +172,7 @@
                                     </div>
                                 </div>
                     </div>
-                        <?php  include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
+                        <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
                 </div>
             </article>
         </div><?php

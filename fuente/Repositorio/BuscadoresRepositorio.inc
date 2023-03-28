@@ -32,7 +32,7 @@ public function filtrarDestinos($datos){
     }
     
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     
         $sql="SELECT distinct d.ref_Localidad, d.cod_Destino, l.nombre_Localidad, l.provincia, l.comunidad, l.pais, l.ruta_imagen1, 
                     d.dia_Semana,d.fecha_Viaje,/*b.matricula,*/ av.nombre_Agencia, d.euros 
@@ -60,7 +60,7 @@ public function filtrarDestinos($datos){
 // Función que devuelve los Negocios filtrados por Localidad desde el Cuadro/Buscador
 public function filtrarNegociosLocalidad($ref_Localidad){
 
-    try {include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+    try {include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
         $sql="SELECT * FROM BARRESTAURANTES br
         /*   INNER JOIN CONTRATOBARRESTAURANTES cbr on cbr.cod_contratobarrestaurantes = br.cod_barrestaurantes 

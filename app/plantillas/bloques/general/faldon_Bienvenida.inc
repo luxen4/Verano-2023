@@ -7,7 +7,7 @@
                              
               if($_SESSION['perfil']['roll']==="admin"){
                   //echo("Hola " . $_SESSION['perfil']['nombre']. ', estás conectado como <br><span class="admin"> ***ADMINISTRADOR***</span>');
-                  // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; 
+                  // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; 
                   echo('<span class="bienvenido">Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . ', BIENVENIDO!,<br><span class="adminnnnn"> ***ADMINISTRADOR***'); //   
                 }
 

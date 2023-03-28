@@ -13,7 +13,7 @@
 
               <div id="navegacion_filtros" class="cuadros_navegacion">
 
-              <?php include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2022\app\plantillas\bloques\navegacion\navegacionDrcha\restaurantes.inc'; ?>
+              <?php include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\navegacion\navegacionDrcha\restaurantes.inc'; ?>
                
               </div>
 

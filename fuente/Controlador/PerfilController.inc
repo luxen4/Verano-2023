@@ -36,7 +36,7 @@ class PerfilController
                     $cuerpo = 
                     "Hola" . $nombre . ": <br /><br />Se ha solicitado un reinicio de contraseña.
                     Para restaurar la contraseña, visita la siguiente dirección:
-                    <a href='localhost/Verano-2022/archivorama.php?ref_Usuario=$ref_Usuario&token=$token_Pasword'>Restablecer Contraseña</a>
+                    <a href='localhost/Verano-2023/archivorama.php?ref_Usuario=$ref_Usuario&token=$token_Pasword'>Restablecer Contraseña</a>
                     ";
                     ?>
 

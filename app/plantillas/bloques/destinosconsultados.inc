@@ -136,7 +136,7 @@ header img{height:200px;}
 
 <!--<link rel="stylesheet" type="text/css" href="web/css/styles.css">-->
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_cardDestinoHome.inc'; ?>    
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_cardDestinoHome.inc'; ?>    
 
 
 
@@ -147,8 +147,8 @@ header img{height:200px;}
         foreach ($destinos as $destino) { ?>
 
         <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12 destinos_cards"><?php
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_busDestino.inc';     // Info del bus que va a un Destino
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/info_tipoPublicidad.inc'; // Este archivo es para los "Donde Comer desplegable"
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_busDestino.inc';     // Info del bus que va a un Destino
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/info_tipoPublicidad.inc'; // Este archivo es para los "Donde Comer desplegable"
 
            // var_dump($vistaPublicidadGeneral);
 
@@ -156,24 +156,24 @@ header img{height:200px;}
 
                 if (!empty($lugaresDondeComer)) {?> 
                     <div class="row">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidad/publicidadderecha.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidad/publicidadderecha.inc'; ?>
                     </div><?php
                 } else {
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc'; ?>
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc'; ?>
                     
                     <?php
                     if (empty($tipoPublicidadHome)) {?>
 
                         <div><?php
                                 /*  if($tipoPublicidadHome[0]->modo_Apariencia==1){
-                                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio1.inc';
+                                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio1.inc';
                                 } */ ?>
                         </div>
 
                         <div >
                             <?php
                                 /* if($tipoPublicidadHome[0]->modo_Apariencia==2){
-                                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio3.inc';
+                                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio3.inc';
                                 } */?>
                         </div><?php
                     } else {} ;
@@ -183,7 +183,7 @@ header img{height:200px;}
                             //echo "Lugares donde Comer Vacio";
                         } else {}
                     
-                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc'; 
+                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc'; 
             } ?>                         
                             
         </div><?php

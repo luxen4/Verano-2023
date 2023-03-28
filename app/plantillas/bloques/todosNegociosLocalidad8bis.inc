@@ -3,7 +3,7 @@
 use miId\fuente\Repositorio\ComerRepositorio;
 ob_start(); 
 ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
    
 <?php $negocios_Localidad =$_SESSION['negocios_Localidad'];
 
@@ -14,7 +14,7 @@ ob_start();
                 <div class="row">
                     <?php
                     require __DIR__ . '/../../../fuente/Modelo/busquedas.inc';
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                         $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);?>
 
                         <div id="recomendamos" class="col-xl-12 text-center ">
@@ -73,7 +73,7 @@ ob_start();
                                                             
                                                             </h6>
 
-                                                            <?php // require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/estrellas1negocioderecha.inc';?>
+                                                            <?php // require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/estrellas1negocioderecha.inc';?>
 
                                                           
                                                             <div class="descrip_negocio">
@@ -191,7 +191,7 @@ ob_start();
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

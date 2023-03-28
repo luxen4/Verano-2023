@@ -1,14 +1,14 @@
 <?php use miId\fuente\Repositorio\DestinoRepositorio; 
 use miId\fuente\Repositorio\ViajarRepositorio;?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/css_tablaBusDestino.inc';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_tablaBusDestino.inc';?>
 
 <?php   // No va en el Servidor la llamada al ajax!  
-        // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_tablaBusDestino.inc';?><?php
+        // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_tablaBusDestino.inc';?><?php
        
         $ref_Destino=$_SESSION['ref_Destino'];
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/plazasOcupadas.inc'; ?>
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plazasOcupadas.inc'; ?>
 
 
 
@@ -24,17 +24,17 @@ use miId\fuente\Repositorio\ViajarRepositorio;?>
     
 </div>
 
-    <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2022\app\plantillas\bloques\destinos\rotuloSiNoPasajeros.inc'; no funciona en el servidor ?>
+    <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\rotuloSiNoPasajeros.inc'; no funciona en el servidor ?>
   
     <?php //use miId\fuente\Repositorio\ViajarRepositorio;
 // La info del BUS se hace solo por medio de la Agencia de Viajes Y SI HAY ASIENTOS OCUPADOS
-//require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';   // Para el host
+//require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';   // Para el host
 include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
     $infoBus = (new ViajarRepositorio())->infoOcupacionBus($ref_Destino); ?>
 
 <!--<input type="button" value="Redistribuir Bus">--><?php
     if(!empty($infoBus)){  ?>
-        <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2022\app\plantillas\bloques\destinos\tablaInfoBusDestino.inc'; no va en el servidor ?><?php
+        <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\tablaInfoBusDestino.inc'; no va en el servidor ?><?php
         
         
         // Viene de rotuloSiNoPasajeros
@@ -51,7 +51,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
                                             <input style="padding: 0.1em 4em; margin:0.5em;" class="btn btn-success" type="submit" name="generaexcelocupacionbus" value="Excel"> 
                                         </div>
 
-                                        <?php include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2022\app\plantillas\bloques\destinos\InfoDestino.inc';?>
+                                        <?php include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\InfoDestino.inc';?>
 
 <?php /*
                                         <div id="" class="col-xl-12 text-center col-lg-4 col-md-4 col-sm-4 col-4">
@@ -69,7 +69,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
                             
                                <?php 
                               
-                               include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/tablaOcupacionBus.inc'; ?>
+                               include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tablaOcupacionBus.inc'; ?>
                         </div>
                     </div>
                 </form>

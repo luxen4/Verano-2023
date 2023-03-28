@@ -241,7 +241,7 @@ Servidor Infinity Free
 	FTP Password    rYPHq8acqd4Y
 	FTP Port (optional)	21
 
-http://laya82.infinityfreeapp.com/Verano-2022/
+http://laya82.infinityfreeapp.com/Verano-2023/
 https://app.infinityfree.net/accounts
 https://app.infinityfree.net/accounts/epiz_31803423
 
@@ -400,7 +400,7 @@ https://www.lyrics.com/ simple
 
 
 
-  <?php // Para futuro include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/navegacionIzda/dropdownDondeComer.inc';?>   
+  <?php // Para futuro include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionIzda/dropdownDondeComer.inc';?>   
 
 
 
@@ -460,8 +460,8 @@ Hacer el bus real de azul Marino y Logrobus
 
 
 Simplificarlo
-  C:\xampp\htdocs\Verano-2022\app\plantillas\bloques\plantabus\tablaBusDestino.php
-  C:\xampp\htdocs\Verano-2022\app\plantillas\bloques\plantabus\pruebaFormularios.php
+  C:\xampp\htdocs\Verano-2023/app\plantillas\bloques\plantabus\tablaBusDestino.php
+  C:\xampp\htdocs\Verano-2023/app\plantillas\bloques\plantabus\pruebaFormularios.php
 
 
 

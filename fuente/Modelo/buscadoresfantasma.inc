@@ -1,6 +1,6 @@
 <!--Inicio buscadodesfantasma.inc-->
 <link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_buscadoresFantasma.inc">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc';  ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc';  ?>
     <div id="cnontenido_principal" class="" >
         <form action="" method="POST" <?php if(empty($bar_rest->e_menu)){?> style="margin-top: 0em;"<?php }?>>
             <div id="container_notepierdas" class="">
@@ -26,11 +26,11 @@
 
                 <div class="row" style="margin: auto;"><?php 
                     if(!empty($lugaresDondeComer)){ ?>
-                        <?php // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/barrestaurantesconsultados.inc'; ?> <?php 
+                        <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/barrestaurantesconsultados.inc'; ?> <?php 
                     }else{?>
                         <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12">
                             <?php $menuSoloRotulo=1; ?>
-                            <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/destinosconsultados.inc';?>   
+                            <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/destinosconsultados.inc';?>   
                         </div>
                     <?php }; ?>
                 </div>

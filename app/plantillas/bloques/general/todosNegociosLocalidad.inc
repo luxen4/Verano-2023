@@ -2,7 +2,7 @@
 <?php 
 use miId\fuente\Repositorio\OpinionesRepositorio;
 ob_start(); 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 
 <?php $arrayRestaurantesPintar=array(); ?>
 
@@ -17,10 +17,10 @@ if(empty($negocios_Localidad)){ ?><script>window.location.href="index.php?ctl=in
             $ref_Localidad=$negocios_Localidad[0]->ref_Localidad; ?>
 
             <div class="row">
-                <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/tituloPagina.inc';?>
+                <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/tituloPagina.inc';?>
             </div>
 
-            <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/general/negociosLocalidad.inc';?>         
+            <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/negociosLocalidad.inc';?>         
 
             
   
@@ -34,7 +34,7 @@ if(empty($negocios_Localidad)){ ?><script>window.location.href="index.php?ctl=in
 </form>
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

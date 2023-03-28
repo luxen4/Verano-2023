@@ -1,8 +1,8 @@
 <?php
 use miId\fuente\Repositorio\ViajarRepositorio; // Ajax
-// require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc'; 
+// require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc'; 
 
- include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\utilidades\constantes.inc';
+ include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\utilidades\constantes.inc';
  include $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO; 
 
  /*

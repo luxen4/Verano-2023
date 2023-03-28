@@ -2,7 +2,7 @@
 use miId\fuente\Repositorio\ComerRepositorio; // Ajax que extrae la foto del menú del día de un Negocio
 
     $ref_negocio=$_POST['ref_Negocio'];
-	require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; 
+	require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; 
 
 	$datosNegocio = (new ComerRepositorio())->menuNegocioAmano($ref_negocio);
 	if(empty($datosNegocio)){

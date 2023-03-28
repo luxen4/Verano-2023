@@ -10,7 +10,7 @@ class LocalidadRepositorio
     public function imagenesLocalidad($ref_Localidad)
     {
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
          
             $sql = "SELECT i.nombre_img1, i.nombre_img2, i.nombre_img3 FROM IMAGENESLOCALIDAD i
             INNER JOIN RELACIONIMAGENESLOCALIDAD r on i.ref_ImagenesLocalidad=r.ref_ImagenesLocalidad
@@ -32,7 +32,7 @@ class LocalidadRepositorio
     public function nombreImagen($ref_Localidad,$posicion_Siguiente)
     {
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
          
             $sql = "SELECT nombre_Img FROM IMAGENESLOCALIDAD WHERE ref_Localidad='$ref_Localidad' and posicion='$posicion_Siguiente' ";
             $result = $gbd->query($sql);
@@ -50,7 +50,7 @@ class LocalidadRepositorio
     public function todasLocalidades()
     {
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
          
             $sql = "SELECT * FROM LOCALIDAD";
             $result = $gbd->query($sql);
@@ -68,7 +68,7 @@ class LocalidadRepositorio
         public function todasLocalidades_ReferenciaYnombre()
         {
             try {
-                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
              
                 $sql = "SELECT ref_Localidad, nombre_Localidad FROM LOCALIDAD";
                 $result = $gbd->query($sql);

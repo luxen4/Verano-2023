@@ -3,7 +3,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
 ?>
 
 <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc';?>     
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc';?>     
 
 <div id="buscadordestinos" class="container" style="max-width: 400px;">
     <div class="row">
@@ -42,7 +42,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
 </div>
 
 <?php $contenido = ob_get_clean()?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 <style>

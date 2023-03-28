@@ -2,7 +2,7 @@
 use miId\fuente\Repositorio\ComerRepositorio;
 
 $ref_Localidad=$bar_rest->ref_Localidad;
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
 $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);
 
 $nombreLocalidad=$nombreLocalidad[0]->nombre_Localidad;?>
@@ -49,7 +49,7 @@ $nombreLocalidad=$nombreLocalidad[0]->nombre_Localidad;?>
 
 
             <div class="modal-body">
-                <form method="post" action="/Verano-2022/app/plantillas/bloques/opinionnegocio.php">
+                <form method="post" action="/Verano-2023/app/plantillas/bloques/opinionnegocio.php">
                    <!-- <label>Nombre:<input type="text" name="nombre" size="60" /></label><br />
                     <label>Dirección:<input type="text" name="direccion" size="60" /></label><br />
                     <label>E-mail:<input type="text" name="email" size="60" /></label><br />-->

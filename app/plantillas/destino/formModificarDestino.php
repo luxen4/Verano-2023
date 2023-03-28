@@ -1,7 +1,7 @@
 <?php ob_start(); // Formulario de inscripción de Destinos // ?>                                  
   <link rel="stylesheet" type="text/css" href='web/css/newandmodifying_destiny.css'/>     
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
   <?php $infoDestino=$_SESSION['infoDestino']; ?>
 <div class="container">
 
@@ -260,5 +260,5 @@
 </html>
 
 <?php $contenido = ob_get_clean() ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 

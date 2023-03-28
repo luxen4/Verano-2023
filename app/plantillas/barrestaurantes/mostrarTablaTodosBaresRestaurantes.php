@@ -14,7 +14,7 @@ ob_start() ?>
     <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">-->
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
     <div class="container">
         <div class="row">
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
@@ -43,7 +43,7 @@ ob_start() ?>
                                         for($i=0; $i<$numTodosBarRestaurantes; $i++){
                                             
                                             $cod_Localidad=$_TodosBarRestaurantes[$i]->ref_Localidad;
-                                           require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+                                           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                                             $_vecesDestino=(new ComerRepositorio())->numeroVecesDestino($cod_Localidad);
                                             
                                             ?>
@@ -164,7 +164,7 @@ ob_start() ?>
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

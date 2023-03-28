@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
 
     if(isset($_POST['verficha'])){ //var_dump($_POST); die();
       $ref_negocio=$_POST['datos']['ref_negocio'];
-      require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; 
+      require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; 
       $datosNegocio = (new ComerRepositorio())->datosNegocio($ref_negocio); 
       $_SESSION['datos_negocio']=$datosNegocio; //var_dump( $_SESSION['datos_negocio']);die();
       $_SESSION['vengodeficha']=1;
@@ -13,7 +13,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
 
     if(isset($_POST['hacercupon'])){ 
       $ref_negocio=$_POST['datos']['ref_negocio'];  //var_dump($_POST); die();
-      require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; 
+      require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; 
       var_dump($ref_negocio);
       $datosNegocio = (new ComerRepositorio())->datosNegocio($ref_negocio);
       $_SESSION['datos_negocio']=$datosNegocio;  //var_dump($_SESSION['datos_negocio']);die();

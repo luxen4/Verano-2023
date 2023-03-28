@@ -63,7 +63,7 @@ use miId\fuente\Repositorio\AgenciaViajesRepositorio;
     }
 ?>
 
-    <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques\partesControladores\contratar_modificar_cancelar.inc'; ?><?php
+    <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques\partesControladores\contratar_modificar_cancelar.inc'; ?><?php
 
 
 
@@ -140,7 +140,7 @@ if(isset($_POST['contratar']) ){
       $datos=$_POST['datos']; 
       $ref_AgenciaViajes=$datos["ref_AgenciaViajes"]; 
     
-      require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/AgenciaViajesRepositorio.inc';
+      require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaViajesRepositorio.inc';
 
       $obj = (new AgenciaViajesRepositorio())->folletoAgenciaViajes($ref_AgenciaViajes); ?><pre><script>//alert("¡Enhorabuena, ya forma parte de nosotros!")</script></pre><?php
           $nombre_Folleto=$obj[0]->nombre_Folleto;

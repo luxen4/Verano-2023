@@ -5,7 +5,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
 <div class="container">
     <div class="row"><?php $veces=0;
         foreach($destinos as $destino){
-        //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/muestradestinoTarjeta.inc';
+        //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/muestradestinoTarjeta.inc';
 
 
         if($veces / 4 == 1){ ?>
@@ -28,7 +28,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                             //$nombreAgenciaViajes=utf8_encode($destino->nombre);
 
                             try {
-                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
                                 $sqlCodigoBus = "SELECT distinct cod_Bus FROM DESTINO
                                                             WHERE cod_Destino=$codDestino";
@@ -79,7 +79,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                                 $googleApiUrl = "api.openweathermap.org/data/2.5/weather?q=Santander&appid=364b8c96a92b46376a612bae9241de67";
                             }
                             
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
 $vistaPublicidadGeneral=(new ComerRepositorio())->tipoPublicidadHome2();
 $vistaPublicidadGeneral=$vistaPublicidadGeneral[0]->posicion;
 
@@ -100,19 +100,19 @@ if($vistaPublicidadGeneral=="derecha"){?><?php
                 if (!empty($tipoPublicidadHome)) {
                     
                     if ($tipoPublicidadHome[0]->modo_Apariencia==1) {
-                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha1negocio.inc';}
+                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha1negocio.inc';}
 
                     if ($tipoPublicidadHome[0]->modo_Apariencia==3) {
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha3negocio.inc';}
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha3negocio.inc';}
 
                     if ($tipoPublicidadHome[0]->modo_Apariencia==0) {
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';}
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';}
                    
                 }?>
                 </div><?php
                 }else{
 
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';
 
         if(empty($tipoPublicidadHome)){?>
 
@@ -121,7 +121,7 @@ if($vistaPublicidadGeneral=="derecha"){?><?php
 
               /*  if($tipoPublicidadHome[0]->modo_Apariencia==1){
                     
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio1.inc'; 
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio1.inc'; 
                 } */ ?>
             </div>
 
@@ -130,7 +130,7 @@ if($vistaPublicidadGeneral=="derecha"){?><?php
                 <?php
                /* if($tipoPublicidadHome[0]->modo_Apariencia==2){
                     
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio3.inc';
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio3.inc';
 
                 } */?>
             </div>
@@ -139,7 +139,7 @@ if($vistaPublicidadGeneral=="derecha"){?><?php
         } ; 
     } 
 }elseif($vistaPublicidadGeneral=="abajo"){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';?>    
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';?>    
 <?php } ?>                         
                    
             </div><?php

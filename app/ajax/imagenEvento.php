@@ -5,7 +5,7 @@ use miId\fuente\Repositorio\EventoRepositorio; // Ajax
 
 
 
-	require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/EventoRepositorio.inc'; 
+	require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/EventoRepositorio.inc'; 
 	//include $_SERVER['DOCUMENT_ROOT'] . EVENTOREPOSITORIO;
 	$nombreImagen = (new EventoRepositorio())->rutaImagen($ref_Evento,$posicion_Siguiente);
 	

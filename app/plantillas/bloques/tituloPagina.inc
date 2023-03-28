@@ -1,7 +1,7 @@
 <?php  // Para el título de la página
 use miId\fuente\Repositorio\ComerRepositorio;
     require __DIR__ . '/../../../fuente/Modelo/busquedas.inc';
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
         $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);?>
 
         <div id="recomendamos" class="col-xl-12 text-center ">

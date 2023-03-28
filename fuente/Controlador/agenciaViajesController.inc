@@ -241,7 +241,7 @@ if(!empty($_SESSION['perfil'])){
                 $ref_AgenciaViajes=$datos["ref_AgenciaViajes"]; 
                 
               
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
         
                 $obj = (new AgenciaViajesRepositorio())->folletoAgenciaViajes($ref_AgenciaViajes); ?><pre><script>//alert("¡Enhorabuena, ya forma parte de nosotros!")</script></pre><?php
                     $nombre_Folleto=$obj[0]->nombre_Folleto;

@@ -20,7 +20,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . CLIENTEREPOSITORIO; ?>
     
 </script>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/formulariosReservaBilletes.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/formulariosReservaBilletes.inc'; ?>
 
 <div id="formnocliente" class="row sentar"> 
     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
@@ -117,7 +117,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . CLIENTEREPOSITORIO; ?>
 
 
 
- <?php //include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/plantabus/infoOcupacionBus.php' ?>
+ <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/infoOcupacionBus.php' ?>
 
  <style>
     #formnocliente, #formclienteplataforma, #formsocioagenciaviajes{

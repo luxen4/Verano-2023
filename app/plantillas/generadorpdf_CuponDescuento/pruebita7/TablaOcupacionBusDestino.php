@@ -20,7 +20,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . PASAJEROREPOSITORIO;
     <link rel="stylesheet" type="text/css" href="web/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 
 <?php 
 
@@ -77,7 +77,7 @@ $info_DestinoTelefonoImeil=(new DestinoRepositorio())->info_DestinoTelefonoImeil
                         $asiento=1; $esOnoCliente=""; $infoCliente=""; $plaza_Bus=1;    
 
                         for ($i = 1; $i <= 63; $i++) { ?>
-                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2022\app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
+                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2023/app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
             <?php
                                 $plaza_Bus=$i;  
 

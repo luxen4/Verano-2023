@@ -71,7 +71,7 @@ use miId\fuente\Repositorio\HotelesRepositorio;
 
                               <!--Restaurantes-->
                                 <details><summary>Restaurantes</summary>
-                                    <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/LocalidadRepositorio.inc'; ?> 
+                                    <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/LocalidadRepositorio.inc'; ?> 
                                     <?php $localidades = (new LocalidadRepositorio())->todasLocalidades_ReferenciaYnombre(); 
 
                                     $ref_LocalidadTitulo="";
@@ -84,7 +84,7 @@ use miId\fuente\Repositorio\HotelesRepositorio;
                                         } ?>
                                         
                                         <?php // Si no hay Restaurantes en esa Localidad, no pinta esa Localidad ?>
-                                        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc'; ?>
+                                        <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc'; ?>
                                         <?php $bar_restaurantes = (new ComerRepositorio())->nombreYenlace($ref_LocalidadTitulo);
                                         if(!empty($bar_restaurantes)){ ?>
                                             <details>
@@ -130,7 +130,7 @@ use miId\fuente\Repositorio\HotelesRepositorio;
                       } ?>
                       
                       <?php // Si no hay Restaurantes en esa Localidad, no pinta esa Localidad ?>
-                      <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/HotelesRepositorio.inc'; ?>
+                      <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/HotelesRepositorio.inc'; ?>
                       <?php $hoteles_Localidad = (new HotelesRepositorio())->hotelesLocalidad($ref_LocalidadTitulo);
                     //var_dump($hoteles_Localidad);
                       if(!empty($hoteles_Localidad)){ ?>

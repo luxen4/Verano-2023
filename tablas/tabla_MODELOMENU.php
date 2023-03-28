@@ -19,7 +19,7 @@
   }
   
   
-  /* 8 MySql OK */    ///require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/insertnegocioshondarribia.php';
+  /* 8 MySql OK */    ///require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/insertnegocioshondarribia.php';
   $pueblaMODELOMENU="INSERT INTO MODELOMENU(ref_modelomenu, nombre_modelomenu, tipo_menu)
           VALUES(/*cod_modelomenu*/
            

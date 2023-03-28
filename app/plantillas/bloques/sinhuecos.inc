@@ -14,25 +14,25 @@
 
            //$destinos=$destinosAgenciaViajesLogeada;?>
             <div class="col-xl-6 text-left col-lg-6 col-md-12 col-sm-12 col-12 destinos_cards"><?php
-                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc'; ?>
+                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc'; ?>
             </div>
 
             <?php 
             if($_SESSION['perfil']['name']==$nombreAgenciaViajes){
                 // Solo de la Agencia logueada ?>
                 <div class="col-xl-6 text-left col-lg-6 col-md-12 col-sm-12 col-12 destinos_cards"><?php
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc'; ?>
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc'; ?>
                 </div><?php
             }
 
         }elseif($_SESSION['perfil']['roll']=='cliente' || $_SESSION['perfil']['roll']=='admin'){
             // Todo
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc'; 
         }
 
     }else{ 
         // Todo
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/cardDestinoHome.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/cardDestinoHome.inc'; 
     }
 ?>
 

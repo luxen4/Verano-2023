@@ -16,7 +16,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
     <link rel="stylesheet" type="text/css" href='web/css/stylesnuevo.css'/>             <!--OK-->
 </head>
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 <?php $plazas=  $plazasBusTotales;
 
 //var_dump($plazas);die();
@@ -83,7 +83,7 @@ use miId\fuente\Repositorio\DestinoRepositorio;
 <?php 
 
 //require __DIR__ . '/../../../fuente/Repositorio/destinoRepositorio.inc'; 
-require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc'; 
+require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc'; 
 
 
 if(!empty($_SESSION['datosdestino'])){
@@ -202,7 +202,7 @@ if($_SESSION['perfil']['roll']=="admin" || $_SESSION['perfil']['roll']=='agencia
 </html>
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

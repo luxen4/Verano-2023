@@ -3,11 +3,11 @@
 
 <?php $menuSoloPopup=0; ?>
 
-<?php  require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/menuAmano.inc'; ?>
+<?php  require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/menuAmano.inc'; ?>
 
 <!--https://www.youtube.com/watch?v=MQFHfFyssH4 Buenísimo-->
 <!--<a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>-->
-<?php //include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php //include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 <div class="modal fade" id="ventana1" style="margin: 0 auto;">
     <div class="modal-dialog">
         <div class="modal-content" style="max-width: 380px;" >
@@ -34,14 +34,14 @@
                     // Necesito sacar su menú en el Pop-Up
                     //var_dump($infoMenu); //die();?>
 
-                    <?php require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/popups/imagenesmenusdeldia.inc'; ?>
+                    <?php require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popups/imagenesmenusdeldia.inc'; ?>
 
                 </div>
             </div>  
 
 
             <div class="modal-body">
-                <form method="post" action="/Verano-2022/app/plantillas/bloques/opinionnegocio.php">
+                <form method="post" action="/Verano-2023/app/plantillas/bloques/opinionnegocio.php">
                     <!-- <label>Nombre:<input type="text" name="nombre" size="60" /></label><br><br />
                     <label>Dirección:<input type="text" name="direccion" size="60" /></label><br><br />
                     <label>E-mail:<input type="text" name="email" size="60" /></label><br><br />-->
@@ -52,10 +52,10 @@
 
                 <?php 
                 $menuSoloPopup=1;
-                require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/ficha/menuAmano.inc'; ?>
+                require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/ficha/menuAmano.inc'; ?>
 
                 <div id="ref_negocio"></div>
-                    <?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/valoracion_MenuDia.inc'; ?> <!--Para cuando esté preparado con logueo de Clientes-->
+                    <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/valoracion_MenuDia.inc'; ?> <!--Para cuando esté preparado con logueo de Clientes-->
 
                 </form>
             </div>

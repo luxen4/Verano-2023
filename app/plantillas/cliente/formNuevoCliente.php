@@ -280,6 +280,6 @@
 
 
 <?php $contenido = ob_get_clean() ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 <!--<div id="seg" class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">-->
   

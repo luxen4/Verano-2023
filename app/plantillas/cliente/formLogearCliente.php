@@ -5,9 +5,9 @@
 
 
 <link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_formLogearCliente.inc">
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/js_formLogearCliente.inc'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_formLogearCliente.inc'; ?>
 
-<?php // include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/general/actores_predeterminados.inc'; ?>
+<?php // include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/actores_predeterminados.inc'; ?>
 
 
 
@@ -77,7 +77,7 @@
            
 
 <?php $contenido = ob_get_clean()?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 <style>
 #register_password{

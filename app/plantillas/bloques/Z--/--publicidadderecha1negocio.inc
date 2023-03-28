@@ -187,9 +187,9 @@
 
 
 
-<?php   require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/estrellas1negocioderecha.inc';?>
+<?php   require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/estrellas1negocioderecha.inc';?>
 
-<?php // require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/windex.php';?>
+<?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/windex.php';?>
     
     
    
@@ -313,7 +313,7 @@
 
 
 
-<?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/tuopinion.php';?>
+<?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/tuopinion.php';?>
 
 
 

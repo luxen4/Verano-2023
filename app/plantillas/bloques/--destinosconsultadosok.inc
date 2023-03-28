@@ -25,7 +25,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
                             //$nombreAgenciaViajes=utf8_encode($destinos[$i]->nombre);
 
                             try {
-                                include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc';
+                                include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc';
 
                                 $sqlCodigoBus = "SELECT distinct cod_Bus FROM DESTINO
                                                             WHERE cod_Destino=$codDestino";
@@ -82,7 +82,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
 
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
 $vistaPublicidadGeneral=(new ComerRepositorio())->tipoPublicidadHome2();
 $vistaPublicidadGeneral=$vistaPublicidadGeneral[0]->posicion;
 
@@ -106,14 +106,14 @@ $veces=0;
                     if (!empty($tipoPublicidadHome)) {
                         
                         if ($tipoPublicidadHome[0]->modo_Apariencia==1) {
-                            //require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha1negocio.inc';}
+                            //require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tarjetasarticulos.inc';
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha1negocio.inc';}
 
                         if ($tipoPublicidadHome[0]->modo_Apariencia==3) {
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/publicidadderecha3negocio.inc';}
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/publicidadderecha3negocio.inc';}
 
                         if ($tipoPublicidadHome[0]->modo_Apariencia==0) {
-                            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';}
+                            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';}
                         $veces=1;
                     }?>
                     </div><?php
@@ -122,25 +122,25 @@ $veces=0;
         }else{?>
             <div class="row" style="padding-right: 0.5em; padding-left: 0.5em;">
                 <div class="col-xl-6 text-center col-lg-6 col-md-12 col-sm-12 col-12"><?php
-                    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';?>
+                    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';?>
                 </div>
             </div><?php
 
             if(empty($tipoPublicidadHome)){?>
                 <div><?php
                     if($tipoPublicidadHome[0]->modo_Apariencia==1){
-                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio1.inc'; }?>
+                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio1.inc'; }?>
                 </div>
 
                 <div><?php
                     if($tipoPublicidadHome[0]->modo_Apariencia==2){
-                        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/negociovacio3.inc'; }?>
+                        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/negociovacio3.inc'; }?>
                 </div>
 
 <?php       }else{} ; 
         }  
 }elseif($vistaPublicidadGeneral=="abajo"){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sinhuecos.inc';?>    
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sinhuecos.inc';?>    
 <?php }?>
                
                

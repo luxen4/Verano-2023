@@ -10,7 +10,7 @@ class JuegosController{
   
   // Función que muestra los destinos a los que se ha apuntado un cliente.
 public function sudoku(){
-            /*require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+            /*require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
             $cod_Cliente=$_SESSION['perfil']["cod_Cliente"];
             $destinosContratados = (new DestinoRepositorio())->destinosDeUnClienteLogueado($cod_Cliente); */ 
 

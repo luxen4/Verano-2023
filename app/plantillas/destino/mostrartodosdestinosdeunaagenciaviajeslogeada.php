@@ -54,7 +54,7 @@ use SebastianBergmann\CodeCoverage\Report\PHP;
                     if (!empty($destinos)) {
                         foreach ($destinos as $destino) { 
                         $ref_Destino=$destino->ref_Destino;
-                            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ViajarRepositorio.inc';
+                            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ViajarRepositorio.inc';
                             $plazasOcupadas = (new ViajarRepositorio())-> numPlazasOcupadasDestino($ref_Destino); 
                             $plazasOcupadasPagadas = (new ViajarRepositorio())-> numPlazasOcupadasPagadas($ref_Destino); 
                             $plazasOcupadasNoPagadas = (new ViajarRepositorio())-> numPlazasOcupadasNoPagadas($ref_Destino); 
@@ -81,7 +81,7 @@ use SebastianBergmann\CodeCoverage\Report\PHP;
 
                                     <?php 
                                     // preguntar en qué estado está el viaje
-                                    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/DestinoRepositorio.inc';
+                                    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/DestinoRepositorio.inc';
                                     $estadoDestino = (new DestinoRepositorio())-> estadoDestino($ref_Destino); ?>
                                     
                                    
@@ -153,9 +153,9 @@ use SebastianBergmann\CodeCoverage\Report\PHP;
                                                             <!--https://getbootstrap.com/docs/5.0/components/buttons/-->
 
 
-                                                            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+                                                            <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
                                                             <?php $ref_Destino=$destino->ref_Destino; ?>
-                                                            <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
+                                                            <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
 
                                                         </td>
                                                     </tr><?php   
@@ -200,7 +200,7 @@ use SebastianBergmann\CodeCoverage\Report\PHP;
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 

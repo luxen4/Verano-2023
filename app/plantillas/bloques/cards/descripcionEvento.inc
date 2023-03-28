@@ -2,18 +2,18 @@
 <?php use miId\fuente\Repositorio\LocalidadRepositorio; 
 use miId\fuente\Repositorio\EventoRepositorio; 
 ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/scripts/css_descripcionViaje.inc';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_descripcionViaje.inc';?>
     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">   
             <h5 class="destino" style="margin-left: 1em; border-bottom:none;">
                 <div>
                     <div>
                    
-                        <?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/EventoRepositorio.inc';
+                        <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/EventoRepositorio.inc';
                                 $nombreCarpeta = (new EventoRepositorio())->carpetaImagen($ref_Evento,1);
                                 $nombreImagen = (new EventoRepositorio())->rutaImagen($ref_Evento,1); 
                                 ?>
 
-                        <a href="/Verano-2022/web/imagenes/eventos/<?=$nombreCarpeta[0]->nombre_Carpeta; ?>/<?=$nombreImagen[0]->nombre_ImagenEvento; ?>" alt="descripción de la foto">
+                        <a href="/Verano-2023/web/imagenes/eventos/<?=$nombreCarpeta[0]->nombre_Carpeta; ?>/<?=$nombreImagen[0]->nombre_ImagenEvento; ?>" alt="descripción de la foto">
                         <?php echo ($evento->nombre_Evento ); ?> <br>
                         <?php 
 
@@ -23,7 +23,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
                             echo ($localidad); 
                         }else{
                             $ref_Localidad2=$evento->ref_Localidad;
-                            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/LocalidadRepositorio.inc';    
+                            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/LocalidadRepositorio.inc';    
                             $provincia = (new LocalidadRepositorio())->provincia($ref_Localidad2); 
                             echo ($provincia[0]->provincia);
                         }
@@ -38,7 +38,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
                     </div>
 
                     <div>
-                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/elTiempo.inc'; ?>
+                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempo.inc'; ?>
                     </div>    
                 </div>
             </h5>
@@ -51,10 +51,10 @@ use miId\fuente\Repositorio\EventoRepositorio;
         </div><?php 
             if (!empty($_SESSION['perfil'])) {
                 if ($_SESSION['perfil']['roll'] === "cliente" || $_SESSION['perfil']['roll'] === "agenciaviajes" || $_SESSION['perfil']['roll'] === "admin"){ ?>
-                    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/eventos/estadoEvento.inc'; }       
+                    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/eventos/estadoEvento.inc'; }       
 
             }else{
-               // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/estadodestino.inc'; 
+               // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; 
             } ?>
     </div>
 
@@ -76,11 +76,11 @@ use miId\fuente\Repositorio\EventoRepositorio;
 
                 <div class="row" style="margin: auto;">
                     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/destinos/estadodestino.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; ?>
                     </div>
                 </div>
                 
-                <?php // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
+                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
                 
                 <div class="row" style="margin: auto;">
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
@@ -89,7 +89,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
                     </div>
 
                     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
                         </div>
 
                         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                         </div>
                     </div><?php 
 
@@ -147,13 +147,13 @@ use miId\fuente\Repositorio\EventoRepositorio;
 </div><?php
                 }else{ ?>
                         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                            <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
                         </div><?php
                 }
             
             } ?>
 </div>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/popups/horariosAgencias.inc'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popups/horariosAgencias.inc'; ?>
 
 
  

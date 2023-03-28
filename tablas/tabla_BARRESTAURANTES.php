@@ -63,26 +63,26 @@ if (mysqli_query($conn, $creaBARRESTAURANTES)) {
 
 
 /* AJO */
-/* BAKIO */                 require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Bakio2.php';
-/* 03 Biarritz */           require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Biarritz2.php';
-/* 04 CASTRO URDIALES */    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_CastroUrdiales2.php';
+/* BAKIO */                 require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Bakio2.php';
+/* 03 Biarritz */           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Biarritz2.php';
+/* 04 CASTRO URDIALES */    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_CastroUrdiales2.php';
 /* DEBA */
-/* 06 Hondarribia */        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Hondarribia2.php';
-/* 07 Getaria */            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Getaria2.php';
-/* 08 Hendaya */            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Hendaya2.php';
-/* 09 ISLA */               require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Isla2.php';
-/* 10 LAREDO */             require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Laredo2.php';
-/* 11 LEKEITIO */           require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Lekeitio2.php';
+/* 06 Hondarribia */        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Hondarribia2.php';
+/* 07 Getaria */            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Getaria2.php';
+/* 08 Hendaya */            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Hendaya2.php';
+/* 09 ISLA */               require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Isla2.php';
+/* 10 LAREDO */             require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Laredo2.php';
+/* 11 LEKEITIO */           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Lekeitio2.php';
 /* 12 MUSKIZ */
-/* 13 NOJA */               require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Noja2.php';
-/* 14 ORIO */               require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Orio2.php';
-/* 15 PLENTZIA */           require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Plentzia2.php';
-/* 16 SAN JUAN DE LUZ */    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_SanJuanDeLuz2.php';
-/* 17 SAN SEBASTIAN */      require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_SanSebastian2.php';
-/* 18 SANTANDER */          require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Santander2.php';
-/* 19 SANTOÑA */            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Santona2.php';
-/* 20 SOMO */               require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Somo2.php';
-/* 21 SOPELANA */           require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Sopelana2.php';
-/* 22 ZARAUTZ */            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Zarautz2.php'; 
-/* 23 ZUMAIA */             require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/insert_Restaurantes_Localidad/poblar_Zumaia2.php'; /* BUSCAR EL BAR CHIC */
+/* 13 NOJA */               require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Noja2.php';
+/* 14 ORIO */               require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Orio2.php';
+/* 15 PLENTZIA */           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Plentzia2.php';
+/* 16 SAN JUAN DE LUZ */    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_SanJuanDeLuz2.php';
+/* 17 SAN SEBASTIAN */      require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_SanSebastian2.php';
+/* 18 SANTANDER */          require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Santander2.php';
+/* 19 SANTOÑA */            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Santona2.php';
+/* 20 SOMO */               require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Somo2.php';
+/* 21 SOPELANA */           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Sopelana2.php';
+/* 22 ZARAUTZ */            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Zarautz2.php'; 
+/* 23 ZUMAIA */             require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/insert_Restaurantes_Localidad/poblar_Zumaia2.php'; /* BUSCAR EL BAR CHIC */
  ?>

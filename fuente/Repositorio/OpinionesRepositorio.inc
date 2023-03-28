@@ -6,7 +6,7 @@ class OpinionesRepositorio{
 
 // Función que devuelve las opiniones de un Negocio------------------------Ajax para Pop-up 
 public function todasOpinionesNegocio($ref_negocio){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     try {
         $sql="SELECT username, texto_Opinion FROM OPINIONESRESTAURANTES 
         WHERE ref_negocio='$ref_negocio'";
@@ -34,7 +34,7 @@ public function todasOpinionesNegocio($ref_negocio){
 
 // Función que devuelve el número de opiniones de un Negocio
 public function numOpiniones($ref_negocio){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     try {
 
         $sql="SELECT count(cod_opinionesrestaurantes) as num_Opiniones FROM OPINIONESRESTAURANTES";
@@ -59,7 +59,7 @@ public function numOpiniones($ref_negocio){
 // Función que devuelve el número de tuplas de votos de un Negocio
 public function numRegistrosVotos(){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql="SELECT count(ref_votosusernamerestaurantes) as num_RegistrosVotos FROM VOTOSUSERNAMERESTAURANTES";
         $result = $gbd->query($sql);
         return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -77,7 +77,7 @@ public function numRegistrosVotos(){
 // Función que inserta un nuevo 
 public function insertarOpinion($datos){ $datos['ref_Opinion']="OP" . $datos['num_Opiniones'];
     try { 
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "INSERT INTO OPINIONESRESTAURANTES (username,ref_negocio,ref_Opinion,texto_Opinion)
                     VALUES('$datos[username]','$datos[ref_negocio2]','$datos[ref_Opinion]','$datos[cuestion]')";
@@ -104,7 +104,7 @@ public function insertarOpinion($datos){ $datos['ref_Opinion']="OP" . $datos['nu
 // Función que da un voto a un Negocio
 public function dar1voto($ref_negocio){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql0='SET lc_time_names = "es_ES"'; // lAS TABLAS EN EL SERVIDOR GRATUITO, SIEMPRE EN MAYUSCULA, EN LOCALHOST DA IGUAL
         $sql = "UPDATE BARRESTAURANTES SET veces_Votado=veces_Votado+1, veces_Positivo=veces_Positivo+1 WHERE ref_negocio='$ref_negocio'";
 
@@ -129,7 +129,7 @@ public function dar1voto($ref_negocio){
 
 // Función que inserta un nuevo registro 
 public function insertVotosUsernameNegocio($ref_votosusernamerestaurantes, $username_cliente, $ref_negocio, $calificacion){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
 
  
@@ -173,7 +173,7 @@ public function insertVotosUsernameNegocio($ref_votosusernamerestaurantes, $user
 
 // Función que da un voto a un Negocio
 public function restarVotos($ref_negocio){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 
         try {
             $sql0='SET lc_time_names = "es_ES"'; // lAS TABLAS EN EL SERVIDOR GRATUITO, SIEMPRE EN MAYUSCULA, EN LOCALHOST DA IGUAL
@@ -211,7 +211,7 @@ public function restarVotos($ref_negocio){
 
 // Función que devuelve los votos de un Negocio
 public function votos1Negocio($ref_negocio){
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     try {
         $sql="SELECT veces_Votado,veces_Positivo,veces_Negativo FROM BARRESTAURANTES WHERE ref_Negocio='$ref_negocio'";
 
@@ -241,7 +241,7 @@ public function votos1Negocio($ref_negocio){
     public function deleteVotosUsernameNegocioNegativo($username_cliente, $ref_negocio, $calificacion){
        
         try {
-            include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+            include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
 
             $sql="DELETE FROM VOTOSUSERNAMERESTAURANTES WHERE username='$username_cliente' and ref_negocio='$ref_negocio' and calificacion='$calificacion'"; 
 
@@ -273,7 +273,7 @@ if ($result) {?>
 // Función que devuelve los votos de un Negocio
 public function calificacionUsuarioNegocio($username_cliente, $ref_negocio){
 
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
     try {
         $sql="SELECT calificacion FROM VOTOSUSERNAMERESTAURANTES WHERE username='$username_cliente' AND ref_negocio='$ref_negocio'";
 

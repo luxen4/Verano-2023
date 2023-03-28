@@ -7,10 +7,10 @@ $guardado=$_FILES['archivo']['tmp_name'];
 
 var_dump($guardado);
 
-//var_dump($_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/');
+//var_dump($_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/');
 //$guardado="/laya2.atwebpages.com/Verano-2022";
 
-//require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Controlador/descuentoController.inc';
+//require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Controlador/descuentoController.inc';
 
 if(!file_exists('archivos')){
  mkdir('archivos',777,true);

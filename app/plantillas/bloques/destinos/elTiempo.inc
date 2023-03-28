@@ -21,7 +21,7 @@ if($localidad=="Laredo"){
 
 <?php 
     // Entra con la $googleApiUrl // No puedo meter el include porque en el movil no funciona
-    // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\plantillas\bloques\destinos\curl_OpenWeather.inc'; ?>
+    // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\curl_OpenWeather.inc'; ?>
 
 <?php
 

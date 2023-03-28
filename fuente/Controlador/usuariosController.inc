@@ -23,7 +23,7 @@ public function loginusuarios(){
             $this->logearAgenciaBuses($datos,$hash);        // Busca el $hash de un Usuario/AgenciaBuses
         }
 
-    require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/cliente/formLogearCliente.php';    
+    require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/cliente/formLogearCliente.php';    
 }
 
 
@@ -61,7 +61,7 @@ public function logearAgenciaViajes($datos,$hash){
                     if(password_verify($datos['contrasenaactual'], $hasContrasena)){     
                                                                                            
                         $datos_AgenciaViajes=(new AgenciaViajesRepositorio())->datosAgenciaViajes($datos);
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/AgenciaBusesRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaBusesRepositorio.inc';
                         
                         $ref_AgenciaBuses=$datos_AgenciaViajes[0]->ref_CompaniaBusHabitual;  
                         $ref_AgenciaViajes=$datos_AgenciaViajes[0]->ref_AgenciaViajes;
@@ -94,7 +94,7 @@ public function logearPropietarios($datos,$hash){
                 
                 if(password_verify($datos['contrasenaactual'], $datos_Propietario[0]->contrasena)){
                     $contrasena=$datos['contrasenaactual'];
-                   // include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/sessiones/session.inc'; 
+                   // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/sessiones/session.inc'; 
                     $obj_SessionPropietario=(new Session())->sessionPropietario($datos_Propietario,$contrasena);
                     $_SESSION['perfil']=$obj_SessionPropietario; ?>
                         <script>alert("Hola Sr. <?php echo $_SESSION['perfil']['nombre']; ?> ")</script>

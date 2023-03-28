@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\BusRepositorio;
 use miId\fuente\Repositorio\DestinoRepositorio;
 
 
- include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022\app\utilidades\constantes.inc';
+ include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\utilidades\constantes.inc';
     include $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
     include $_SERVER['DOCUMENT_ROOT'] . BUSREPOSITORIO;
     include $_SERVER['DOCUMENT_ROOT'] . DESTINOREPOSITORIO;

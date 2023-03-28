@@ -7,7 +7,7 @@ class MenuPersonalRepositorio{
 // Función que inserta un nuevo destino | Recive un array de datos                                            
 public function nuevoMenuPersonal($datos){  
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql="INSERT INTO MENUPERSONAL(ref_MenuPersonal,nombre_MenuPersonal,ref_Negocio)
                         VALUES(/*cod_menuPersonal*/'$datos[ref_MenuPersonal]','$datos[nombre_MenuPersonal]','$datos[ref_negocio]')";    
 //var_dump($sql); die();
@@ -24,7 +24,7 @@ public function nuevoMenuPersonal($datos){
 // Función que inserta un nuevo Menú Del Día de un Negocio                                            
 public function comprobarMenuPersonal($datos){  
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql="SELECT MAX(ref_MenuPersonal) as ref_MenuPersonal FROM MENUPERSONAL WHERE ref_Negocio='$datos[ref_Negocio]'";
         $result = $gbd->query($sql0); $result = $gbd->query($sql);
@@ -39,7 +39,7 @@ public function comprobarMenuPersonal($datos){
 // Función que inhabilita un menú
 public function inhabilitarMenuPersonal($datos){ 
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql0='SET lc_time_names = "es_ES"'; // LAS TABLAS EN EL SERVIDOR GRATUITO, SIEMPRE EN MAYUSCULA, EN LOCALHOST DA IGUAL
         $sql = "UPDATE RELACIONMENUSNEGOCIOS SET habilitado='NO' WHERE ref_negocio='$datos[ref_negocio]'";
         $acentos = $gbd->query("SET NAMES 'utf8'"); $result = $gbd->query($sql); 
@@ -59,7 +59,7 @@ public function inhabilitarMenuPersonal($datos){
 // Función que devuelve todos los Menús del día Premium de un Negocio.                                           
 public function todosMenusPersonales($ref_negocio){    
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
 
         $sql="SELECT rm.ref_Menu, mp.nombre_MenuPersonal, rm.habilitado FROM MENUPERSONAL mp 
@@ -88,7 +88,7 @@ public function todosMenusPersonales($ref_negocio){
 public function nombreImagenMenuPersonal($ref_MenuPersonal){    
 
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
 
         $sql="SELECT nombre_MenuPersonal FROM MENUPERSONAL where ref_MenuPersonal='$ref_MenuPersonal'"; 
@@ -116,7 +116,7 @@ public function nombreImagenMenuPersonal($ref_MenuPersonal){
 /*
 public function habilitarMenuPremium($ref_MenuPersonal){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql0='SET lc_time_names = "es_ES"'; // LAS TABLAS EN EL SERVIDOR GRATUITO, SIEMPRE EN MAYUSCULA, EN LOCALHOST DA IGUAL
         $sql = "UPDATE MENUPERSONAL SET habilitado='SI' WHERE ref_MenuPersonal='$ref_MenuPersonal'"; //var_dump($sql);
         $acentos = $gbd->query("SET NAMES 'utf8'"); $result = $gbd->query($sql); 
@@ -138,7 +138,7 @@ public function habilitarMenuPremium($ref_MenuPersonal){
 /*
 public function inhabilitarTodosMenusPersonales($ref_negocio){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
         $sql0='SET lc_time_names = "es_ES"'; // LAS TABLAS EN EL SERVIDOR GRATUITO, SIEMPRE EN MAYUSCULA, EN LOCALHOST DA IGUAL
         $sql = "UPDATE MENUPERSONAL SET habilitado='NO' WHERE ref_negocio='$ref_negocio'";
         $acentos = $gbd->query("SET NAMES 'utf8'"); $result = $gbd->query($sql);
@@ -172,7 +172,7 @@ public function inhabilitarTodosMenusPersonales($ref_negocio){
 // Propietario y         Administrador
 // Función que elimina un Menú del día de un negocio
 public function eliminarMenu($ref_negocio){
-    try { include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    try { include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql="DELETE FROM MENU WHERE ref_negocio='$ref_negocio'";     // var_dump($sql); die();
             $result = $gbd->query($sql); 
 
@@ -194,7 +194,7 @@ public function eliminarMenu($ref_negocio){
 // Función que devuelve si un Negocio tiene menú Premium (si ha pagado).                                           
 public function menuPremium($ref_negocio){ 
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
             $sql="SELECT * FROM RELACIONMENUSNEGOCIOS WHERE ref_negocio='$ref_negocio'";
             $result = $gbd->query($sql);
 
@@ -211,7 +211,7 @@ public function menuPremium($ref_negocio){
 // Función que devuelve todos los modelos de menús del día.                                           
 public function todosModelosMenus2($tipo_menu){    
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql="SELECT * FROM MODELOMENU WHERE tipo_menu='$tipo_menu'";
         $result = $gbd->query($sql);  return  $results = $result -> fetchAll(\PDO::FETCH_OBJ);
     } catch (\PDOException $e) { echo $e->getMessage();

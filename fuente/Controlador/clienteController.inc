@@ -82,7 +82,7 @@ class ClienteController
                         $cliente =  new Cliente($datos);
                         
 
-                        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                         $obj = (new ClienteRepositorio())->nuevoCliente($datos, $hash);
 
                         ?><pre><script>//alert("¡Enhorabuena, ya forma parte de nosotros!")</script></pre><?php
@@ -129,7 +129,7 @@ class ClienteController
                                 $nuevoHash=password_hash($datos['contrasena'], PASSWORD_DEFAULT);
                         
                                 try {
-                                    require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                                    require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                                     $hashActual=(new ClienteRepositorio())->hashClienteAgenciaViajes($datos);
                                     
 
@@ -183,7 +183,7 @@ class ClienteController
             $datos=$_POST['datos'];                  
                 
             if (isset($datos['estaseguro'])) {
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+                require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                 $hashActual=(new ClienteRepositorio())->hashClienteAgenciaViajes($datos);
                 
 
@@ -250,7 +250,7 @@ class ClienteController
     // Función que muestra los datos de un Cliente logueado.
     public function mostrarInfoClienteLogeado()
     {
-        require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ClienteRepositorio.inc';
+        require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ClienteRepositorio.inc';
                 $usernamee=$_SESSION ['perfil']['username'];
                 $contrasenaa=$_SESSION ['perfil']['contrasena'];
                 $datosPerfilCliente = (new ClienteRepositorio())->datosClienteLogeado($usernamee,$contrasenaa);

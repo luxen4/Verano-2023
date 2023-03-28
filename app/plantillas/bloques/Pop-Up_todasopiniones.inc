@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
 use miId\fuente\Repositorio\SatisfacionRepositorio;
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/SatisfacionRepositorio.inc'; ?>
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/SatisfacionRepositorio.inc'; ?>
   <!--Pop-Up de todas la Opiniones de un negocio-->
   
   <div class="modal fade" id="ventana2" style="max-width: 800px;">
@@ -58,7 +58,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/Satisf
                                 </div>
 
 
-                                <?php  require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/popUp_gradoSatisfacion.inc'; ?>
+                                <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popUp_gradoSatisfacion.inc'; ?>
                              
 
                         <!-- Footer de la ventana-->

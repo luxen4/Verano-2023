@@ -9,7 +9,7 @@ class DescuentoController
 public function crearDescuento(){
     if (isset($_POST['creardescuento'])) { $datos=$_POST['datos']; 
         if (isset($_POST['asegura'])) {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                 $datos['ref_negocio'] = $_SESSION['perfil']['ref_negocio'];            
                 $obj = (new ComerRepositorio())->crearDescuento($datos);
 
@@ -21,7 +21,7 @@ public function crearDescuento(){
     
     if (isset($_POST['eliminardescuento'])) { 
         if (isset($_POST['asegura_eliminar'])) {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                 $datos['ref_negocio'] = $_SESSION['perfil']['ref_negocio'];            
                 $obj = (new ComerRepositorio())->eliminarDescuento($datos);
 
@@ -31,7 +31,7 @@ public function crearDescuento(){
 
     if (isset($_POST['modificardescuento'])) {  $datos=$_POST['datos'];  
         if (isset($_POST['asegura_modificar'])) {
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/ComerRepositorio.inc';
+            require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
                 
             
             $datos['ref_negocio'] = $_SESSION['perfil']['ref_negocio'];     

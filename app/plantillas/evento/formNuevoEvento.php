@@ -28,7 +28,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
           <?php if(isset($datos)){if(isset($errores['fechaviaje'])){?><span class="error"><?="<br>". $errores['fechaviaje'].'</span>'?><?php 
                                   }else{?><span class="ok">OK</span><?php }};?>
         </div>
- <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/EventoRepositorio.inc'; 
+ <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/EventoRepositorio.inc'; 
  $todosEventos = (new EventoRepositorio())->todosEventos();
  //var_dump($todosEventos);
  ?>
@@ -63,7 +63,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
         </div>
 
 
-        <?php // Retocado require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/bus/tipoBus.inc';?>
+        <?php // Retocado require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/bus/tipoBus.inc';?>
 
 
 
@@ -75,7 +75,7 @@ use miId\fuente\Repositorio\EventoRepositorio;
                
                 <?php
                 // Todos buses registrados
-                require_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/BusRepositorio.inc';
+                require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
                 $todosBuses=(new BusRepositorio())->todosBuses(); 
  
        
@@ -143,7 +143,7 @@ function eliminar(){
 
 <?php $contenido = ob_get_clean() ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/basefantasma.php';?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/basefantasma.php';?>
 
 
 <style>

@@ -11,7 +11,7 @@ public function insertRelacion($datos){
 $ref_Interface=$datos['ref_Interface'][0]->ref_Interface;
 
 try {
-    include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+    include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
     $sql0='SET lc_time_names = "es_ES"';
     $sql = "INSERT INTO RELACIONIPREMOTAINTERFACE (ref_RelacionInterfaceRemota, ref_IpRemota, ref_Interface, fecha)
                 VALUES('$datos[ref_RelacionInterfaceRemota]','$datos[ref_IpRemota]','$ref_Interface',default)";
@@ -45,7 +45,7 @@ throw $ex; ?><script>alert("Algo Relacion no insertada ha ido mal!");</script><?
 // Función que inserta una visita de una IP a un Negocio
 public function visitaIpNegocio($datos){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "INSERT INTO VISITAFICHANEGOCIO (ref_VisitaFichaNegocio, ref_IpRemota, ref_negocio, fecha)
                     VALUES('$datos[ref_VisitaFichaNegocio]','$datos[ref_IpRemota]','$datos[ref_negocio]',default)";
@@ -76,7 +76,7 @@ public function visitaIpNegocio($datos){
 // Función que devuelve el último registro de ref_RelacionInterfaceRemota
 public function ultimaRelacionInterfaceRemota(){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "SELECT MAX(ref_RelacionInterfaceRemota) AS maxima_ref FROM RELACIONIPREMOTAINTERFACE ";
 
@@ -106,7 +106,7 @@ public function ultimaRelacionInterfaceRemota(){
 // Función que devuelve el último registro de LA TABLA VISITAFICHANEGOCIO 
 public function ultimaRefVisitaNegocio(){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
        // $sql = "SELECT MAX(ref_VisitaFichaNegocio) AS maxima_ref FROM VISITAFICHANEGOCIO";
          $sql = "SELECT * FROM VISITAFICHANEGOCIO 
@@ -138,7 +138,7 @@ public function ultimaRefVisitaNegocio(){
 // Función que devuelve el último registro de ref_RelacionInterfaceRemota
 public function refInterface(){
     try {
-        include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+        include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql0='SET lc_time_names = "es_ES"';
         $sql = "SELECT ref_Interface FROM interface";
 

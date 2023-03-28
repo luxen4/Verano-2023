@@ -28,7 +28,7 @@ header("Content-Disposition: attachment; filename=$file");
 <body>
 
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/utilidades/utilidades.inc'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -107,7 +107,7 @@ header("Content-Disposition: attachment; filename=$file");
                         $asiento=1; $esOnoCliente=""; $infoCliente=""; $plaza_Bus=1;    
 
                         for ($i = 1; $i <= 63; $i++) { ?>
-                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2022\app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
+                            <?php //include $_SERVER["DOCUMENT_ROOT"] . "/Verano-2023/app\plantillas\bloques\partesRepositorios\datos_PersonasBus.inc"; ?>
                             <?php
                                                 $plaza_Bus=$i;  
 

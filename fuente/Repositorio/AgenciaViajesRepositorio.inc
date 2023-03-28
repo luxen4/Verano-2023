@@ -451,7 +451,7 @@ public function horarioAgenciaViajes($ref_AgenciaViajes){
 
     try {
         // include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-         include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+         include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql="SELECT horario_Agencia FROM AGENCIAVIAJES WHERE ref_AgenciaViajes='$ref_AgenciaViajes'";
 
         $result = $gbd->query($sql); return $results = $result->fetchAll(\PDO::FETCH_OBJ);
@@ -469,7 +469,7 @@ public function telefonoAgenciaViajes($ref_AgenciaViajes){
 
     try {
         // include $_SERVER['DOCUMENT_ROOT'] . CONEXIONBASEDEDATOS;
-         include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/conf/configuracionfantasma.inc'; 
+         include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; 
         $sql="SELECT telefono_Agencia FROM AGENCIAVIAJES WHERE ref_AgenciaViajes='$ref_AgenciaViajes'";
 
         $result = $gbd->query($sql); return $results = $result->fetchAll(\PDO::FETCH_OBJ);

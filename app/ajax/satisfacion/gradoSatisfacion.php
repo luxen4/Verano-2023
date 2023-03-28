@@ -1,6 +1,6 @@
 <?php
 use miId\fuente\Repositorio\SatisfacionRepositorio; // Ajax
-require $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/fuente/Repositorio/SatisfacionRepositorio.inc'; 
+require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/SatisfacionRepositorio.inc'; 
 
     $ref_negocioparaAjax=$_POST['ref_NegocioparaAjax'];
 	$num_barra=$_POST['num_barra'];

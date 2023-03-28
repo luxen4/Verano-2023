@@ -66,7 +66,7 @@
           <?php $destinosLocalidad=array('Noja','Castro Urdiales','Zarautz','San Juán de Luz','Laredo'); ?>
           <?php $foto_destinosLocalidad=array('playa-noja1.jpg','playa-castro1.jpg','playa-zarautz1.jpg','playa-sanjuandeluz.jpg','playa-laredo2.jpg'); ?>
 
-          <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/home/carruseles_pequenos.inc' ?>
+          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos.inc' ?>
 
          
         </div>
@@ -78,7 +78,7 @@
         $destinosLocalidad=array('Santander','Fuenterrabía','Orio','Deba','Plentzia');    //var_dump($destinosLocalidad);?>
         <?php $foto_destinosLocalidad=array('Santander.jpg','Fuenterrabía.jpg','Orio.jpg','Deba.jpg','Plentzia.jpg'); //var_dump($destinosLocalidad);?>
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/home/carruseles_pequenos2.inc' ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos2.inc' ?>
 
 
         </div>
@@ -90,7 +90,7 @@
 $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLocalidad);?>
 <?php $foto_destinosLocalidad=array('Ajo.jpg','Sopelana.jpg','Comillas.jpg'); //var_dump($destinosLocalidad);?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/Verano-2022/app/plantillas/bloques/home/carruseles_pequenos2.inc' */?>
+<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos2.inc' */?>
 
 
 

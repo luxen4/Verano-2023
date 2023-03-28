@@ -11,7 +11,7 @@ var parametros = {"ref_Destino":ref_Destino, "asiento":asiento};                
 
   $.ajax({
     data: parametros, 
-    url: "/Verano-2022/app/ajax/eliminarasientobus.php",
+    url: "/Verano-2023/app/ajax/eliminarasientobus.php",
     type: "POST",
 
     beforesend:function(){
@@ -70,7 +70,7 @@ alert('Billete No Pagado');
 function cambioDeEstado(parametros){
 $.ajax({
   data: parametros, 
-  url: "/Verano-2022/app/ajax/reservasbus/cambiarestadoreserva.php",
+  url: "/Verano-2023/app/ajax/reservasbus/cambiarestadoreserva.php",
   type: "POST",
 
   beforesend:function(){
