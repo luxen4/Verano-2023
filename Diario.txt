@@ -32,7 +32,7 @@ qqa
 Hacer unas diapositivas mostrando todo para explicar al tribunal 
 https://www.webempresa.mx/wordpress/que-es-wordpress.html
 
-
+a
 https://www.laurachuburu.com.ar/tutoriales/enlaces-html.php      para enlaces que abren fotos
 https://www.a2hosting.es/kb/developer-corner/php/using-php.ini-directives/php-allow-url-fopen-directive     web para copiar
 
