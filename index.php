@@ -34,6 +34,9 @@ require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Controlador/desc
 require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Controlador/propietarioController.inc';
 require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Controlador/usuariosController.inc';
 
+
+require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Controlador/OficinasTurismoController.inc';
+
 // Parseo de la ruta
 if (isset($_GET['ctl']))
 { if (isset($mapeoRutas[$_GET['ctl']]))

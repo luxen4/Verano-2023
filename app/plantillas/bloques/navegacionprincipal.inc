@@ -23,8 +23,8 @@
     
       <!--<li><a class="nav-link" href="index.php?ctl=inicio/#situarprimerarticulo"><i class="fas fa-home"></i> eInicio</a></li>-->
       <!--<li><a class="nav-link" href="index.php?ctl=inicio/"><i class="fas fa-home"></i>Inicio</a></li>-->
-      <li><a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a></li>
-      <li><a class="nav-link" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a></li>
+      <!--<li><a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a></li>-->
+      <!--<li><a class="nav-link" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a></li>-->
    
     
 
@@ -44,12 +44,12 @@ if(empty($_SESSION['perfil'])){?>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#"><i class="fas fa-store-alt"></i> Brisca</a> 
 
-              <!--  <div class="dropdown-divider"></div>
+               <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Otros</a>
               
   </li>-->
   <li><a class="nav-link" href="index.php?ctl=cuadrobuscadoresnegocios"><i class="fas fa-utensils"></i> Bares y Restaurantes!</a></li>
-
+  <!--<li><a class="nav-link" href="index.php?ctl=mostraroficinasturismo"><i class="fas fa-utensils"></i> Oficinas Turismo</a></li>-->
   <li><a class="nav-link" href="https://www.eltiempo.es/" target="_blank"><i class="fa-solid fa-cloud-sun"></i> El tiempo</a></li><?php
 
 }elseif($_SESSION['perfil']['roll']=='cliente'){ ?>
@@ -66,7 +66,7 @@ if(empty($_SESSION['perfil'])){?>
 if(empty($_SESSION['perfil'])){?> 
     <li><a class="nav-link" href="index.php?ctl=loginusuarios" ><i class="fas fa-users"></i> LOGIN </a></li>
 
-  <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc'; ?>
+  <?php  // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc'; ?>
 
         
 
@@ -88,6 +88,30 @@ if(empty($_SESSION['perfil'])){?>
       </div>   
 </li>
 -->
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 
+    aria-expanded="false"><i class="fas fa-bus-alt"></i> Destinos</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a>
+
+        <a class="nav-link" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a>
+
+        <a class="nav-link" href="index.php?ctl=mostraroficinasturismo"><i class="fas fa-utensils"></i> Oficinas Turismo</a>
+                
+
+
+
+
+
+                
+                <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
+                  <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
+        </div>
+</li>
+
+
   </div>
 <?php }; ?>
 

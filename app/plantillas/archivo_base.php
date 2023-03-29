@@ -46,6 +46,7 @@ body{
 
 
 <header id="">
+  
   <div class="container-fluid">
       <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal.inc';?>
   </div>
@@ -54,31 +55,19 @@ body{
 </header>
     <div id="container_cabecera" class="container-fluid">
         <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_cardDestinoHome.inc';?>
-<!--
-        <div class="row">
-            <div class="col-xl-12 text-center">
-                <div class="row">
-                  <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/faldon_Bienvenida.inc';?>
-                </div>
-            </div>    
-        </div>  
--->
-    </div>
-  <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempoLocalidadUsuario.php';?>
-      
-  
 
-<div class="container">
-  <div id="directos" class="row">
-    <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-12 col-12">
-      <a href="index.php?ctl=cuadrobuscadoresnegocios"><i class="fas fa-utensils"></i> Bares y Restaurantes!</a>
+        <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/general/faldon_Bienvenida.inc';?>
+                
     </div>
 
-    <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-12 col-12">
-      <a href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Agenda del Verano 2022</a>
-    </div>
-  </div>
-</div>
+    
+  <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempoLocalidadUsuario.php';?>  
+  <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/enlaces/directos.inc';?>
+    
+
+
+
+
 
 
 
@@ -223,7 +212,15 @@ if (!empty($_SESSION['perfil'])) {
 
 
         <footer style="margin-top: 1em;">
-          <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/oficinasturismoOK.inc';?>
+          <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/oficinasturismoOK.inc';?>
+
+          <div class="row">
+            <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
+                <div id="copyright">     
+                <h6>Adrián Laya García © 2023  <br> - superlaya50@gmail.com- </h6>
+                </div> 
+            </div>
+          </div>
         </footer>
 
 
@@ -271,6 +268,19 @@ li a{color:#006293; }
 
 
 
+
+</style>
+
+
+<style>
+footer{background-color: #FFFFFF;/*background-color: #F8F9FA;*/}
+footer h4{/*text-decoration: underline #006293 2px;*/ font-weight: 400; text-align: center;   }
+h2{margin: 0.5em;  color:#006293;}
+h4{color:#006293; /*margin-top: 1em;*/}
+footer a{color: #999999; }footer a:hover{color: #212721;}
+footer, footer h6{ text-align: center;}
+footer h6 a{font-weight: 400;}
+#container_footer{/* background-image:url("../imagenes/fondo1.jpg")!important; background-size: cover; */}
 
 </style>
 

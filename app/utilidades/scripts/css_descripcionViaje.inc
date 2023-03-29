@@ -24,7 +24,7 @@ a.boton:after,
 a.boton:before{
 	width: 80px;
 	height: 200px;
-	content: '';
+	content: 'tttt';
 	display: block;
 	background: rgba(255,255,255,0.5);
 	transform: rotate(45deg);
@@ -46,9 +46,9 @@ a.boton:hover{
  
 a.boton:hover:after,
 a.boton:hover:before{
-	transform: rotate(45deg), scaleX(130%);
+/*	transform: rotate(45deg), scaleX(130%);
 	background: rgba(255,255,255,0.1);
-	transition: all ease 0.5s;
+	transition: all ease 0.5s;*/
 }
  
 a.boton:hover:after{

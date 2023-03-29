@@ -18,6 +18,14 @@
 $mapeoRutas =
   array(
     
+     //-----------------------------------------------------------------------------------------------------------------defaultController.inc
+     'mostraroficinasturismo' =>
+     array('controller' =>'miId\fuente\Controlador\OficinasTurismoController', 'action' =>'mostraroficinasturismo'),
+
+ //----------------------------
+
+
+
       //-----------------------------------------------------------------------------------------------------------------defaultController.inc
           'inicio/' =>
           array('controller' =>'miId\fuente\Controlador\defaultController', 'action' =>'inicio'),

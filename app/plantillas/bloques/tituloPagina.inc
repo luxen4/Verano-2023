@@ -4,7 +4,7 @@ use miId\fuente\Repositorio\ComerRepositorio;
         require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/ComerRepositorio.inc';
         $nombreLocalidad = (new ComerRepositorio())->nombreLocalidad($ref_Localidad);?>
 
-        <div id="recomendamos" class="col-xl-12 text-center ">
+        <div id="recomendamosss" class="col-xl-12 text-center ">
             <h5>Te recomendamos en <?php echo pasarUtf8($nombreLocalidad[0]->nombre_Localidad); ?></h5>
 
         </div>

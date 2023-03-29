@@ -26,11 +26,11 @@
 
 h5, i{text-align: center; color: #006293; border-bottom: none; margin: 0em;}
 h5{border-bottom: 1px solid #006293; margin-top: 1em; padding-bottom: 0.1em;}
-h6{text-decoration: underline; margin-bottom: 0em;}
+h6{text-decoration: underline; margin-bottom: 0em; text-align: left; padding-left: 0.5em;}
 p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 
 .tarjeta_barrestaurante_localidad{margin-top: 0.5em; padding:0em;}
-#recomendamos{/*margin-bottom: 0.5em;*/}
+
 
 #nohay{color:red; font: 1em sans-serif; text-align: center; margin-top: 1em;}
 
@@ -42,9 +42,8 @@ p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 
 
 
-.articuloconboton {
-    text-align: left;
-    border: 1px solid #006293; border-radius: 3px; padding: 0.2em;
+
+article{border: 1px solid #006293; border-radius: 3px; padding: 0.2em;
     box-shadow: inset 0px 0px 20px 4px #c1c1c1;
 }
 
