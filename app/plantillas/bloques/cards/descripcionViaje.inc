@@ -27,11 +27,9 @@
             <?php  echo $destino->euros .'€'; ?>
         </div>
 
-        <div>
-            <input  id="<?php echo ($ref_Destino); ?>" class="checksdestinos" type="checkbox" name="datos[destinoseleccionado]" value="<?php echo ($ref_Destino); ?>">
-            <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo ($ref_Destino); ?>')" value="Reserva">
-        </div>
-
+        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/boton_reservar.inc'; ?>
+                    
+    
         <?php 
             if (!empty($_SESSION['perfil'])) {
                 if ($_SESSION['perfil']['roll'] === "cliente" || $_SESSION['perfil']['roll'] === "agenciaviajes" || $_SESSION['perfil']['roll'] === "admin"){ ?>
@@ -65,6 +63,7 @@
 
     } ?>
        
+
        <input hidden id="<?php echo ($ref_Destino); ?>" class="checksdestinos" type="checkbox" name="datos[destinoseleccionado]" value="<?php echo ($ref_Destino); ?>">
       
         <?php
@@ -139,11 +138,9 @@
               
 
                     -->  
-                    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                        
-                    <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo($ref_Destino); ?>')" 
-                    value="Hacer Reserva">
-                    </div><?php
+                 
+                    
+                    <?php
 
     } else { ?>
                         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">

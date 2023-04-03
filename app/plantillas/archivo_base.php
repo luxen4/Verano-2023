@@ -29,30 +29,24 @@
     <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
 
     <?php /*
-    <!--<link rel="stylesheet" type="text/css" href='web/css/styles.css'> 
+    <!--<link rel="stylesheet" type="text/css" href='web/css/styles.css'>
     <link rel="stylesheet" type="text/css" href='web/css/forms.css'>-->
     <!--https://www.baulphp.com/como-usar-include-y-require-en-php-ejemplos/ -->
     */?>
 
   </head>
-
-  <style>
-body{
-        background-image:url("web/imagenes/fondos/fondo5.jpg"); background-size: cover; }
-</style>
-
+  
+      <?php  include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>  
+      <?php  include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
   <body>
-  <?php  include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>  
-  <?php  include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
-
-
-
-<header title="Castillos del Loira por Adrián Laya García">
+ <header title="Castillos del Loira por Adrián Laya García">
   <div class="container-fluid">
       <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal.inc';?>
   </div>
 </header>
+
+
 
 
     <div id="container_cabecera" class="container-fluid">
@@ -76,15 +70,7 @@ body{
            
    
 
-
-
- <style>
- .fg {
-
-    background-image: url(../Verano-2023/web/imagenes/fondos/fondo3vuelt.jpg);
-    background-size: cover;}
-    
- </style><?php /*
+<?php /*
 
     if(!empty($_SESSION['perfil'])){
 
@@ -98,7 +84,7 @@ body{
           </div>
           <div id="directos">
             <a href="index.php?ctl=cuadrobuscadoresnegocios"><i class="fas fa-utensils"></i> Bares y Restaurantes!</a>
-            <a href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i>  Toda la Agenda del Verano 2022</a> 
+            <a href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i>  Toda la Agenda del Verano 2022</a>
           </div>
           <?php
         }
@@ -126,17 +112,13 @@ body{
           </div>
       </div>
 
-          
+
 
       </div><?php
     } */ ?>
 
- <style>
 
-      #directos a{ background-color: #EFEFEF; text-align:center; border: 1px solid black; 
-        padding:0em 1em; border-radius: 5px; }
-      .container{padding: 0em;}
-    </style>
+
 
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
@@ -146,8 +128,8 @@ body{
     <div class="row">
         <?php //include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\utilidades\scripts\css_navegacion_filtros.inc'; ?>
         <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Izda.inc'; ?>
-    </div>    
-</div>    
+    </div>
+</div>
 */ ?>
             
      
@@ -155,19 +137,19 @@ body{
                 
 
              
-<?php 
+<?php
 
 if (!empty($_SESSION['perfil'])) {
     if ($_SESSION['perfil']['roll'] === "cliente") { ?>
         <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12"><?php }
-}else{ ?><div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12"><?php }?>
+    } else { ?><div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12"><?php }?>
             
               <div id="contenido">
                   <?php /*el id css facilita (si se define) la definición del aspecto visual
                       de su contenido
                       La variable $contenido hará que se muestre la plantilla concreta, el
                       contenido concreto, según la solicitud realizada por el usuario */
-                  ?>
+                      ?>
                   <?= $contenido ?>
 
                   <div class="ab"></div>
@@ -176,13 +158,13 @@ if (!empty($_SESSION['perfil'])) {
           
 
   <?php if (!empty($_SESSION['perfil'])) {
-          if ($_SESSION['perfil']['roll'] === "cliente") { ?>
+      if ($_SESSION['perfil']['roll'] === "cliente") { ?>
               <div class="col-xl-2 text-center col-lg-2 col-md-12 col-sm-12 col-12">
-                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Derecha.inc'; ?>
+                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Derecha.inc';?>
               </div><?php }
-        }else{ ?>
+      } else { ?>
           <div class="col-xl-2 text-center col-lg-2 col-md-12 col-sm-12 col-12">
-            <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Derecha.inc'; ?>
+            <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacion/navegacion_Derecha.inc';?>
           </div><?php } ?> 
   
 </div>
@@ -203,17 +185,19 @@ if (!empty($_SESSION['perfil'])) {
       </style>
 
 
-        <footer style="margin-top: 1em;">
-          <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/oficinasturismoOK.inc';?>
+</body>
 
-          <div class="row">
-            <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                <div id="copyright">     
-                <h6>Adrián Laya García © 2023  <br> - superlaya50@gmail.com- </h6>
-                </div> 
-            </div>
-          </div>
-        </footer>
+<footer style="margin-top: 1em;">
+  <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/oficinasturismoOK.inc';?>
+
+  <div class="row">
+    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
+        <div id="copyright">     
+        <h6>Adrián Laya García © 2023  <br> - superlaya50@gmail.com- </h6>
+        </div> 
+    </div>
+  </div>
+</footer>
 
 
 
@@ -233,50 +217,13 @@ if (!empty($_SESSION['perfil'])) {
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
              
-  </body>
+  
 </html>
 
 
-<style>
-
-
-#filtros_buscadores input,#filtros_buscadores select {
-    border: 1px solid #006293;
-    border-radius: 5px;
-    padding: 0.2em;
-  
-}
-
-.carousel-item{width: 100%;}
-
-li{list-style: none;}
-li a{color:#006293; }
 
 
 
-    #filtros,#dondecomer,.aparecernegocios{
-        display: none;
-    }
-
-
-
-
-</style>
-
-
-<style>
-.container{max-width: 100%;}
-
-footer{background-color: #FFFFFF;/*background-color: #F8F9FA;*/}
-footer h4{/*text-decoration: underline #006293 2px;*/ font-weight: 400; text-align: center;   }
-h2{margin: 0.5em;  color:#006293;}
-h4{color:#006293; /*margin-top: 1em;*/}
-footer a{color: #999999; }footer a:hover{color: #212721;}
-footer, footer h6{ text-align: center;}
-footer h6 a{font-weight: 400;}
-#container_footer{/* background-image:url("../imagenes/fondo1.jpg")!important; background-size: cover; */}
-
-</style>
 
 <script>
   // Desplegar tabla de Info de estado de asientos del Bus que va a un Destino
@@ -335,7 +282,58 @@ footer h6 a{font-weight: 400;}
 */
 </script>
 
-   
+
+<style>
+body{
+  background-image:url("web/imagenes/fondos/fondo5.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.fg {
+  background-image: url(../Verano-2023/web/imagenes/fondos/fondo3vuelt.jpg);
+  background-size: cover;
+}
+
+#directos a{ 
+  background-color: #EFEFEF; 
+  text-align:center; border: 1px solid black; 
+  padding:0em 1em; border-radius: 5px; }
+.container{padding: 0em;
+}
+
+
+  #filtros_buscadores input,#filtros_buscadores select {
+  border: 1px solid #006293;
+  border-radius: 5px;
+  padding: 0.2em;
+
+  }
+
+  .carousel-item{width: 100%;}
+
+  li{list-style: none;}
+  li a{color:#006293; }
+
+
+
+  #filtros,#dondecomer,.aparecernegocios{
+      display: none;
+  }
+
+
+  .container{max-width: 100%;}
+
+  footer{background-color: #FFFFFF;}
+  footer h4{font-weight: 400; text-align: center;   }
+  h2{margin: 0.5em;  color:#006293;}
+  h4{color:#006293;}
+  footer a{color: #999999; }footer a:hover{color: #212721;}
+  footer, footer h6{ text-align: center;}
+  footer h6 a{font-weight: 400;}
+
+</style>
+
 
 
 
@@ -400,15 +398,15 @@ footer h6 a{font-weight: 400;}
 -->
 
 
-<!--  
+<!--
   <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Reserva Grupos</a></li>
-  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Destinos culturales</a></li>  
+  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Destinos culturales</a></li>
 
-  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Por ser socio de tu agencia de Viajes</a></li>  
+  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Por ser socio de tu agencia de Viajes</a></li>
   <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Info de pasajeros de un destino para agencia de Viajes</a></li>
-  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Últimos dias con descuento para salvar el viaje</a></li>   
-  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Cupones descuento por ser de una agencia de Viajes</a></li>  
-  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Proponnos tu Destino</a></li>  
+  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Últimos dias con descuento para salvar el viaje</a></li>
+  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Cupones descuento por ser de una agencia de Viajes</a></li>
+  <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Proponnos tu Destino</a></li>
   <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Proximos sorteos</a></li>
   <li><a class="nav-link" href="index.php?ctl=#"><i class="fas fa-sign-in-alt"></i> Destinos de más de 1 dia</a></li>
 
@@ -419,15 +417,15 @@ footer h6 a{font-weight: 400;}
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-umbrella-beach"></i> Donde comer</a>
                     <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-eye"></i> Actividades</a>
-                    <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-edit"></i> Rutas y paseos</a> 
-                    <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-trash-alt"></i> No te pierdas</a> 
-                </div>   
+                    <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-edit"></i> Rutas y paseos</a>
+                    <a class="dropdown-item" href="index.php?ctl=#"><i class="fas fa-trash-alt"></i> No te pierdas</a>
+                </div>
   </li>
 -->
 
 <!--
-  <li><a class="nav-link" 
-        style='background-image:url("web/imagenes/icons/puntos.png");    
+  <li><a class="nav-link"
+        style='background-image:url("web/imagenes/icons/puntos.png");
           background-size: cover;
           text-align: center;
           margin-top: 1.9em;
@@ -435,9 +433,9 @@ footer h6 a{font-weight: 400;}
           height: 2.3em;'> 30</a>
     </li>
 
-    <li class="nav-link" 
-     class="nav-link" 
-        style='background-image:url("web/imagenes/icons/bolsa.png");    
+    <li class="nav-link"
+     class="nav-link"
+        style='background-image:url("web/imagenes/icons/bolsa.png");
           background-size: cover;
           text-align: center;
           margin-top: 1.9em;

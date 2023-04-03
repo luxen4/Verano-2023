@@ -1,7 +1,9 @@
+
+<?php /* <link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_buscadoresFantasma.inc">*/ ?>
+
 <!--Inicio buscadodesfantasma.inc-->
-<link rel="stylesheet" type="text/css" href="app/utilidades/scripts/css_buscadoresFantasma.inc">
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc';  ?>
-    <div id="cnontenido_principal" class="" >
+    <div>
         <form action="" method="POST" <?php if(empty($bar_rest->e_menu)){?> style="margin-top: 0em;"<?php }?>>
             <div id="container_notepierdas" class="">
 
@@ -36,9 +38,5 @@
                 </div>
             </div>   
         </form>
-    </div></div>
+    </div>
 <!--Fín buscadodesfantasma.inc-->
-<style>
-
-
-</style>
