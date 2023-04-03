@@ -68,7 +68,7 @@ use miId\fuente\Repositorio\AgenciaViajesRepositorio;
 
 
 if(isset($_POST['contratar']) ){ 
-    $datos=$_POST['datos']; 
+    $datos=$_POST['datos']; //var_dump($datos);  die();
     $_SESSION['datos']=$datos; 
     
     $ref_Destino=$datos['destinoseleccionado'];

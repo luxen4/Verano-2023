@@ -252,13 +252,14 @@
 
 </div>
 
-  <script type="text/javascript" src="js/jquery-3-5.1.min.js"></script>
-  <script type="text/javascript" src="js/boostrap.min.js"></script>
-  <script type="text/javascript" src="js/boostrap-bundle.min.js"></script>
-
 </body>
 </html>
 
 <?php $contenido = ob_get_clean() ?>
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
 
+
+
+<style>
+  #carruse1, #carrusel2 { }
+</style>

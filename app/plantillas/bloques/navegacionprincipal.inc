@@ -1,9 +1,3 @@
-<link rel="stylesheet" type="text/css" href='web/css/styles.css'>
-<link rel="stylesheet" type="text/css" href="web/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="web/css/bootstrap-grid.min.css">
-<link rel="stylesheet" type="text/css" href="web/css/bootstrap-reboot.min.css">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
 
 <div class="container">
 
@@ -28,10 +22,10 @@
    
     
 
-<?php  
+<?php
 // Si no hay loging o se loguea como Cliente
 
-if(empty($_SESSION['perfil'])){?>
+if (empty($_SESSION['perfil'])) {?>
   <li><a class="nav-link" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i>Todas las Agencias de Viajes</a></li>
   
   <!--<li class="nav-item dropdown"> Para seguir desarrollando
@@ -52,21 +46,16 @@ if(empty($_SESSION['perfil'])){?>
   <!--<li><a class="nav-link" href="index.php?ctl=mostraroficinasturismo"><i class="fas fa-utensils"></i> Oficinas Turismo</a></li>-->
   <li><a class="nav-link" href="https://www.eltiempo.es/" target="_blank"><i class="fa-solid fa-cloud-sun"></i> El tiempo</a></li><?php
 
-}elseif($_SESSION['perfil']['roll']=='cliente'){ ?>
+} elseif ($_SESSION['perfil']['roll']=='cliente') { ?>
   <li><a class="nav-link" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i>Todas las Agencias de Viajes</a></li><?php
-}?>   
+}?> <?php
 
 
 
-
-    <?php
-
-
-
-if(empty($_SESSION['perfil'])){?> 
+if (empty($_SESSION['perfil'])) {?> 
     <li><a class="nav-link" href="index.php?ctl=loginusuarios" ><i class="fas fa-users"></i> LOGIN </a></li>
 
-  <?php  // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc'; ?>
+  <?php  // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/logins/logins.inc';?>
 
         
 
@@ -94,11 +83,12 @@ if(empty($_SESSION['perfil'])){?>
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 
     aria-expanded="false"><i class="fas fa-bus-alt"></i> Destinos</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a>
 
-        <a class="nav-link" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a>
+        <a class="nav-link" style="margin-top: 0em; padding-left: 0.5em; border: none;" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Listado 2023</a>
 
-        <a class="nav-link" href="index.php?ctl=mostraroficinasturismo"><i class="fas fa-utensils"></i> Oficinas Turismo</a>
+        <a class="nav-link" style="margin-top: 0em; padding-left: 0.5em;" href="index.php?ctl=cuadrobuscadoresdestinos"><i class="fas fa-umbrella-beach"></i> Buscador Destinos</a>
+
+        <a class="nav-link" style="margin-top: 0em; padding-left: 0.5em; " href="index.php?ctl=mostraroficinasturismo"><i class="fas fa-utensils"></i> Oficinas Turismo</a>
                 
 
 
@@ -106,37 +96,37 @@ if(empty($_SESSION['perfil'])){?>
 
 
                 
-                <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
-                  <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
-        </div>
-</li>
-
-
-  </div>
+     
 <?php }; ?>
 
   
 
-<?php  if(!empty($_SESSION['perfil'])){
-
-
-
-
-if (!empty($_SESSION['perfil'])) {
-  if ($_SESSION['perfil']['roll']=="propietario") {?>
+<?php  if (!empty($_SESSION['perfil'])) {
+    if (!empty($_SESSION['perfil'])) {
+        if ($_SESSION['perfil']['roll']=="propietario") {?>
 
 <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/propietario/propietario.inc'; ?>
 
 
 <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
 
-<!--
+
+
+
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bus-alt"></i> Area de Buses</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="index.php?ctl=nuevobus"><i class="fas fa-bus"></i> Nuevo Bus</a> 
-                 <a class="dropdown-item" href="index.php?ctl=nuevobus">Eliminar Bus (Hecho)</a>-->
-                <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
+                 <a class="dropdown-item" href="index.php?ctl=nuevobus">Eliminar Bus (Hecho)</a>
+
+                            <!-- <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
+                  <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
+        </div>
+</li>
+
+
+  </div>
+                <a class="dropdown-item" href="index.php?ctl=modificarbus">Modificar un Bus (Hecho)</a>
                   <a class="dropdown-item" href="index.php?ctl=todosbusesdeunaagenciabuses"><i class="fas fa-eye"></i> Todos los Buses</a> 
         </div>
 </li>
@@ -146,29 +136,12 @@ if (!empty($_SESSION['perfil'])) {
 <li class="saludo"><?php echo('<span class="nav-link fas fa-user" > Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . '!</span>');?></li>
 
 <?php }
-}
+        }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-if($_SESSION['perfil']['roll']=="admin"){?>
+    if ($_SESSION['perfil']['roll']=="admin") {?>
   <!--  <li class="nav-item margin2"><a class="nav-link" href="index.php?ctl=borrarcliente">Borrar Cliente</a></li> -->
   <!--  <li class="nav-item margin2"><a class="nav-link" href="index.php?ctl=borrartodosclientes">Borrar todos los Clientes</a></li>-->
   <!--  <li class="nav-item margin2"><a class="nav-link" href="index.php?ctl=mostrartodosclientes">Mostrar todos los Clientes</a></li>-->
@@ -192,13 +165,14 @@ if($_SESSION['perfil']['roll']=="admin"){?>
   <li><a class="nav-link" href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
   <li class="saludo"><?php echo('<span class="nav-link fas fa-user" > Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . '!</span>');?></li>
 
-<?php }}; 
+<?php }
+    };
 
 
 
 
-if (!empty($_SESSION['perfil'])) {
-  if ($_SESSION['perfil']['roll']=="agenciabuses") {?>
+          if (!empty($_SESSION['perfil'])) {
+              if ($_SESSION['perfil']['roll']=="agenciabuses") {?>
 
 <li><a class="nav-link" href="index.php?ctl=mostrartodosdestinos"><i class="fas fa-umbrella-beach"></i> Destinos</a></li>
     <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciabuses/agenciabuses.inc'; ?>
@@ -209,12 +183,12 @@ if (!empty($_SESSION['perfil'])) {
 
 
 <?php }
-}
+              }
 
 
-if (!empty($_SESSION['perfil'])) {
-  if ($_SESSION['perfil']['roll']=="agenciaviajes") {?>
-      <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/--agenciaviajes.inc'; ?>
+          if (!empty($_SESSION['perfil'])) {
+              if ($_SESSION['perfil']['roll']=="agenciaviajes") {?>
+      <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/--agenciaviajes.inc';?>
 
       <li><a class="nav-link" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos/<?= $_SESSION['perfil']['name']; ?></a></li>                           
       <li class="nav-item dropdown">
@@ -240,17 +214,16 @@ if (!empty($_SESSION['perfil'])) {
 
 
 
-  if (!empty($_SESSION['perfil'])) {
-      if ($_SESSION['perfil']['roll']=="cliente") {?> 
-        <li ><a class="nav-link" href="index.php?ctl=sudoku"><span style="color:red"><i class="fa-solid fa-chess-board"></i> SUDOKU de hoy</span> </a></li>
+              if (!empty($_SESSION['perfil'])) {
+                  if ($_SESSION['perfil']['roll']=="cliente") {?> 
+          <li ><a class="nav-link" href="index.php?ctl=sudoku"><span style="color:red"><i class="fa-solid fa-chess-board"></i> SUDOKU de hoy</span> </a></li>
 
-        <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
+          <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
 
-        <li><a class="nav-link" style="border-right: 1px solid #006293;"  href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
-        <li class="saludo"><?php echo('<span class="nav-link fas fa-user"  > Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . '!</span>');?></li><?php    }
-  }
-
-}; ?>
+          <li><a class="nav-link" style="border-right: 1px solid #006293;"  href="index.php?ctl=deslogearCliente"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+          <li class="saludo"><?php echo('<span class="nav-link fas fa-user"  > Hola ' . pasarUtf8($_SESSION['perfil']['nombre']) . '!</span>');?></li><?php    }
+              }
+          }; ?>
 
 
   </ul>
@@ -260,30 +233,11 @@ if (!empty($_SESSION['perfil'])) {
 
 </div>
 
-
-<script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="boostrap/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="web/js/sweetAlert/libreria_sweetAlert.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
 <!--Idioma <img style="width:100px; height: 60px; background-color:red;" src="web/imagenes/banderas/Ingles.png" alt="Logo idioma Inglés">-->
 
+
+
 <style>
-@media only screen and (min-width: 100px) and (max-width: 990px) {
-  .nav-link{border-top: 1px solid black;}
-  .nav-link:hover{background-color:  #EFEFEF;}
-  .navbar-expand-lg .navbar-nav .dropdown-menu { position: absolute; margin:0em}
-  .dropdown-item{padding: 0rem 1em;}
-  
-
-}  .dropdown-item:hover{background-color: yellow;}
+.dropdown-menu{width: 200px; margin-top: -1em;}
+.nav-link:hover{text-decoration: underline;}
 </style>
-

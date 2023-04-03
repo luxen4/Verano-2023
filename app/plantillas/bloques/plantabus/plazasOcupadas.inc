@@ -5,6 +5,11 @@ use miId\fuente\Repositorio\BusRepositorio;
 
 include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO;
  $plazasOcupadas=[]; 
+
+
+ //var_dump($ref_Destino); die();
+
+
  $infoPlazas = (new ViajarRepositorio())->infoOcupacionBus($ref_Destino);                        // Para buscar los nombres de los ocupantes de un bus.
  for($i=0; $i<count($infoPlazas); $i++){
      array_push($plazasOcupadas,$infoPlazas[$i]->plaza_Bus);

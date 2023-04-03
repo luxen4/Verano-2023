@@ -63,10 +63,3 @@ $obj = (new ViajarRepositorio())->infoEstadoPagado($ref_Destino, $i); // var_dum
 } ?>
 
 
-<style>
-   .butacacompleta2 img,.butacacompleta2 .check_plaza{border: solid 1px black;}
-
-
-
-
-</style>

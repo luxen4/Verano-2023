@@ -10,7 +10,6 @@ input{/*width: 90%;*/}
 
 
 /* Estas seguro? */  
-#seg{margin: 0.5em;}
 #estaseguro input, #estaseguro2 input[type=checkbox] { transform: scale(1.5);margin-right: 0.5em;}
 
 #botones{text-align:center;}

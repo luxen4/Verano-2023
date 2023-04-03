@@ -11,7 +11,7 @@
 .deseleciona{font-size: 0.8em; border: 1px solid #006293; border-radius:1em; padding-left:1em; color:#006293;
                         padding-right:1em; width: 120px;}
 
-    .botones_mostrarFotosLocalidad input{height: 16px; margin: 0.5em; border-radius: 1em;}
+.botones_mostrarFotosLocalidad input{height: 16px; margin: 0.5em; border-radius: 1em;}
 /*#ab{ background-image: url("web/imagenes/localidades/imgLaredo1.jpg");}*/
 .fa-solid{
     margin: 0.25em;
@@ -26,7 +26,7 @@
 
 h5, i{text-align: center; color: #006293; border-bottom: none; margin: 0em;}
 h5{border-bottom: 1px solid #006293; margin-top: 1em; padding-bottom: 0.1em;}
-h6{text-decoration: underline; margin-bottom: 0em; text-align: left; padding-left: 0.5em;}
+h6{text-decoration: underline; margin-bottom: 0em; text-align: left; padding-left: 0.5em; color:  #006293;}
 p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 
 .tarjeta_barrestaurante_localidad{margin-top: 0.5em; padding:0em;}

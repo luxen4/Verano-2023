@@ -18,6 +18,9 @@
     <!--https://cdnjs.com/libraries/font-awesome para cdn de fontawesome-->
 
    
+    <link rel="stylesheet" type="text/css" href='web/css/styles.css'>
+    <link rel="stylesheet" type="text/css" href="web/css/stylesmostrar.css">
+
 
     <link rel="stylesheet" type="text/css" href="web/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="web/css/bootstrap-grid.min.css">
@@ -45,14 +48,13 @@ body{
 
 
 
-<header id="">
-  
+<header title="Castillos del Loira por Adrián Laya García">
   <div class="container-fluid">
       <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal.inc';?>
   </div>
-
-
 </header>
+
+
     <div id="container_cabecera" class="container-fluid">
         <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/js_cardDestinoHome.inc';?>
 
@@ -63,17 +65,7 @@ body{
     
   <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempoLocalidadUsuario.php';?>  
   <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/enlaces/directos.inc';?>
-    
-
-
-
-
-
-
-
- 
-
-
+  
       
   <!-- <h1>Viaja a más sitios sin pagar más</h1>-->
 
@@ -273,6 +265,8 @@ li a{color:#006293; }
 
 
 <style>
+.container{max-width: 100%;}
+
 footer{background-color: #FFFFFF;/*background-color: #F8F9FA;*/}
 footer h4{/*text-decoration: underline #006293 2px;*/ font-weight: 400; text-align: center;   }
 h2{margin: 0.5em;  color:#006293;}

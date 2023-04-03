@@ -85,37 +85,37 @@
 
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4 cont_foto"> 
 
-        <?php 
-/*
-$destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLocalidad);?>
-<?php $foto_destinosLocalidad=array('Ajo.jpg','Sopelana.jpg','Comillas.jpg'); //var_dump($destinosLocalidad);?>
+            <?php 
+          /*
+          $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLocalidad);?>
+          <?php $foto_destinosLocalidad=array('Ajo.jpg','Sopelana.jpg','Comillas.jpg'); //var_dump($destinosLocalidad);?>
 
-<?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos2.inc' */?>
-
-
+          <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos2.inc' */?>
 
 
-        <div id="carrusel" class="container-fluid">
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="web/imagenes/destinos/Ajo.jpg" alt="Ajo">
-                        <h6>Ajo</h6>
-                    </div>
 
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="web/imagenes/destinos/Sopelana.jpg" alt="Ajo">
-                        <h6>Sopelana</h6>
-                    </div>
 
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="web/imagenes/destinos/Comillas.jpg" alt="Ajo">
-                        <h6>Comillas</h6>
-                    </div>
+            <div id="carrusel" class="container-fluid">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="web/imagenes/destinos/Ajo.jpg" alt="Ajo">
+                            <h6>Ajo</h6>
+                        </div>
 
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="web/imagenes/destinos/Sopelana.jpg" alt="Ajo">
+                            <h6>Sopelana</h6>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="web/imagenes/destinos/Comillas.jpg" alt="Ajo">
+                            <h6>Comillas</h6>
+                        </div>
+
+                      </div>
                   </div>
-              </div>
-            </div>
+                </div>
         </div>
     </div>
 
@@ -152,7 +152,7 @@ $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLo
  
 </style>
 
-
+<div class="container">
       <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-3 cont_foto" > 
             <div id="carrusel" class="container-fluid">
@@ -227,6 +227,8 @@ $destinosLocalidad=array('Ajo','Sopelana','Comillas');    //var_dump($destinosLo
               </div>
             </div>
           </div>
+
+          
 
           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-3 cont_foto">  
             <div id="carrusel" class="container-fluid">

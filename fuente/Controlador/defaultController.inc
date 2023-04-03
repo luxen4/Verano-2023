@@ -36,13 +36,16 @@ class DefaultController{
           $soloAgenciasDeViajes= (new DestinoRepositorio())->soloAgenciasDeViajes();
           $_SESSION['soloagenciasdeviajes']=$soloAgenciasDeViajes;
 
-    if(isset($_POST['apuntar'])){
-      $datos=$_POST['datos'];  
+
+          
+    if(isset($_POST['contratar'])){
+      $datos=$_POST['datos']; // var_dump($datos); die(); 
       $_SESSION['datosdestino']=$datos['destinoseleccionado'];?>
       <script>
       alert("Por aquí");
       window.location.href="index.php?ctl=motrarplantabus";</script><?php
     }
+    
   
     include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/partesControladores/verFicha.inc';
 
