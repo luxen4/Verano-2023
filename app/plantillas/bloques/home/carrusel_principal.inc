@@ -1,12 +1,14 @@
 
 <?php
-// $uri=$_SERVER["REQUEST_URI"];
-    //    $partes = explode("ctl=", $uri);
+ $uri=$_SERVER["REQUEST_URI"];
+        $partes = explode("ctl=", $uri);
        
-//if (!empty($partes[1])) {
-   // $ctl=$partes[1];
+if (!empty($partes[1])) {}
+    $ctl=$partes[1];
 
-   // if ($ctl=="inicio/") { ?>
+    if ($ctl=="inicio/") { ?>
+
+    
      
     <div id="carrusel1" class="container-fluid" style="padding:0em;">
       <div class="row">
@@ -228,9 +230,9 @@
     </div>
 
     <?php
-   // }
+    }
 
-   //}
+   
           ?>
 
 

@@ -11,7 +11,7 @@ use miId\fuente\Repositorio\ViajarRepositorio;?>
         include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plantabus/plazasOcupadas.inc'; ?>
 
 
-
+<?php /*
 <div id="" class="row">
     <div id="" style="margin-bottom: 1em;"  class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
         <a class="" style="text-decoration:none; border: 1px solid black; border-radius:0.25em; padding:0.25em 0.5em; background-color:#EFEFEF;" href="index.php?ctl=motrarplantabus">Inscribir Pasajeros</a> 
@@ -20,9 +20,12 @@ use miId\fuente\Repositorio\ViajarRepositorio;?>
     <div id="desplegar_tabla_Info_bus" class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
         <input id="" type="button" value="Desplegar Información Bus">                                       
     </div>
-
-    
 </div>
+*/
+
+
+?>
+
 
     <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\rotuloSiNoPasajeros.inc'; no funciona en el servidor ?>
   

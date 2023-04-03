@@ -37,7 +37,7 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
 
     <input id="ref_Destino" type="checkbox" name="datos[refdestino]" value="<?php echo ($ref_Destino); ?>" hidden checked>
     <div id="info_viaje" class="container">
-        <div class="row" style="    max-width: 439px;">
+        <div class="row">
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="table-responsive"> 
                     <table class="table table-bordered table-hover">

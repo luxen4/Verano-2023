@@ -1,6 +1,7 @@
-<?php   use miId\fuente\Repositorio\ViajarRepositorio; 
-  use miId\fuente\Repositorio\PasajeroRepositorio;
-  use miId\fuente\Repositorio\ClienteRepositorio;
+<?php   
+    use miId\fuente\Repositorio\ViajarRepositorio; 
+    use miId\fuente\Repositorio\PasajeroRepositorio;
+    use miId\fuente\Repositorio\ClienteRepositorio;
 ?>
 
 <div class="table-responsive"> 
@@ -71,22 +72,22 @@
                     
                         <input id="<?php echo ("asiento_" . $asiento); ?>" type="checkbox" name="datos[asiento]" value="<?php echo ($asiento); ?>" hidden >
 
-<?php /*
-    if ($nomenclatura=="CLI") {
-        if (!empty($esSocioAgenciaViajes)) { ?>
-            <h6>Socio de <?= $_SESSION['perfil']['name']?></h6>
-            <?php
-        } else { ?>
-            <h6>Cliente Plataforma</h6><?php
-        } ?>
-        <input type="button" onclick="eliminarReservaAsiento(<?php echo ($asiento); ?>)" value="Eliminar esta plaza"<?php
-    }elseif($nomenclatura=='PAS'){ ?>
-        <h6> Pasajero</h6>
-        <input type="button" onclick="eliminarReservaAsiento(<?php echo ($asiento); ?>)" value="Eliminar esta plaza"><?php
+                                            <?php /*
+                                                if ($nomenclatura=="CLI") {
+                                                    if (!empty($esSocioAgenciaViajes)) { ?>
+                                                        <h6>Socio de <?= $_SESSION['perfil']['name']?></h6>
+                                                        <?php
+                                                    } else { ?>
+                                                        <h6>Cliente Plataforma</h6><?php
+                                                    } ?>
+                                                    <input type="button" onclick="eliminarReservaAsiento(<?php echo ($asiento); ?>)" value="Eliminar esta plaza"<?php
+                                                }elseif($nomenclatura=='PAS'){ ?>
+                                                    <h6> Pasajero</h6>
+                                                    <input type="button" onclick="eliminarReservaAsiento(<?php echo ($asiento); ?>)" value="Eliminar esta plaza"><?php
 
-    }else{ } 
-    */
-?>
+                                                }else{ } 
+                                                */
+                                            ?>
                     </td><?php   
                     
                     if ($nomenclatura=="CLI") {   $infoPersona=$infoCliente; ?>
@@ -136,62 +137,16 @@
                             <input type="radio" id="pagado_no<?=$plaza_Bus ?>" name="datos[pagado_<?=$plaza_Bus ?>]" value="NO"> NO</label> 
                 </td>
                 
-                <style>
-                    td h6{margin-bottom: 0em;}
-                </style><?php
+                <?php
                     
                     }elseif($nomenclatura=="PAS"){ $infoPersona=$infoNoCliente; ?>
                         <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
-                  ?>  <td><?php 
-    
-                    if(!empty($infoPersona[0]->nombre)){ ?>
-                    <h6><?php echo(pasarUtf8($infoPersona[0]->nombre) .' '. pasarUtf8($infoPersona[0]->apellidos)); ?></h6><?php
-                    }else{ ?>
-                    <h6><?php echo(pasarUtf8($infoPersona[0]->nombreApellidos));?></h6><?php
-                    }
-                
-                    
-                    if(!empty($infoPersona[0]->nombre)){
-                        $firstDate  = new DateTime();
-                        $secondDate = new DateTime($infoPersona[0]->fNacimiento);
-                
-                        $intvl = $firstDate->diff($secondDate);
-                        echo '(' . $intvl->y . " Años) ";
-                        // echo $intvl->y . " year, " . $intvl->m." months and ".$intvl->d." day"; 
-                        // echo "\n";
-                        // Total amount of days
-                        // echo $intvl->days . " days "; 
-                    }?>
-                
-                        <?php echo 'Tel: ' . pasarUtf8($infoPersona[0]->TlfnoParticular.'<br>email: '. pasarUtf8($infoPersona[0]->email));?>
-                
-                </td>
-                
-                
-                <td id='<?php echo 'plaza_' . $plaza_Bus; ?>'<?php ?>
+                  ?>  
+                  
 
-                <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\celda_Cobrado.inc'; ?><?php
-                    if($infoPersona[0]->pagado=='NO'){ ?>style="background-color: red;" 
-                        <?php $pendienteRecaudar= $pendienteRecaudar+($infoPersona[0]->embolso);
-                                $plazasSinCobrar=$plazasSinCobrar+1;
-                        ?>  <?php 
-                        }else{?>style="background-color: #99FE97;"<?php $total=$total+$infoPersona[0]->embolso; $plazasCobradas=$plazasCobradas+1; } ?> onclick="cambiar(<?php echo $plaza_Bus; ?>)" 
-                        >
-                
-                        <?php echo "Pagado: " . pasarUtf8($infoPersona[0]->pagado); ?>
-                        <!--<?php echo pasarUtf8(round($destino[0]->euros,2) . "€")?>-->
-                        <input type="text" name="preciobillete[<?=$plaza_Bus . '_' . $infoPersona[0]->embolso ?>]" value="<?php echo (pasarUtf8($infoPersona[0]->embolso) . '€' );?>" placeholder="<?php echo (pasarUtf8($infoPersona[0]->embolso) . '€' );?>"><br>
-                        <label for="">Modificar</label><br>
-                            <label for="pagado_si<?=$plaza_Bus ?>">
-                            <input type="radio" id="pagado_si<?=$plaza_Bus ?>" name="datos[pagado_<?=$plaza_Bus ?>]" value="SI"> SI</label>
-                
-                            <label for="pagado_no<?=$plaza_Bus ?>" style="margin-left:2em">
-                            <input type="radio" id="pagado_no<?=$plaza_Bus ?>" name="datos[pagado_<?=$plaza_Bus ?>]" value="NO"> NO</label> 
-                </td>
-                
-                <style>
-                    td h6{margin-bottom: 0em;}
-                </style>
+                  <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero.inc'; ?>
+                  <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero_cobrado.inc'; ?>
+
                 <?php
                 } 
                     else { ?><td></td><td></td> <?php } ?> 
@@ -201,59 +156,13 @@
             } ?>                                 
         </tbody>
     </table>
-
-
-
-
-    <script src="web/bootstrap/js/jspdf.debug.js"></script>
-     <div id="reporte">
-
-       
     
-    <?php /* 
-<table id="reporte1">
-    <tr>
-        <th>Clave</th>
-        <th>Url</th>
-        <th>Descripción</th>  
-    </tr>
-   
-    <tr>
-        <td style="color: red">a</td>
-        <td>b</td>
-        <td>c</td>
-    </tr>
-
-
-</table>  
-
-    <div id="reporte2" class="container">
-        <div class="row">
-            <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                a
-            </div>
-
-            <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                b
-            </div>
-        </div>
-    </div>
 </div>
 
-*/ ?>
+    <script src="web/bootstrap/js/jspdf.debug.js"></script>
+     
 
-
-
-<script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-<script src="boostrap/js/popper.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="web/js/sweetAlert/libreria_sweetAlert.js"></script>
-<script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous"></script>
-
-     <script>
+<script>
     //DescargarPDF(reporte,Archivo);
     function descargarPDF(ContenidoID,nombre){
 alert("entro");
@@ -268,73 +177,17 @@ var pdf =new jsPDF('p','pt','letter');
     }
 </script>
 
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/controles.inc'; ?>
+    <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\--info_Recaudado.inc'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_recaudado.inc'; ?>
 
-    <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/--modificarEstadosReservas.inc'; ?>
-    <div class="table-responsive"> 
-    <table class="table table-bordered table-hover">
-        <thead class="table-active">
-            <th><div id="" style="margin-top: 0.5em;" class="row"> 
-                <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                    <input type="submit" onclick="eliminarVariasReservasssssss()" name="eliminarvariasreservas" value="Eliminar Reservas">    
-                </div> 
-            </th>
-
-            <th style="width: 50%;">
-                <div class="row">
-                    <div id="" class="col-xl-12 text-center">
-                        <label style="font-size: 0.7em;" for="estaseguroa">
-                        <input  id="estaseguroa" type="checkbox" name="asegura"> Estoy seguro de hacer los cambios.</label>
-                    </div>
-                </div>
-
-                <div id="botones" class="row" style="margin-bottom: 0.5em;">
-
-                    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-6">
-                        <input type="submit" name="guardarcambiosbilletes" value="Guardar">
-                    </div>
-
-                    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-6">
-                        <input type="reset" value="Limpiar">
-                    </div>
-
-                </div>
-
-            </th>
-        </thead>
-    </table>
-    <?php 
-  
-    // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\--info_Recaudado.inc'; ?>
-
-
-<div class="row">
-    <div id="plazas_totales" class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-        <?php echo "Plazas Totales " . $plazasBusTotales; ?><br>
-        <?php echo "Plazas Libres " . $plazasBusTotales-$plazasCobradas-$plazasSinCobrar; ?>
-    </div>
-
-
-
-        <div id="recaudado" class="col-xl-6 text-center col-lg-12 col-md-12 col-sm-6 col-6">
-            <h6>Recaudado: <?php echo $total . '€'; ?></h6>
-            <h6>Cobradas: <?php echo $plazasCobradas . 'plaza/s'; ?></h6>
-        </div>
-
-        <div id="norecaudado" class="col-xl-6 text-center col-lg-12 col-md-12 col-sm-6 col-6">
-            <h6>Por Recaudar: <?php echo $pendienteRecaudar . '€'; ?></h6>
-            <h6>Sin Cobrar: <?php echo $plazasSinCobrar . ' plazas/s'; ?></h6>
-        </div>
-    
-</div>
 
 <style>
+    td h6{margin-bottom: 0em;}
+                
     #recaudado, #norecaudado, #plazas_totales{border:1px solid #006293; background-color:#F6F6F6; padding:0.5em}
     #recaudado_plazas{margin: 0.5em;}
     #recaudado_plazas, h6{color: #006293; text-decoration: underline;}
     th{font-size: 1em;}
 </style>
-</div>
 
-
-
-</div>

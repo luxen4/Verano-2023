@@ -171,6 +171,12 @@ if (empty($_SESSION['perfil'])) {?>
       <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/--agenciaviajes.inc';?>
 
       <li><a class="nav-link" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos/<?= $_SESSION['perfil']['name']; ?></a></li>                           
+      
+
+
+
+
+
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Su Agencia</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -186,6 +192,15 @@ if (empty($_SESSION['perfil'])) {?>
                   <a class="dropdown-item" href="#">Otros (ampliable V2)</a>-->
               </div>
       </li>
+
+
+
+
+
+
+      
+
+
 
         <!--Por comodidad se necesita volver a los formularios de inscripción-->
 
