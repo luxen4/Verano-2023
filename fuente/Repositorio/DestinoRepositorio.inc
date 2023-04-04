@@ -248,7 +248,7 @@ public function todosDestinos(){
             $sql="SELECT distinct d.ref_Destino, d.ref_Localidad, d.ref_Destino,
             l.nombre_Localidad, l.provincia, l.comunidad, l.pais, l.ruta_imagen1, 
             d.dia_Semana,d.fecha_Viaje, 
-            av.nombre_Agencia, d.euros, av.ref_AgenciaViajes, d.estado
+            av.nombre_Agencia, d.euros, av.ref_AgenciaViajes,av.telefono_Agencia, d.estado
             FROM DESTINO d 
             INNER JOIN AGENCIAVIAJES av ON av.ref_AgenciaViajes=d.ref_AgenciaViajes 
             INNER JOIN LOCALIDAD l on l.ref_Localidad=d.ref_Localidad 

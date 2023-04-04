@@ -5,10 +5,16 @@
       <!--  <link rel="stylesheet" type="text/css" href='web/css/plantasbuses/plantabus.css'/> OK
         <link rel="stylesheet" type="text/css" href='web/css/plantasbuses/bus_63plazas.css'/>  -->
 
+
+
         <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
         <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
-            <div class="container fondoplantabus"> 
+
+
+
+
+            <div class="container fondoplantabus" style=" max-width: fit-content;margin: auto;"> 
                 <form action="" method="POST">
                         <div class="row">
                             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
@@ -83,7 +89,7 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
     <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
     <input id="ref_Destino" type="checkbox" name="datos[refdestino]" value="<?php echo ($ref_Destino); ?>" hidden checked>
-    <div id="info_viaje" class="container">
+    <div id="info_viaje" class="container" style="margin: auto;">
         <div class="row">
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="table-responsive"> 
@@ -104,6 +110,30 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 <style>
     td{vertical-align: middle;}
@@ -155,6 +185,8 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
             </div>
 
 
+            
+
            
 <?php $contenido = ob_get_clean() ?>
 <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA .  BASE;?>
@@ -167,3 +199,45 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
 
 
 
+
+<style> 
+
+/*.container{ max-width: fit-content !important;}*/
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+   
+    .fila_asientos{margin: auto; height: 100px;}
+    .butacacompleta2{transform: scale(0.75);
+    margin-left: -0.5em;}
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .fila_asientos{margin-left: 5em; height: 85px;}
+    .butacacompleta2{transform: scale(0.6);
+    margin-left: -2em;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+   
+    .fila_asientos{margin-left: 1em; height: 85px;}
+    .butacacompleta2{transform: scale(0.6);
+    margin-left: -2em;}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .fila_asientos{margin-left: 3em; height: 55px;}  
+      .butacacompleta2{transform: scale(0.3);
+    margin-left: -3.5em;}
+}
+
+@media only screen and (max-width: 424px){
+    .fila_asientos{margin-left: 3em; height: 55px;}
+    .butacacompleta2{transform: scale(0.25);
+    margin-left: -4.1em;}
+}
+
+form{margin: 0em;}
+   .butacacompleta2 img,.butacacompleta2 .check_plaza{border: solid 1px black;}
+
+</style>

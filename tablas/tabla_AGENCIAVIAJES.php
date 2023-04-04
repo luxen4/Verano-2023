@@ -138,10 +138,12 @@ $pueblaAGENCIAVIAJES="INSERT INTO AGENCIAVIAJES (/*codigoAgencia*/fecha_Inscripc
 											web,email,telefono_Reserva,telefono_Agencia,horario_Agencia,lugar_SalidaPredeterminado,ref_CompaniaBusHabitual, 
 											username,contrasena,pago_Online,num_CuentaPagosOnline)
 
-	VALUES  (default,'AV004','Azul Marino','AM','AzulMarino.png','folletoAzulMarino.jpeg','B95860615','C/Gran Vía 45, entrada por calle Lardero','26002','Logroño','La Rioja','La Rioja','España',
+	VALUES  
+	
+/*	(default,'AV004','Azul Marino','AM','AzulMarino.png','folletoAzulMarino.jpeg','B95860615','C/Gran Vía 45, entrada por calle Lardero','26002','Logroño','La Rioja','La Rioja','España',
 			'https://www.viajesazulmarino.com/',
 			'superlaya51@gmail.com','941 899 200','941 899 200',default,default,'AB005',
-			'azulmarino21','$2y$10\$B.aNV5BQo8K7BwtQLs0lXuzLbjrmLkQ6j6A/rzSXTCHmi1YjQ373q','NO','NO'),
+			'azulmarino21','$2y$10\$B.aNV5BQo8K7BwtQLs0lXuzLbjrmLkQ6j6A/rzSXTCHmi1YjQ373q','NO','NO'),*/
 	
 	
 /* (default,'AV001','Gran Reserva','GR','GranReserva.png','folletogranReserva.png','A48265169','C/ Vara de Rey 42','26003','Logroño','La Rioja','La Rioja','España',
@@ -152,9 +154,9 @@ $pueblaAGENCIAVIAJES="INSERT INTO AGENCIAVIAJES (/*codigoAgencia*/fecha_Inscripc
 
 	/* username:gotravell21  contrasena:gotravell21 */ 
 	(default,'AV002','GO TRAVELL','GT','GoTravel.png','folletoGoTravell_2023.jpg','B26562918','C/ Avenida de la Solidaridad 9','26003','Logroño','La Rioja','La Rioja','España',
-			'gotravell@gotravell.com',
-			'superlaya51@gmail.com','653107390','643674634',default,'C/ Avenida de la Solidaridad 9','AB002',
-			'gotravell21','$2y$10\$rwK1HGaQotvT0dkt9G3Fhu/4.55cZ2WEOxY.UP1VwCT/7RWnjpNkC','SI','ES65987654321')";	
+			'viajesgotraveltour.com',
+			'info.gotraveltour@gmail.com','653107390','643674634',default,'C/ Avenida de la Solidaridad 9','AB002',
+			'gotravell21','$2y$10\$rwK1HGaQotvT0dkt9G3Fhu/4.55cZ2WEOxY.UP1VwCT/7RWnjpNkC','SI','ES65987654321')";	/* info.gotraveltour@gmail.com · viajesgotraveltour.com. */
 /*
 	(default,'AV003','ROTUPRINT','RT',null,'folletoRotuprint.jpeg','R2600077H','Padre Claret, 1 bajo','26004', 'Logroño','La Rioja','La Rioja','España',
 			'rotuprint@rotuprintrioja.com.','941235217','941235217','10:15:00 a 13:15:00 y 17:00:00 a 20:00:00','Varias Paradas','AB003',

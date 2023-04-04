@@ -103,7 +103,7 @@ public function cambioContrasenaUsuario($datos){
         
           // Función que ...
     public function tokenBaseDatos($ref_Usuario){
-      
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2023/app/utilidades/constantes.inc'; 
         try {
             include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/conf/configuracionfantasma.inc'; // ASI ES LA ÚNICA MANERA DE QUE FUNCIONE
 

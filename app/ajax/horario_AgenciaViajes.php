@@ -1,7 +1,10 @@
 <?php
 use miId\fuente\Repositorio\AgenciaViajesRepositorio; // Ajax
-
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2023/app/utilidades/constantes.inc'; 
     $ref_AgenciaViajes=$_POST['ref_AgenciaViajes'];
+
+
+
 	require $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/AgenciaViajesRepositorio.inc'; 
 	$horario_AgenciaViajes = (new AgenciaViajesRepositorio())->horarioAgenciaViajes($ref_AgenciaViajes);
 	

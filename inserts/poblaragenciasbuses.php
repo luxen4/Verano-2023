@@ -60,9 +60,14 @@
           /*----------------------------------------------------------------- */
 
           /*---JIMENEZ---------------------------------------------------- */
-          ('BUSJIM001','Grande','59','9476 JHH',2017,'AB004'),  /* Real con montacargas elevador sillas discapacitados */
-          ('BUSJIM002','Grande','59','7446 LYP',2018,'AB004'),  /* Real con PLM */
-          ('BUSJIM003','Grande','55','4912 JSP',2020,'AB004'),  /* Real */ 
+          ('BUSJIM001','Grande','63','9476 JHH',2020,'AB004'),  /* Real con montacargas elevador sillas discapacitados */
+          ('BUSJIM002','Grande','63','-',2020,'AB004'),
+          ('BUSJIM003','Grande','63','--',2020,'AB004'),
+          ('BUSJIM004','Grande','63','---',2020,'AB004'),
+          
+          
+          ('BUSJIM011','Grande','59','7446 LYP',2018,'AB004'),  /* Real con PLM */
+          ('BUSJIM022','Grande','55','4912 JSP',2020,'AB004'),  /* Real */ 
            /* ('BUSJIM003','Mediano','55','0055 JIM',2009,'AB004'), 
           ('BUSJIM004','Pequeño','51','0051 JIM',2012,'AB004'), 
           ('BUSJIM005','Minibus','28','0028 JIM',2005,'AB004'), 

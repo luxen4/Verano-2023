@@ -19,6 +19,7 @@ use miId\fuente\Repositorio\ViajarRepositorio;  ?>
 if(empty($_SESSION['perfil'])){ ?>
  <div>
     <a style="text-decoration: underline;" class="nav-link" href="index.php?ctl=loginusuarios" ><i class="fas fa-users"></i> Haga Loguin para reservar!</a>
+    <h6>o <br> llame al Tel. <?= $info_DestinoTelefonoImeil[0]->telefono_Agencia; ?></h6>
 </div>
 <?php
 }
@@ -135,8 +136,9 @@ if(empty($_SESSION['perfil'])){ ?>
              <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoDestino.inc' ; No me deja el include para el movil ?>            
 
              <?php 
+             /*
 include_once $_SERVER['DOCUMENT_ROOT'] . DESTINOREPOSITORIO; 
-$destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
+$destino = (new DestinoRepositorio())->infoDestino($ref_Destino); */?>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
     <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
@@ -148,7 +150,11 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
                 <div class="table-responsive"> 
                     <table class="table table-bordered table-hover">
                         <thead class="table-active">
-                            <th><?php echo pasarUtf8($destino[0]->nombre_Localidad)?>,<?php echo (pasarUtf8($destino[0]->kilometrosIdaVuelta) . "Km.")?></th><th><span><?php echo pasarUtf8($destino[0]->nombre_Agencia) ;?></span>  <span>Tel: <?php echo $info_DestinoTelefonoImeil[0]->telefono_Agencia; ?></span></th><th><?php echo pasarUtf8(round($destino[0]->euros,2) . "€")?></th>
+                            <th><?php echo pasarUtf8($destino[0]->nombre_Localidad)?>,
+                            <?php echo (pasarUtf8($destino[0]->kilometrosIdaVuelta) . "Km.")?></th>
+                            <th><span><?php echo pasarUtf8($destino[0]->nombre_Agencia) ;?></span>  <span>Tel: 
+                                <?php echo $info_DestinoTelefonoImeil[0]->telefono_Agencia; ?></span></th>
+                                <th><?php echo pasarUtf8(round($destino[0]->euros,2) . "€")?></th>
                         </thead>
 
                         <tbody>
@@ -263,11 +269,7 @@ $destino = (new DestinoRepositorio())->infoDestino($ref_Destino); ?>
 }
 
 form{margin: 0em;}
-
-
    .butacacompleta2 img,.butacacompleta2 .check_plaza{border: solid 1px black;}
-
-
 
 </style>
            

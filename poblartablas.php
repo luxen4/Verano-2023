@@ -14,6 +14,8 @@ $username="root";
 $contrasena="";
 */
 
+include_once $_SERVER['DOCUMENT_ROOT'] . '/Verano-2023/app/utilidades/constantes.inc'; 
+
 if($_SERVER['SERVER_NAME']=="localhost"){
   $host="localhost";
   $dbname="proyectoplayasdefinitivo";

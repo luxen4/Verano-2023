@@ -5,7 +5,15 @@ $pueblaDESTINO="INSERT INTO DESTINO (/*codDestino,*/ref_Destino, ref_Localidad, 
     VALUES	
 
 /* Abril 2023 */
-('D_GT1','SAS', ELT(WEEKDAY('2023-04-06') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-06','AV002',174,16,'BUSJIM001'),  /* Jueves */    /* 169km 1h 48min */
+('D_GT1_1','SAS', ELT(WEEKDAY('2023-04-06') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-06','AV002',174,16,'BUSJIM001'),  /* Jueves */    /* 169km 1h 48min */
+('D_GT1_2','SAS', ELT(WEEKDAY('2023-04-06') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-06','AV002',174,16,'BUSJIM002'),  /* Jueves */    /* 169km 1h 48min */
+('D_GT1_3','SAS', ELT(WEEKDAY('2023-04-06') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-06','AV002',174,16,'BUSJIM003'),  /* Jueves */    /* 169km 1h 48min */
+('D_GT1_4','SAS', ELT(WEEKDAY('2023-04-06') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-06','AV002',174,16,'BUSJIM004'),  /* Jueves */    /* 169km 1h 48min */
+
+
+
+
+
 ('D_GT2','SJL', ELT(WEEKDAY('2023-04-07') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-07','AV002',194,16,'BUSJIM001'),	/* Viernes */   /* 194km 2h 04min */
 ('D_GT3','STR', ELT(WEEKDAY('2023-04-08') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-08','AV002',193,16,'BUSJIM001'),  /* Sábado */    /* 234km 2h 17min */
 ('D_GT4','SAS', ELT(WEEKDAY('2023-04-09') + 1, 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),'2023-04-09','AV002',174,17,'BUSJIM001'),  /* Domingo */   /* 169km 1h 48min */
