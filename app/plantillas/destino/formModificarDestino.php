@@ -178,12 +178,15 @@
 
 
                   $busesCompanias=$_SESSION['todosbusesagenciaviajes'];
+                  //var_dump($busesCompanias); die();
+
                 for($i=0; $i<count($busesCompanias);$i++){
                 $matriculaBus=$busesCompanias[$i]->matricula; 
                 $plazas=$busesCompanias[$i]->plazas; 
                 $nombreCompaniaBuses=$busesCompanias[$i]->nombre; 
                 $ref_Bus= $busesCompanias[$i]->ref_Bus; 
                 $opcionBus=$matriculaBus . " // " .  $plazas . " plazas... " . $nombreCompaniaBuses;?>
+
                 <option value="<?php echo($ref_Bus);?>"><?php echo($opcionBus);?></option><?php }?>
 
 

@@ -59,7 +59,7 @@
                 <a class="boton_VerHorario" href="#Pop_UP_horario_AgenciaViajes" onclick="seleccionaRefAgenciaViajes2(<?php echo $ref_AgenciaViajes; ?>,'<?php echo ($agenciaViajes[$i]->nombre_Agencia); ?>')" data-toggle="modal" > Ver Horario</a><?php 
                     include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/popups/Pop_UP_horario_AgenciaViajes.inc'; // Tabla grande ?>                    
                     <input id="<?php echo ($ref_AgenciaViajes); ?>" type="checkbox" name="datos[ref_AgenciaViajes]" hidden value="<?= $ref_AgenciaViajes; ?>">
-                    <input class="boton_VerHorario" type="submit" name="ver_folleto" onclick="seleccionaRefAgenciaViajes(<?php echo ($ref_AgenciaViajes); ?>)" value="Ver Folleto">
+                    <input class="boton_VerHorario" type="submit" name="ver_folleto" onclick="seleccionaRefAgenciaViajes('<?php echo ($ref_AgenciaViajes); ?>')" value="Ver Folleto">
                     <!-- #B3A299 #D5BAA9 #B6A498 -->
             </div>
             

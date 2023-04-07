@@ -158,12 +158,10 @@ header img{height:402px;}
 @media (min-width: 576px){}
 .container, .container-sm {/*max-width: 800px;*/}
 
-.row>*{}
+
 
 .container{padding: 0em;}
  </style>
-
-
 
 
 

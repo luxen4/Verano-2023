@@ -76,7 +76,7 @@ if (isset($partes[1])) {
 
                   <?php
 
-                      $destinosLocalidad=array('Santander','Fuenterrabía','Orio','Deba','Plentzia');    //var_dump($destinosLocalidad);?>
+                  $destinosLocalidad=array('Santander','Fuenterrabía','Orio','Deba','Plentzia');    //var_dump($destinosLocalidad);?>
                   <?php $foto_destinosLocalidad=array('Santander.jpg','Fuenterrabía.jpg','Orio.jpg','Deba.jpg','Plentzia.jpg'); //var_dump($destinosLocalidad);?>
 
                   <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/home/carruseles_pequenos2.inc' ?>

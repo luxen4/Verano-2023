@@ -26,6 +26,12 @@
 // Si no hay loging o se loguea como Cliente
 
 if (empty($_SESSION['perfil'])) {?>
+
+
+<li>  <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/no_login/destinos.inc'; ?>
+</li>
+
+
   <li><a class="nav-link" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i>Todas las Agencias de Viajes</a></li>
   
   <!--<li class="nav-item dropdown"> Para seguir desarrollando
@@ -49,6 +55,7 @@ if (empty($_SESSION['perfil'])) {?>
   <li><a class="nav-link" href="https://www.eltiempo.es/" target="_blank"><i class="fa-solid fa-cloud-sun"></i> El tiempo</a></li><?php
 
 } elseif ($_SESSION['perfil']['roll']=='cliente') { ?>
+
   <li><a class="nav-link" href="index.php?ctl=mostraragenciaviajes"><i class="fas fa-store"></i>Todas las Agencias de Viajes</a></li><?php
 }?> <?php
 
@@ -172,34 +179,7 @@ if (empty($_SESSION['perfil'])) {?>
 
       <li><a class="nav-link" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos/<?= $_SESSION['perfil']['name']; ?></a></li>                           
       
-
-
-
-
-
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Su Agencia</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.php?ctl=infoagenciaviajes">Perfil</a> 
-                  <a class="dropdown-item" href="index.php?ctl=modificacioninfoagenciaviajeslogeada">Modificar Perfil</a> 
-                  <a class="dropdown-item" href="index.php?ctl=cambiousernamecontrasenaagenciaviajes">Username/Password</a> 
-                  <a class="dropdown-item" href="index.php?ctl=eliminarAgenciaviajesLogeada">Darse de baja</a> 
-                  
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Personal Agencia Viajes (ampliable V2)</a>
-
-                <!--  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Otros (ampliable V2)</a>-->
-              </div>
-      </li>
-
-
-
-
-
-
-      
-
+      <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/agenciaviajes/su_agenciaviajes.inc';?>
 
 
         <!--Por comodidad se necesita volver a los formularios de inscripción-->
@@ -213,6 +193,7 @@ if (empty($_SESSION['perfil'])) {?>
                   if ($_SESSION['perfil']['roll']=="cliente") {?> 
                       <li ><a class="nav-link" href="index.php?ctl=sudoku"><span style="color:red"><i class="fa-solid fa-chess-board"></i> SUDOKU de hoy</span> </a></li>
 
+                      
                       <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/clientes/clientes.inc'; ?>
 
                       <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal/dropdowns/no_login/destinos.inc'; ?>

@@ -1,4 +1,6 @@
 <div>
+
+<?php /*
     <!--
     <div class="row">
         <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
@@ -7,6 +9,7 @@
         </div>
     </div>
     -->
+    */ ?>
 
     <div class="modal fade" id="ventana96" style="margin: 0 auto;">
         <div class="modal-dialog">
@@ -39,8 +42,8 @@
 
                         <div class="row">
                             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                            <input id="<?php echo ("popup_" . $destino->ref_AgenciaViajes); ?>" type="checkbox" name="datos[ref_AgenciaViajes]" value="<?=$destino->ref_AgenciaViajes; ?>" hidden>
-                            <input class="boton_VerHorario btn btn-primary"  onclick='seleccionaRefAgenciaViajes("<?php echo ($destino->ref_AgenciaViajes); ?>")' type="submit" name="ver_folleto" value="Ver Folleto">
+                            <input id="<?php echo ("popup_" . $destino->ref_AgenciaViajes); ?>" type="checkbox" name="datos[ref_AgenciaViajes]" hidden value="<?=$destino->ref_AgenciaViajes; ?>" >
+                            <input class="boton_VerHorario btn btn-primary"  onclick='seleccionaRefAgenciaViajes3("<?php echo ($destino->ref_AgenciaViajes); ?>")' type="submit" name="ver_folleto" value="Ver Follneto">
                             </div>
                         </div>
                     </div>

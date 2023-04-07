@@ -40,7 +40,7 @@
       <?php  include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades2.inc'; ?>
 
   <body>
- <header title="Castillos del Loira por Adrián Laya García">
+ <header title="Playas 2023 por Adrián Laya García">
   <div class="container-fluid">
       <?php  require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/navegacionprincipal.inc';?>
   </div>
@@ -193,7 +193,7 @@ if (!empty($_SESSION['perfil'])) {
   <div class="row">
     <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
         <div id="copyright">     
-        <h6>Adrián Laya García © 2023  <br> - superlaya50@gmail.com- </h6>
+        <h6>Adrián Laya García <?php /* © */ ?> 2023  <br> - superlaya50@gmail.com- </h6>
         </div> 
     </div>
   </div>

@@ -630,6 +630,11 @@ Análisis:
 
 
 
+Si se loguea la agencia de viajes, está de más las fotos,
+Necesario:
+  fecha, destino, plazas, precio, reserva
+
+
 Análisis
 Prepago de apertura de Destino
 

@@ -253,7 +253,8 @@ $datos['ref_Destino']= 'D_' . $siglas_AgenciaViajes . $num_ref_Destino;
 
           require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/fuente/Repositorio/BusRepositorio.inc';
           $todosBusesAgenciaViajes = (new BusRepositorio())-> todosBusesDisponiblesParaUnaAgenciaViajes($ref_AgenciaViajes);
-         // var_dump($todosBusesAgenciaViajes); die();
+         // var_dump($ref_AgenciaViajes);
+        //var_dump($todosBusesAgenciaViajes); die();
           $_SESSION['todosbusesagenciaviajes']= $todosBusesAgenciaViajes;
       
 

@@ -1,4 +1,4 @@
-<div class="col-xl-4 text-center col-lg-6 col-md-12 col-sm-12 col-12" style="margin:auto; margin-bottom:0.5em;">
+<div class="col-xl-4 text-center col-lg-6 col-md-12 col-sm-12 col-12 av" >
     <article style="padding: 0em;">  
     
         <div class="row articuloconboton">
@@ -50,11 +50,20 @@
                             </div>
                         </div>
             </div>
-                <?php  include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
+                <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/descripcionViaje.inc'; ?>
         </div>
     </article>
 </div>
 
 <style>
     .w-100{height: 300px;}
+</style>
+
+<style>
+.av{margin:auto; margin-bottom:0.5em;}
+
+@media only screen and (min-width: 101px) and (max-width: 800px) {
+  .av{padding: 0em;}
+}
+
 </style>

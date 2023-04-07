@@ -8,22 +8,22 @@
             </div>
 
             <div class="carousel-item">
-                <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[0]; ?>" alt="Casto Urdiales">
+                <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[1]; ?>" alt="Casto Urdiales">
                 <h6><?php echo $destinosLocalidad[1]; ?></h6>
             </div>
 
             <div class="carousel-item">
-            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[0]; ?>" alt="Zarautz">
+            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[2]; ?>" alt="Zarautz">
             <h6><?php echo $destinosLocalidad[2]; ?></h6>
             </div>
         
             <div class="carousel-item">
-            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[0]; ?>" alt="San Juán de Luz">
+            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[3]; ?>" alt="San Juán de Luz">
             <h6><?php echo $destinosLocalidad[3]; ?></h6>
             </div>
 
             <div class="carousel-item">
-            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[0]; ?>" alt="Laredo">
+            <img class="d-block w-100" src="web/imagenes/destinos/<?php echo $foto_destinosLocalidad[4]; ?>" alt="Laredo">
             <h6><?php echo $destinosLocalidad[4]; ?></h6>
             </div>
             

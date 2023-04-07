@@ -125,8 +125,13 @@ public function eliminarBusAgenciaBusesLogeada($matricula){
                         INNER JOIN AGENCIAVIAJES av ON av.ref_CompaniaBusHabitual=ab.ref_AgenciaBuses
                         WHERE r.ref_AgenciaViajes='$ref_AgenciaViajes' /*AND ab.ref_AgenciaViajes!='$ref_AgenciaViajes'*/";
        
-            $result = $gbd->query($sql); //var_dump($result);die();
+
+            $result = $gbd->query($sql);
+
             return $results = $result->fetchAll(\PDO::FETCH_OBJ);
+
+
+
             //return $results = $result->fetchAll();
 
         } catch (\PDOException$e) { echo $e->getMessage();

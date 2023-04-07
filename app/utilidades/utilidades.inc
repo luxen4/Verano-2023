@@ -64,7 +64,6 @@ function selecciona(codigo){
 
 // Función que selecciona el checkbox cuando se ejecuta el submit
 function seleccionaCheckLocalidadParaHoteles(codigo){
-  alert("Entros");
   var seleccionar=document.getElementById(codigo).checked = true;
   $('#ref_Destino').value=codigo;
 }
@@ -73,10 +72,19 @@ function seleccionaCheckLocalidadParaHoteles(codigo){
 // Función que selecciona el checkbox cuando se ejecuta el submit para seleccionar la Agencia de Viajes
 function seleccionaRefAgenciaViajes(ref_AgenciaViajes){
 
-  var selector="popup_" + ref_AgenciaViajes
+  //var selector="popup_" + ref_AgenciaViajes;
+  
+  var selector=ref_AgenciaViajes
   var seleccionar=document.getElementById(selector).checked = true;
   
  // var seleccionar=document.getElementById(ref_AgenciaViajes.id).checked = true;
+}
+
+function seleccionaRefAgenciaViajes3(ref_AgenciaViajes){
+var selector="popup_" + ref_AgenciaViajes;
+var seleccionar=document.getElementById(selector).checked = true;
+
+// var seleccionar=document.getElementById(ref_AgenciaViajes.id).checked = true;
 }
 
 

@@ -47,6 +47,8 @@
           ('BUSVIC004','Minibus','28','0028 VIC',2015,'AB003'),	
           ('BUSVIC005','Minibus','19','0019 VIC',2005,'AB003'),	    /* Para Victor Bayo */
           
+
+          
           /*---LOGROBUS---------------------------------------------------- */
           ('BUSLOG001','Grande','63','4729 HWW',2005,'AB005'),  /* Real */
           ('BUSLOG002','Grande','59','6664 CZT',2015,'AB005'),  /* Real */
@@ -60,18 +62,18 @@
           /*----------------------------------------------------------------- */
 
           /*---JIMENEZ---------------------------------------------------- */
-          ('BUSJIM001','Grande','63','9476 JHH',2020,'AB004'),  /* Real con montacargas elevador sillas discapacitados */
-          ('BUSJIM002','Grande','63','-',2020,'AB004'),
-          ('BUSJIM003','Grande','63','--',2020,'AB004'),
-          ('BUSJIM004','Grande','63','---',2020,'AB004'),
+          ('BUSJIM001','Grande','63','9476 JHH',2020,'AB002'),  /* Real con montacargas elevador sillas discapacitados */
+          ('BUSJIM002','Grande','63','-',2020,'AB002'),
+          ('BUSJIM003','Grande','63','--',2020,'AB002'),
+          ('BUSJIM004','Grande','63','---',2020,'AB002'),
           
           
-          ('BUSJIM011','Grande','59','7446 LYP',2018,'AB004'),  /* Real con PLM */
-          ('BUSJIM022','Grande','55','4912 JSP',2020,'AB004'),  /* Real */ 
-           /* ('BUSJIM003','Mediano','55','0055 JIM',2009,'AB004'), 
-          ('BUSJIM004','Pequeño','51','0051 JIM',2012,'AB004'), 
-          ('BUSJIM005','Minibus','28','0028 JIM',2005,'AB004'), 
-          ('BUSJIM006','Minibus','19','0019 JIM',2005,'AB004'),	*/
+          ('BUSJIM011','Grande','59','7446 LYP',2018,'AB002'),  /* Real con PLM */
+          ('BUSJIM022','Grande','55','4912 JSP',2020,'AB002'),  /* Real */ 
+           /* ('BUSJIM003','Mediano','55','0055 JIM',2009,'AB002'), 
+          ('BUSJIM004','Pequeño','51','0051 JIM',2012,'AB002'), 
+          ('BUSJIM005','Minibus','28','0028 JIM',2005,'AB002'), 
+          ('BUSJIM006','Minibus','19','0019 JIM',2005,'AB002'),	*/
           /*----------------------------------------------------------------- */
  
           /*---GURREA---------------------------------------------------- */

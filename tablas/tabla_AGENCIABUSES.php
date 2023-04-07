@@ -47,19 +47,20 @@ $creaAGENCIABUSES="CREATE TABLE AGENCIABUSES(
   'yanguas@yanguas.com','637117965','941-20-20-20', '10:15:00 a 13:30:00 y 17:30:00 a 20:30:00','SI','ES650123456789', 'yanguas21','$2y$10$91YosuvjXJim4.6eZcQccehkPJVKVNKjLbiJ9SJaGBoyUrThGNGDW',default),	
   /*username-> yanguas21		contrasena->yanguas21*/
   
-  ('AB002',default,'Autobuses Riojacar','A234567891','Calle la Nevera, 12','26006',    'Logroño','La Rioja','La Rioja','España',  
-  'riojacar@riojacar.com','941 50 02 00','941 50 02 00', '10:00:00 a 13:00:00 y 17:00:00 a 20:00:00','SI','ES65123456789','riojacar21','$2y$10\$FyUtPdH/FpUDdtmEfg697emLusRh8l9wdRmdc9uEbYDd1aKbUazVi',default),	
-  /*username=> riojacar21     contrasena=> riojacar21 */
-  
+  ('AB002',default,'Autobuses Jimenez','A48265190','C/ Santa María 8','26006',   'Logroño','La Rioja','La Rioja','España',	
+  'jimenez@jimenez.com','941 20 27 77','941 20 27 77',  '10:00:00 a 13:00:00 y 17:00:00 a 20:00:00','SI','ES65234567890','jimenez21','$2y$10\$YEqrNDwx800/PG7gxhS2iOtcNgwtE09c2B1Mxn4aJg60bBJuAkfuS',default),	
+  /*username=> jimenez21      contrasena=> jimenez21 */
+
   ('AB003',default,'Victor Bayo','B40156598','C/ Mayor, nº 10','40551','Campo de San Pedro','Segovia','Castilla y León','España',	
   'victorbayo@victorbayo.com','921 55 60 35','921 55 63 36', /*Lunes a viernes: 10:00-13:00 ; 17:00-19:00*/' 10:00 a 13:00 ; 17:00 a 19:00','SI','ES65412569863',
   'victorbayo21','$2y$10\$WzAOf40fn03oxdAJ8cjUpuYWMo7zFgJfR.1Fm4j4ZMzlraNgeXZAG',default),
   /* username=> victorbayo21     contrasena=> victorbayo21 */
+ 
+  ('AB004',default,'Autobuses Riojacar','A234567891','Calle la Nevera, 12','26006',    'Logroño','La Rioja','La Rioja','España',  
+  'riojacar@riojacar.com','941 50 02 00','941 50 02 00', '10:00:00 a 13:00:00 y 17:00:00 a 20:00:00','SI','ES65123456789','riojacar21','$2y$10\$FyUtPdH/FpUDdtmEfg697emLusRh8l9wdRmdc9uEbYDd1aKbUazVi',default),	
+  /*username=> riojacar21     contrasena=> riojacar21 */
   
-  ('AB004',default,'Autobuses Jimenez','A48265190','C/ Santa María 8','26006',   'Logroño','La Rioja','La Rioja','España',	
-  'jimenez@jimenez.com','941 20 27 77','941 20 27 77',  '10:00:00 a 13:00:00 y 17:00:00 a 20:00:00','SI','ES65234567890','jimenez21','$2y$10\$YEqrNDwx800/PG7gxhS2iOtcNgwtE09c2B1Mxn4aJg60bBJuAkfuS',default),	
-  /*username=> jimenez21      contrasena=> jimenez21 */
-  
+ 
   ('AB005',default,'Logrobus','A00125478','Calle Rodejón, 24','26006','Logroño','La Rioja','La Rioja','España',	
   'logrobus@logrobus.com','609411262',' 941 26 33 51',default,'SI','ES65547896258',
   'logrobus21','$2y$10$3mPHpqDtmAvs3mvZaWmgxuVna4yM9LTKKZXcXFuN8TbVGwvnaALsy',default),

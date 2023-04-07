@@ -245,9 +245,11 @@ if(!empty($_SESSION['perfil'])){
         
                 $obj = (new AgenciaViajesRepositorio())->folletoAgenciaViajes($ref_AgenciaViajes); ?><pre><script>//alert("¡Enhorabuena, ya forma parte de nosotros!")</script></pre><?php
                     $nombre_Folleto=$obj[0]->nombre_Folleto;
+                    //var_dump($obj); die();
 
                 if(!empty($nombre_Folleto)){?>
                     <script>//alert("Le mostramos el Folleto");
+
                     window.location.href ="web/imagenes/folletos/<?php echo $nombre_Folleto; ?>";</script><?php
                 }else{?><script>alert("No tiene Folleto"); window.location.href="index.php?ctl=mostraragenciaviajes";</script><?php }      
             }

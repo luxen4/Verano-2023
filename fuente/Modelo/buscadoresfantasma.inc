@@ -18,7 +18,7 @@
 
 
             }else{ ?>
-                <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12" style="padding: 0em;">
                     <h5 style="text-align: center;">No te pierdas los <br> Próximos Viajes Programados</h5>
                 </div><?php
             }
@@ -30,7 +30,7 @@
                     if(!empty($lugaresDondeComer)){ ?>
                         <?php // require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/barrestaurantesconsultados.inc'; ?> <?php 
                     }else{?>
-                        <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-12 text-left col-lg-12 col-md-12 col-sm-12 col-12" style="padding: 0em;">
                             <?php $menuSoloRotulo=1; ?>
                             <?php require_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/destinosconsultados.inc';?>   
                         </div>

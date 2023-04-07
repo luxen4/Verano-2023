@@ -44,11 +44,22 @@
             
 
     <h4><?php echo round($destino->euros, 2) . '€/billete' ?></h4>
-    <h4><?php echo $plazasOcupadas[$i]->num_PlazasOcupadas . " / "; ?><?php echo $destino->plazas; ?><span style="background-color: cyan;"> / <?php echo $destino->plazas - $plazasOcupadas[$i]->num_PlazasOcupadas . " Libres"; ?></span></h4>
+    <h4><?php echo $plazasOcupadas[$i]->num_PlazasOcupadas . " / "; ?><?php echo $destino->plazas; ?><span style="background-color: #AFE0E0;"> / <?php echo $destino->plazas - $plazasOcupadas[$i]->num_PlazasOcupadas . " Libres"; ?></span></h4>
                             
-    <h4>Pagadas: <?php echo $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas; ?><span style="background-color: cyan;"><?php echo "  Recaudado: " . $destino->euros * $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas . "€"; ?></span></h4> 
+    <h4>Pagadas: <?php echo $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas; ?><span style="background-color: #AFE0E0;"><?php echo "  Recaudado: " . $destino->euros * $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas . "€"; ?></span></h4> 
     
-    <h4>No Pagadas: <?php echo $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas; ?> <span  style="background-color:red;">
+    <h4  ><span <?php if($plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas>0){ ?>style="background-color:red; border-radius: 0.25em; padding: 0em 0.25em;"<?php
+
+
+} ?> >No Pagadas: <?php echo $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas; ?> 
+    
+
+
+    
+    
+    
+    
+    
         <?php echo "Faltan: " . $destino->euros * $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas . "€"; ?></span></h4>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
@@ -56,7 +67,7 @@
     <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
     
     <hr class="letra">
-        <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo ($ref_Destino); ?>')" value="Realizar Reserva" <?php
+        <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo ($ref_Destino); ?>')" value="Reservas" <?php
 
         if($estadoDestino[0]->estado=='NO DISPONIBLE'){ ?>disabled<?php } ?> >
 

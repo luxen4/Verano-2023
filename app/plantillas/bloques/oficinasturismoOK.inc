@@ -65,7 +65,7 @@
     <div class="row">
             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                 <div id="copyright">     
-                <h6>Adrián Laya García © 2023  <br> - superlaya50@gmail.com- </h6>
+                <h6>Adrián Laya García <?php /* © */ 2023  <br> - superlaya50@gmail.com- </h6>
                 </div> 
             </div>
     </div> 
