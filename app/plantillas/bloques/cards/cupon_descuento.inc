@@ -1,5 +1,7 @@
-<!--Inicio Cupón Descuento-->
+
 <?php 
+/*
+<!--Inicio Cupón Descuento-->
 
     if(!empty($bar_rest->dto)){?>
         <p class="texto-vertical-3">
@@ -9,9 +11,10 @@
             </div>
         </p><?php
     } 
-
+<!--Fín Cupón Descuento-->    
+*/
 ?>
-<!--Fín Cupón Descuento-->
+
  
 
 

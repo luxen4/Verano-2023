@@ -27,7 +27,7 @@
             <?php  echo $destino->euros .'€'; ?>
         </div>
 
-        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/boton_reservar.inc'; ?>
+        <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/boton_reservar.inc'; ?>
                     
     
         <?php 

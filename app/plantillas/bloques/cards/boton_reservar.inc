@@ -8,8 +8,7 @@ if(!empty($_SESSION['perfil'])){
     } 
 
 }else{ ?>
-    <h6 style="text-align: center;">Tel: <?= $destino->telefono_Agencia; ?></h6>
-    <?php
+   <?php /* <h6 style="text-align: center;">Tel: <?= $destino->telefono_Agencia; ?></h6>  */ ?><?php 
 }
 
 ?>

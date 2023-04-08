@@ -40,3 +40,7 @@
         </form>
     </div>
 <!--Fín buscadodesfantasma.inc-->
+
+<style>
+    .w-100{height: 300px;}
+</style>

@@ -335,7 +335,11 @@ body{
 </style>
 
 
-
+<style>
+    .modal-header,.modal-body{padding: 0em;}
+    .row{margin: 0.15em;}
+    h5{text-align: center; border: none;}
+</style>
 
 
 

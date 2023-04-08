@@ -251,7 +251,7 @@ if (isset($partes[1])) {
   }
 
 
- @media only screen and (min-width: 770px) and (max-width: 1600px) {
+ @media only screen and (min-width: 770px) and (max-width: 2140px) {
 #carrusel1{display: none;}
 
 

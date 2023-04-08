@@ -32,18 +32,16 @@
                             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                                 <h5>Horario: <br><span id="horario_AgenciaViajes" style="margin-left: 0.5em;"></span></h5>
                             </div>
-                        </div>
-
-                        <div class="row">
+                       
                             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                                <h5>Teléfono: <br><span id="telefono_AgenciaViajes" style="margin-left: 0.5em;"></span></h5>
+                                <h5>Teléfono: <span id="telefono_AgenciaViajes" style="margin-left: 0.5em;"></span></h5>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
                             <input id="<?php echo ("popup_" . $destino->ref_AgenciaViajes); ?>" type="checkbox" name="datos[ref_AgenciaViajes]" hidden value="<?=$destino->ref_AgenciaViajes; ?>" >
-                            <input class="boton_VerHorario btn btn-primary"  onclick='seleccionaRefAgenciaViajes3("<?php echo ($destino->ref_AgenciaViajes); ?>")' type="submit" name="ver_folleto" value="Ver Follneto">
+                            <input class="boton_VerHorario btn btn-primary"  onclick='seleccionaRefAgenciaViajes3("<?php echo ($destino->ref_AgenciaViajes); ?>")' type="submit" name="ver_folleto" value="Ver Folleto">
                             </div>
                         </div>
                     </div>
@@ -59,9 +57,11 @@
     </div>
 </div>
 
-         
+     
+<?php /* Borrar
 <style>
     .modal-header,.modal-body{padding: 0em;}
     .row{margin: 0.5em;}
     h5{text-align: center; border: none;}
 </style>
+*/ ?>

@@ -25,7 +25,7 @@
 /* Para ambos archivos */
 
 h5, i{text-align: center; color: #006293; border-bottom: none; margin: 0em;}
-h5{border-bottom: 1px solid #006293; margin-top: 1em; padding-bottom: 0.1em;}
+h5{border-bottom: 1px solid #006293; /* margin-top: 1em; */ padding-bottom: 0.1em;}
 h6{text-decoration: underline; margin-bottom: 0em; text-align: left; padding-left: 0.5em; color:  #006293;}
 p{font-size: 1em; margin-top: -0.5em; margin-bottom: 0.3em;}
 
