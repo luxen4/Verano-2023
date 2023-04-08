@@ -396,11 +396,11 @@ class BusController
 
         }
 
-        if(isset($_POST['generaexcelocupacionbus'])){ ?><script>alert("Entro");</script>
+        if(isset($_POST['generaexcelocupacionbus'])){ ?><script>alert("Generando informe Excel");</script>
            <?php $datos=$_POST['datos']; ?>
-            <script>window.location.href="index.php?ctl=generaexcel_ocupacionbus";
-           
-            </script><?php 
+            <script>window.location.href="index.php?ctl=generaexcel_ocupacionbus";</script>
+            <script>//window.location.href="index.php?ctl=inicio/";</script>
+            <?php 
             
         }
 

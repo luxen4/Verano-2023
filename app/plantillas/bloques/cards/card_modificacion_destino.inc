@@ -22,13 +22,13 @@
                     if($estadoDestino[0]->estado=='DISPONIBLE'){ ?> name="cerrarviaje" <?php
                     }else{ ?> name="abrirviaje" <?php } 
                 
-            if($estadoDestino[0]->estado=='DISPONIBLE'){ ?>  value="DISPONIBLE" <?php
-            }else if($estadoDestino[0]->estado=='NO DISPONIBLE'){ ?> value="NO DISPONIBLE"  <?php
+            if($estadoDestino[0]->estado=='DISPONIBLE'){ ?>  value="_DISPONIBLE_" <?php
+            }else if($estadoDestino[0]->estado=='NO DISPONIBLE'){ ?> value="_NO DISPONIBLE_"  <?php
 
             }else if($plazasOcupadas[$i]->num_PlazasOcupadas==$destino->plazas){
-                    ?> value="COMPLETO" <?php
+                    ?> value="BUS COMPLETO" <?php
             }else{
-                ?> value="DISPONIBLE"<?php
+                ?> value="_DISPONIBLE_"<?php
             } ?>
             
             onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo($ref_Destino);?>')">  
@@ -38,14 +38,15 @@
                                    
                                 
     <h4><?php echo $destino->fecha_Viaje . ", " . $destino->dia_Semana;?><br>
-        <?php echo $destino->nombre_Localidad . ', ' . $destino->kilometrosIdaVuelta . " Km"; ?>
+        <?php echo $destino->nombre_Localidad . ', ' . $destino->kilometrosIdaVuelta . " Km, "; ?>
         <?php echo $destino->matricula;?>
     </h4>
             
 
     <h4><?php echo round($destino->euros, 2) . '€/billete' ?></h4>
     <h4><?php echo $plazasOcupadas[$i]->num_PlazasOcupadas . " / "; ?><?php echo $destino->plazas; ?><span style="background-color: #AFE0E0;"> / <?php echo $destino->plazas - $plazasOcupadas[$i]->num_PlazasOcupadas . " Libres"; ?></span></h4>
-                            
+         
+    <hr class="letra">
     <h4>Pagadas: <?php echo $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas; ?><span style="background-color: #AFE0E0;"><?php echo "  Recaudado: " . $destino->euros * $plazasOcupadasPagadas[$i]->num_PlazasOcupadasPagadas . "€"; ?></span></h4> 
     
     <h4  ><span <?php if($plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas>0){ ?>style="background-color:red; border-radius: 0.25em; padding: 0em 0.25em;"<?php
@@ -54,13 +55,8 @@
 } ?> >No Pagadas: <?php echo $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas; ?> 
     
 
-
     
-    
-    
-    
-    
-        <?php echo "Faltan: " . $destino->euros * $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas . "€"; ?></span></h4>
+    <?php echo "Faltan: " . $destino->euros * $plazasOcupadasNoPagadas[$i]->num_PlazasOcupadasNoPagadas . "€"; ?></span></h4>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
     <?php $ref_Destino=$destino->ref_Destino; ?>

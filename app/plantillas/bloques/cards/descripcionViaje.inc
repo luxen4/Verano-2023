@@ -2,7 +2,7 @@
 
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_descripcionViaje.inc';?>
     <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">   
-            <h5 class="destino">
+            <h6 class="destino">
                 <div>
                     <div>
                         <a href="web/imagenes/destinos/<?php echo ($destino->nombre_Localidad); ?>.jpg" alt="descripción de la foto">
@@ -13,7 +13,7 @@
                         <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/elTiempo.inc'; ?>
                     </div>    
                 </div>
-            </h5>
+            </h6>
     </div>
 
     <div class="col-xl-4 text-center col-lg-4 col-md-4 col-sm-4 col-4" style="padding: initial;">
@@ -23,33 +23,18 @@
         </div>
         
         <div>
-            <?php  echo $numPlazasOcupadasBus; ?>/<?php echo $numPlazasTotalesBus; ?> plazas&nbsp;
-            <?php  echo $destino->euros .'€'; ?>
+            <?php echo $numPlazasOcupadasBus; ?>/<?php echo $numPlazasTotalesBus; ?> plazas&nbsp; <?php echo $destino->euros .'€'; ?>
         </div>
 
-        <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/boton_reservar.inc'; ?>
-                    
-    
         <?php 
             if (!empty($_SESSION['perfil'])) {
                 if ($_SESSION['perfil']['roll'] === "cliente" || $_SESSION['perfil']['roll'] === "agenciaviajes" || $_SESSION['perfil']['roll'] === "admin"){ ?>
                   
-                  
-<?php /*
-    <div>
-        <?php  echo $numPlazasOcupadasBus; ?>/<?php  echo $numPlazasTotalesBus; ?> plazas  &nbsp;
-        <?php  echo $destino->euros .' €'; ?>
-    </div>
-
-    */ 
-?>
-
-
+                    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/boton_reservar.inc'; ?>
                     <?php //include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; }       
-
-            }else{
-               // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; 
-            } ?>
+                }else{
+                // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/estadodestino.inc'; 
+                } ?>
     </div>
     
 
@@ -70,35 +55,25 @@
             
             if(empty($_SESSION['perfil'])){ // Solo sale el botón de 'Solicitar Reserva' y el de 'Comer en' ?>
 
-               
-                
                 <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/botones_Destino.inc'; ?>
                 
+                <div class="row" style="margin: auto;">
+                    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
+                        <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/solicitarReserva.inc'; ?>
+                    </div>
 
+                    <?php /*
+                    <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
+                        <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                    </div>
+                    */
+                    ?>
 
-    <div class="row" style="margin: auto;">
-        <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-            <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/solicitarReserva.inc'; ?>
-        </div>
-
-        <?php /*
-        <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
-        </div>
-        */
-        ?>
-
-
-
-
-    </div>
-
-                
-
-
+                </div>
                 <?php
                     
             }else{
+    
     if ($_SESSION['perfil']['roll']=='cliente') { // Solo sale el botón de 'Solicitar Reserva' y el de 'Comer en'?>
                     <div class="row">
                         <?php /*
@@ -115,38 +90,38 @@
 
 
                     </div><?php
-    } elseif ($_SESSION['perfil']['roll']=='agenciaviajes') { // Aparecen los botones de 'Reservar', 'Modificar' y 'Suspender Viaje'?>
-<!--
-                    <div class="row">
-                        <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
-                        <a class="dropdown-item" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"></a> 
-                        <div>
-                    </div>
+            } elseif ($_SESSION['perfil']['roll']=='agenciaviajes') { // Aparecen los botones de 'Reservar', 'Modificar' y 'Suspender Viaje'?>
+        <!--
+                            <div class="row">
+                                <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
+                                <a class="dropdown-item" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"></a> 
+                                <div>
+                            </div>
 
-                    <div class="row">
-                        <div class="col-xl-4 text-center col-lg-4 col-md-4 col-sm-4 col-4">
-                          
-                        <?php
+                            <div class="row">
+                                <div class="col-xl-4 text-center col-lg-4 col-md-4 col-sm-4 col-4">
+                                
+                                <?php
 
-            if ($estado=="COMPLETO") { ?>
-                        <a class="dropdown-item" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos de <?= $_SESSION['perfil']['name']; ?></a> 
-                        <?php
-            } else { ?>
-                            <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo($ref_Destino); ?>')" 
-                                    value="Reservar"><?php
-            } ?>
-              
-
-                    -->  
-                 
+                    if ($estado=="COMPLETO") { ?>
+                                <a class="dropdown-item" href="index.php?ctl=motrartodosdestinosdeagenciaviajeslogeada"><i class="fas fa-eye"></i> Destinos de <?= $_SESSION['perfil']['name']; ?></a> 
+                                <?php
+                    } else { ?>
+                                    <input type="submit" name="contratar" onclick="deselecionaTodosChecksDestinos(),selecciona('<?php echo($ref_Destino); ?>')" 
+                                            value="Reservar"><?php
+                    } ?>
                     
-                    <?php
 
-    } else { ?>
-                        <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
-                            <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
-                        </div><?php
-    }
+                            -->  
+                        
+                            
+                            <?php
+
+            } else { ?>
+                                <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/cards/desplegabledondecomer.inc'; ?>
+                                </div><?php
+            }
 }
             
             } ?>

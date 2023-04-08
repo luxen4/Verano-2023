@@ -11,7 +11,7 @@
 <div class="container-fluid" style="padding: 0em;"> 
     <div class="row">
         <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12 ">
-            <h5 style="text-align: center;"><?php echo $_SESSION['perfil']['name']; ?><br> All Destinations of your Travel-Agency</h5>
+            <h5 style="text-align: center;"><?php echo $_SESSION['perfil']['name']; ?><br> Todos los Destinos de la Agencia de Viajes</h5>
         </div>
     </div>
 

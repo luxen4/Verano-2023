@@ -236,7 +236,16 @@ class excelController
     </div>
 </div> 
         </body>
-        </html><?php
+        </html>
+       
+           
+           </script>
+        <?php
+
+
+
+
+
 
       }
 }

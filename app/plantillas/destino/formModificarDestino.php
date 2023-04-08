@@ -146,9 +146,9 @@
               <!--echo round($desti, 2, PHP_ROUND_HALF_DOWN) . "€";-->
             <label for="precio">Precio</label>
             <input  id="precio" type="number" name="datos[euros]" value="<?php echo $datos['euros'] ?? '' ?>" 
-                    placeholder="" step="0.5" min="12" max="20" size="3" required>
+                    placeholder="" step="0.5" min="5" max="100" size="3" required>
             <?php if(isset($datos)){if(isset($errores['euros'])){?><span class="error"><?="<br>". $errores['euros'].'</span>'?><?php 
-                  }else{?><span class="ok">OK</span><?php }};?>
+                  }else{?><?php /* <span class="ok">OK</span> */ ?><?php }};?>
         </div>
 
 <?php
@@ -194,7 +194,7 @@
 
               </select>
                       <!--   <input id="busasignado" type="text" name="datos[busasignado]" value="<?php echo $datos['busasignado'] ?? '' ?>"> -->
-                          <?=isset($errores['busasignado'])?'<span class="error">'.$errores['busasignado'].'</span>':'<span class="ok">OK</span>'?></label>
+                          <?php /* isset($errores['busasignado'])?'<span class="error">'.$errores['busasignado'].'</span>':'<span class="ok">OjK</span>' */?></label>
         </div>
 <?php /*
 <!--        <div class="col-xl-6 col-lg-6 col-sm-6 col-md-6 col-12">

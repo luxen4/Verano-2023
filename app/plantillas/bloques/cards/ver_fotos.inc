@@ -1,14 +1,37 @@
 <div class="col-xl-4 text-center col-lg-6 col-md-12 col-sm-12 col-12 av" >
     <article style="padding: 0em;">  
     
-        <div class="row articuloconboton">
-            <h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana; ?>
+        <div class="row articuloconboton" 
         
-
+        <?php
+        if($numPlazasOcupadasBus==$numPlazasTotalesBus){ ?>
+         style="background-color:#CFE7AD;"
+        <?php 
+        }?>
         
-        </h6> 
-
+       
+        
+        
+        
+        
+        
+        >
     
+
+        <div style="display: flex;">
+            <h6><?= $destino->fecha_Viaje . ', ' . $destino->dia_Semana; ?>&nbsp;</h6> 
+
+       <?php 
+
+            if($numPlazasOcupadasBus==$numPlazasTotalesBus){ ?>
+             
+             <div><h6>COMPLETO</h6></div> 
+             
+             <?php
+
+            }
+          ?>
+          </div>
 
             <div class="col-xl-2 text-center col-lg-2 col-md-2 col-sm-2 col-2" style="padding: 0em;"><!--Foto -->
                 <!-- <img class="fotodestino" src="web/imagenes/destinos/completo.png" alt="Foto de un destino"-->

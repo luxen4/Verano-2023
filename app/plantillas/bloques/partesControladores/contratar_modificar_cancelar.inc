@@ -36,7 +36,7 @@
       }
 
     
-         if (isset($_POST['modificardestino'])) {  ?><script>alert("jhbkjbkj");</script> <?php
+         if (isset($_POST['modificardestino'])) {  ?><?php
                 $datos=$_POST['datos'];//var_dump($datos);die();
                 $ref_Destino=$datos['destinoseleccionado'];
                 $infoDestino=(new DestinoRepositorio())->infoDestino($ref_Destino);

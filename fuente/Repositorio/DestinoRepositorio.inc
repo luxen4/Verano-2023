@@ -835,7 +835,7 @@ public function noMasPlazas($ref_Destino){
 
             return true;
         } else {?>
-       <script>alert("Lo sentimos, no se ha podido modificar el DESTINO");</script><?php
+       <?php
         return false;
         }
     } catch (\PDOException$e) {?>
@@ -868,7 +868,7 @@ public function noMasPlazasCompleto($ref_Destino){
 
             return true;
         } else {?>
-       <script>alert("Lo sentimos, no se ha podido modificar el DESTINO");</script><?php
+      <?php
         return false;
         }
     } catch (\PDOException$e) {?>
@@ -903,7 +903,7 @@ public function masPlazasDisponible($ref_Destino){
 
             return true;
         } else {?>
-       <script>alert("Lo sentimos, no se ha podido modificar el DESTINO");</script><?php
+      <?php
         return false;
         }
     } catch (\PDOException$e) {?>
@@ -937,7 +937,7 @@ public function noMasPlazasNoDisponible($ref_Destino){
 
             return true;
         } else {?>
-       <script>alert("Lo sentimos, no se ha podido modificar el DESTINO");</script><?php
+      <?php
         return false;
         }
     } catch (\PDOException$e) {?>

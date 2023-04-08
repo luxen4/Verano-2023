@@ -73,7 +73,7 @@ use miId\fuente\Repositorio\BusRepositorio;
 
         <div class="col-xl-6 text-center col-lg-6 col-md-6 col-sm-6 col-6">  
             <label for="precio">Precio</label>
-            <input id="precio" type="number" name="datos[euros]" value="<?php echo $datos['euros'] ?? '' ?>" placeholder="10euros" step="0.5" min="12" max="20" size="3" required> <br>
+            <input id="precio" type="number" name="datos[euros]" value="<?php echo $datos['euros'] ?? '' ?>" placeholder="10euros" step="0.5" min="1" max="100" size="3" required> <br>
             <?php if(isset($datos)){if(isset($errores['euros'])){?><span class="error"><?="<br>". $errores['euros'].'</span>'?><?php 
                                     }else{?><span class="ok">OK</span><?php }};?>
         </div>
