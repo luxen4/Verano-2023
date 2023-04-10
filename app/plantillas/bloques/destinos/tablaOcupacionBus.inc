@@ -2,13 +2,14 @@
     use miId\fuente\Repositorio\ViajarRepositorio; 
     use miId\fuente\Repositorio\PasajeroRepositorio;
     use miId\fuente\Repositorio\ClienteRepositorio;
-?>
+use PhpParser\Node\Stmt\Echo_;
 
+?>
 <div class="table-responsive"> 
 
     <table class="table table-bordered table-hover">
         <thead class="table-active">
-            <th style="width: 15%;">Plaza</th>
+            <th style="width: 15%;">Plazas</th>
             <th style="width: 45%;">Contacto</th>
             <th style="width: 30%;">Cobrado</th>
         </thead>
@@ -22,36 +23,36 @@
                 <?php
 
 
-    $plaza_Bus=$i;  
-    include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO; 
-    $clienteOPasajero = (new ViajarRepositorio())->clienteOpasajero($ref_Destino, $plaza_Bus);
+                $plaza_Bus=$i;  
+                include_once $_SERVER['DOCUMENT_ROOT'] . VIAJARREPOSITORIO; 
+                $clienteOPasajero = (new ViajarRepositorio())->clienteOpasajero($ref_Destino, $plaza_Bus);
 
-    $nomenclatura="";
+                $nomenclatura="";
 
-    if (!empty($clienteOPasajero)) {
-        $ref_Persona = $clienteOPasajero[0]->ref_Persona;
-        $nomenclatura = substr($ref_Persona, 0, 3);
-    }
+                if (!empty($clienteOPasajero)) {
+                    $ref_Persona = $clienteOPasajero[0]->ref_Persona;
+                    $nomenclatura = substr($ref_Persona, 0, 3);
+                }
 
 
-    if ($nomenclatura=='CLI') {
-        // Si es Cliente que consulte sus datos
-        include_once $_SERVER['DOCUMENT_ROOT'] . CLIENTEREPOSITORIO;
-        $infoCliente = (new ClienteRepositorio())->infoCliente($ref_Destino, $plaza_Bus);
-                        
-        // Debe consultar si es SOCIO de la Agencia de Viajes
-        $ref_AgenciaViajes=$_SESSION['perfil']['ref_AgenciaViajes'];
-        $esSocioAgenciaViajes = (new ClienteRepositorio())->esSocio($ref_Persona, $ref_AgenciaViajes);
+                if ($nomenclatura=='CLI') {
+                    // Si es Cliente que consulte sus datos
+                    include_once $_SERVER['DOCUMENT_ROOT'] . CLIENTEREPOSITORIO;
+                    $infoCliente = (new ClienteRepositorio())->infoCliente($ref_Destino, $plaza_Bus);
+                                    
+                    // Debe consultar si es SOCIO de la Agencia de Viajes
+                    $ref_AgenciaViajes=$_SESSION['perfil']['ref_AgenciaViajes'];
+                    $esSocioAgenciaViajes = (new ClienteRepositorio())->esSocio($ref_Persona, $ref_AgenciaViajes);
 
-    } elseif ($nomenclatura=='PAS') {
+                } elseif ($nomenclatura=='PAS') {
 
-        // Si es Pasajero que va a una ref_Destino y se sienta en el asiento ($asiento) que consulte sus datos
-        include_once $_SERVER['DOCUMENT_ROOT'] . PASAJEROREPOSITORIO;
-        $ref_Pasajero = $ref_Persona;
-        $infoNoCliente = (new PasajeroRepositorio())->infoPasajero($ref_Destino, $plaza_Bus);
+                    // Si es Pasajero que va a una ref_Destino y se sienta en el asiento ($asiento) que consulte sus datos
+                    include_once $_SERVER['DOCUMENT_ROOT'] . PASAJEROREPOSITORIO;
+                    $ref_Pasajero = $ref_Persona;
+                    $infoNoCliente = (new PasajeroRepositorio())->infoPasajero($ref_Destino, $plaza_Bus);
 
-    } else { } 
-?>
+                } else { } 
+                ?>
 
                 <tr>
                     <td>
@@ -88,7 +89,7 @@
                                                 }else{ } 
                                                 */
                                             ?>
-                    </td><?php   
+                    </td><?php 
                     
                     if ($nomenclatura=="CLI") {   $infoPersona=$infoCliente; ?>
                         <?php // include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app\plantillas\bloques\destinos\InfoTablaBusDestino\--celdas_ContactoCobrado.inc'; ?><?php
@@ -119,6 +120,9 @@
                 
                 
                 <td id='<?php echo 'plaza_' . $plaza_Bus; ?>'<?php 
+
+
+
                     if($infoPersona[0]->pagado=='NO'){ ?>style="background-color: red;" 
                         <?php $pendienteRecaudar= $pendienteRecaudar+($infoPersona[0]->embolso);
                                 $plazasSinCobrar=$plazasSinCobrar+1;
@@ -144,7 +148,17 @@
                   ?>  
                   
 
-                  <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero.inc'; ?>
+                  <?php 
+                
+                  
+
+                  // BUENO include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero.inc'; 
+                  
+                  include ('../Verano-2023/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero.inc');
+                  
+                  ?>
+                  
+                  
                   <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/infoTablaBusDestino/info_contacto_pasajero_cobrado.inc'; ?>
 
                 <?php
@@ -156,7 +170,7 @@
             } ?>                                 
         </tbody>
     </table>
-    
+   
 </div>
 
     <script src="web/bootstrap/js/jspdf.debug.js"></script>
@@ -165,15 +179,15 @@
 <script>
     //DescargarPDF(reporte,Archivo);
     function descargarPDF(ContenidoID,nombre){
-alert("entro");
-var pdf =new jsPDF('p','pt','letter');
-        html=$('#'+ContenidoID).html();
-        especialElementsHandlers={};
-        margins={top:10, bottom:20, left:20, width:522};
-        pdf.fromHTML(
-            html, margins.left, margins.top, {'width':margins.width},
-            function(dispose){pdf.save(nombre+'.pdf');}, margins);
-        
+        alert("entro");
+        var pdf =new jsPDF('p','pt','letter');
+                html=$('#'+ContenidoID).html();
+                especialElementsHandlers={};
+                margins={top:10, bottom:20, left:20, width:522};
+                pdf.fromHTML(
+                    html, margins.left, margins.top, {'width':margins.width},
+                    function(dispose){pdf.save(nombre+'.pdf');}, margins);
+                
     }
 </script>
 

@@ -1,12 +1,24 @@
 <?php
 
+echo $_SERVER['SERVER_NAME']; 
 
-
-if($_SERVER['SERVER_NAME']=="localhost"){
+if($_SERVER['SERVER_NAME']=="localhost") {
     $host="localhost";
     $dbname="proyectoplayasdefinitivo";
     $username="root";
-    $contrasena="";   
+    $contrasena="";
+
+
+    /* Quitar este si falla */
+}elseif($_SERVER['SERVER_NAME']=="laya.atwebpages.com"){
+    $host="fdb1030.awardspace.net";
+    $dbname="3714088_proyectoplayasdefinitivo";
+    $username="3714088_proyectoplayasdefinitivo";
+    $contrasena="rYPHq8acqd4Y";
+
+
+
+
 
 }else{
   /*  la buena $host="fdb30.awardspace.net";

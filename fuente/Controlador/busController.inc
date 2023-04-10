@@ -404,10 +404,6 @@ class BusController
             
         }
 
-       
-
-
-
         require __DIR__ . '/../../app/plantillas/bus/informacionBusDestino.php';
     }
 
