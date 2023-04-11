@@ -7,15 +7,7 @@
         if($numPlazasOcupadasBus==$numPlazasTotalesBus){ ?>
          style="background-color:#CFE7AD;"
         <?php 
-        }?>
-        
-       
-        
-        
-        
-        
-        
-        >
+        }?>>
     
 
         <div style="display: flex;">

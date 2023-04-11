@@ -1,6 +1,5 @@
 <?php
 
-echo $_SERVER['SERVER_NAME']; 
 
 if($_SERVER['SERVER_NAME']=="localhost") {
     $host="localhost";

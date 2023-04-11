@@ -1,7 +1,14 @@
 <?php 
 use miId\fuente\Repositorio\ViajarRepositorio;
+use miId\fuente\Repositorio\DestinoRepositorio;
+
+include_once $_SERVER['DOCUMENT_ROOT'] . DESTINOREPOSITORIO; 
+$destino = (new DestinoRepositorio())->infoDestino($ref_Destino); 
 
 ?>
+
+
+
 
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/utilidades.inc'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/utilidades/scripts/css_tablaBusDestino.inc';?>
@@ -36,11 +43,52 @@ include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/plant
                                    
 
                                         <div id="" class="col-xl-12 text-center col-lg-4 col-md-4 col-sm-4 col-12">
-                                            <input style="padding: 0.1em 4em; margin:0.5em;" class="btn btn-success" type="submit" name="generaexcelocupacionbus" value="Exncel"> 
+                                            <input style="padding: 0.1em 4em; margin:0.5em;" class="btn btn-success" type="submit" name="generaexcelocupacionbus" value="-Excel-"> 
                                         </div>
 
                                         <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\paraImprimir.inc';?>
-                                        <?php // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\InfoDestino.inc';?>
+                                        
+                                        <?php 
+                                        // NO FUNCIONA EN SERVIDOR GRATUITO
+                                        // include $_SERVER['DOCUMENT_ROOT'] . '\Verano-2023/app\plantillas\bloques\destinos\InfoDestino.inc';?>
+                                            <input id="ref_Destino" type="checkbox" name="datos[refdestino]" value="<?php echo ($ref_Destino); ?>" hidden checked>
+                                            <div id="info_viaje" class="container">
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="table-responsive"> 
+                                                            <table class="table table-bordered table-hover">
+                                                                <thead class="table-active">
+                                                                    <th><?php echo pasarUtf8($destino[0]->nombre_Localidad)?><br><?php echo (pasarUtf8($destino[0]->kilometrosIdaVuelta) . "Km.")?></th><th><span><?php echo pasarUtf8($destino[0]->nombre_Agencia) ;?></span> <br> <span>Tel: <?php echo $info_DestinoTelefonoImeil[0]->telefono_Agencia; ?></span></th><th><?php echo pasarUtf8(round($destino[0]->euros,2) . "€")?></th>
+                                                                </thead>
+
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><?php echo pasarUtf8($destino[0]->fecha_Viaje) . ", " . pasarUtf8($destino[0]->dia_Semana)?></td>
+                                                                        <td><span>emeil: <?php echo $info_DestinoTelefonoImeil[0]->email; ?></span></td>
+                                                                        <td style="padding:0.5em"><?php echo $destino[0]->matricula; ?></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+<style>
+    #info_viaje{/*margin: 0.5em;*/}
+    td{/*vertical-align: middle;*/}
+</style>
+
+
+
+
+
+
+
+
+
+
+
                                     </div>
 
                                     <?php include $_SERVER['DOCUMENT_ROOT']   . TEMPORADA . '/app/plantillas/bloques/destinos/tablaOcupacionBus.inc'; ?> 
